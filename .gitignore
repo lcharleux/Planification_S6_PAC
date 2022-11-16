@@ -1,3 +1,6 @@
 planification/outputs/schedule.xlsx
 planification/activity_data/*
 planification/outputs/modules_activities.xlsx
+planification/course_makers/MECA654_data/MECA654_ressources.csv
+.gitignore
+planification/course_makers/MECA654_data/MECA654_graph.md
