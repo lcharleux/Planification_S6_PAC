@@ -144,7 +144,7 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 10.0
+solver.parameters.max_time_in_seconds = 20.0
 
 
 solution_printer = SolutionPrinter(limit=100)
@@ -176,7 +176,7 @@ export_student_schedule_to_xlsx(
 # MODULES
 writer = pd.ExcelWriter(f"outputs/modules_activities.xlsx", engine="xlsxwriter")
 for module in solution.module.unique():
-    module_solution = solution[solution.module == module].sort_values(["kind", "start"])
+    module_solution = solution[solution.module == module].sort_values(["start"])
     module_solution = module_solution[["label", "week", "weekday", "weekdayname", "starttime", "endtime", "kind", "students", "teachers", "rooms", "year", "month", "day", "daystart", "dayend"]]
     sheet_name = f"{module}"
     module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
