@@ -175,7 +175,9 @@ export_student_schedule_to_xlsx(
 )
 # MODULES
 writer = pd.ExcelWriter(f"outputs/modules_activities.xlsx", engine="xlsxwriter")
-for module in solution.module.unique():
+unique_modules = solution.module.unique()
+unique_modules.sort()
+for module in unique_modules:
     module_solution = solution[solution.module == module].sort_values(["start"])
     module_solution = module_solution[["label", "week", "weekday", "weekdayname", "starttime", "endtime", "kind", "students", "teachers", "rooms", "year", "month", "day", "daystart", "dayend"]]
     sheet_name = f"{module}"
@@ -191,4 +193,30 @@ for module in solution.module.unique():
     worksheet.set_column('I:J', 70, my_format)
     worksheet.set_column('K:N', 12, my_format)
 
-writer.save()    
+writer.close()    
+
+# RESSOURCES
+for ressources in ["teachers", "rooms"]:
+    writer = pd.ExcelWriter(f"outputs/{ressources}_activities.xlsx", engine="xlsxwriter")
+    unique_ressources = np.unique(np.concatenate(solution[ressources].values))
+    unique_ressources.sort()
+    for ressource in unique_ressources:
+        loc = solution[ressources].apply(lambda a: ressource in a)
+        ressource_solution = solution[loc].sort_values(["start"])
+        ressource_solution = ressource_solution[["module", "label", "week", "weekday", "weekdayname", "starttime", "endtime", "kind", "students", "teachers", "rooms", "year", "month", "day", "daystart", "dayend"]]
+        sheet_name = f"{ressource}"
+        ressource_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
+        worksheet = writer.sheets[sheet_name]
+        workbook = writer.book
+        my_format = workbook.add_format(
+            {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+        
+        )
+        worksheet.set_column('A:A', 20, my_format)
+        worksheet.set_column('B:B', 50, my_format)
+        worksheet.set_column('C:H', 12, my_format)
+        worksheet.set_column('I:I', 20, my_format)
+        worksheet.set_column('J:K', 70, my_format)
+        worksheet.set_column('L:N', 12, my_format)
+
+    writer.close()  

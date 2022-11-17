@@ -6,7 +6,7 @@ import pandas as pd
 import json
 
 # SETUP
-course_label = "MECA654"
+course_label = "MECA655"
 data = yaml.safe_load(open(f"../course_models/{course_label}.yml"))
 data = data[course_label]
 course = Course(label=course_label, color=data["color"])
@@ -32,7 +32,7 @@ open(f"../courses_graphs/{course_label}_graph.md", "w").write(constraints_graph)
 activities = data["activities"]
 out_df = activities_to_dataframe(activities)
 out_df.to_csv(f"../courses_activities_dataframes/{course_label}_ressources.csv")
-
+out_df.to_html(f"../courses_activities_dataframes/{course_label}_ressources.html")
 
 # ACTIVITIES
 activities = {}

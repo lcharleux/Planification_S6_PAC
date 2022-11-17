@@ -58,13 +58,12 @@
                 "from_year": 2023,
                 "from_week": 4,
                 "from_weekday": 3,
-                "from_dayslot": 0,
+                "from_dayslot": 32,
                 "to_year": 2023,
                 "to_week": 4,
                 "to_weekday": 3,
-                "to_dayslot": 95,
-                "repeat":1,
-                "repeat_pad":672
+                "to_dayslot": 72,
+                "repeat":0
             }
         ],
         "first_name": "THOMAS",

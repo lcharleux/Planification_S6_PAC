@@ -4,3 +4,14 @@ planification/outputs/modules_activities.xlsx
 planification/course_makers/MECA654_data/MECA654_ressources.csv
 .gitignore
 planification/course_makers/MECA654_data/MECA654_graph.md
+planification/courses_activities_dataframes/MATH642_ressources.html
+planification/courses_activities_dataframes/MECA654_ressources.csv
+planification/courses_activities_dataframes/MECA655_ressources.csv
+planification/courses_activities_dataframes/MECA655_ressources.html
+planification/courses_graphs/MATH642_graph.md
+planification/courses_graphs/MECA654_graph.md
+planification/courses_graphs/MECA655_graph.md
+planification/outputs/.~lock.modules_activities.xlsx#
+planification/outputs/rooms_activities.xlsx
+planification/outputs/teachers_activities.xlsx
+planification/courses_activities_dataframes/MATH642_ressources.csv
