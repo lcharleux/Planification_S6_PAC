@@ -1,0 +1,87 @@
+{"MOUILLE PASCAL": {
+        "unavailable": [
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 4,
+                "from_weekday": 4,
+                "from_dayslot": 52,
+                "to_year": 2023,
+                "to_week": 4,
+                "to_weekday": 4,
+                "to_dayslot":96,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 8,
+                "from_weekday": 4,
+                "from_dayslot": 52,
+                "to_year": 2023,
+                "to_week": 8,
+                "to_weekday": 4,
+                "to_dayslot":96,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 11,
+                "from_weekday": 4,
+                "from_dayslot": 52,
+                "to_year": 2023,
+                "to_week": 11,
+                "to_weekday": 5,
+                "to_dayslot":48,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 13,
+                "from_weekday": 4,
+                "from_dayslot": 52,
+                "to_year": 2023,
+                "to_week": 13,
+                "to_weekday": 4,
+                "to_dayslot":96,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 16,
+                "from_weekday": 4,
+                "from_dayslot": 52,
+                "to_year": 2023,
+                "to_week": 16,
+                "to_weekday": 4,
+                "to_dayslot":96,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 19,
+                "from_weekday": 4,
+                "from_dayslot": 52,
+                "to_year": 2023,
+                "to_week": 19,
+                "to_weekday": 4,
+                "to_dayslot":96,
+                "repeat": 1,
+                "repeat_pad": 672
+            }
+            
+        ],
+        "first_name": "XXX",
+        "name": "XXX",
+        "phone": "xxxx"
+    }
+}

@@ -531,7 +531,7 @@ MECA655:
         pool: ["info_rooms"]
         value: 1
       students:
-        "MM-3"
+        "MM-3-C2"
     TP4-A1:
       kind: TP
       duration: 16
@@ -597,7 +597,7 @@ MECA655:
         pool: ["info_rooms"]
         value: 1
       students:
-        "MM-3"                                        
+        "MM-3-C2"                                        
     CT1:
       kind: EX
       duration: 8

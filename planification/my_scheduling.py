@@ -130,7 +130,10 @@ create_activities(
     room_unavailable_intervals=room_unavailable_intervals,
     students_unavailable_intervals=students_unavailable_intervals,
     weekly_unavailable_intervals=weekly_unavailable_intervals,
+    cm_td_allowed_slots = [32, 39, 46, 53, 60, 67]
 )
+
+# MINIMIZE SEMESTER DURATION
 # Makespan objective
 activities_ends = []
 for file, module in activity_data.items():

@@ -1,0 +1,23 @@
+{
+    "GALLET MATTHIEU": {
+        "unavailable": [
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 21,
+                "from_weekday": 1,
+                "from_dayslot": 1,
+                "to_year": 2023,
+                "to_week": 21,
+                "to_weekday": 5,
+                "to_dayslot": 95,
+                "repeat": 1,
+                "repeat_pad": 672
+            }
+            
+        ],
+        "first_name": "XXX",
+        "name": "XXX",
+        "phone": "xxxx"
+    }
+}

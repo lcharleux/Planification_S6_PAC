@@ -1,0 +1,36 @@
+{
+    "MONNET SÉBASTIEN": {
+        "unavailable": [
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 1,
+                "from_weekday": 1,
+                "from_dayslot": 1,
+                "to_year": 2023,
+                "to_week": 1,
+                "to_weekday": 1,
+                "to_dayslot": 48,
+                "repeat": 40,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2023,
+                "from_week": 1,
+                "from_weekday": 4,
+                "from_dayslot": 52,
+                "to_year": 2023,
+                "to_week": 1,
+                "to_weekday": 4,
+                "to_dayslot": 95,
+                "repeat": 40,
+                "repeat_pad": 672
+            }
+            
+        ],
+        "first_name": "XXX",
+        "name": "XXX",
+        "phone": "xxxx"
+    }
+}

@@ -13,6 +13,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 2016 # lundi semaine 4
+      max_start_slot: 2496 # vendredi semaine 4 
     CM2:
       kind: CM
       duration: 6
@@ -23,7 +25,9 @@ MATH642:
         pool: ["default"]
         value: 1
       students:
-        "SNI-3-D-TD"    
+        "SNI-3-D-TD"   
+      min_start_slot: 2016 # lundi semaine 4
+      max_start_slot: 2496 # vendredi semaine 4    
     CM3:
       kind: CM
       duration: 6
@@ -34,7 +38,9 @@ MATH642:
         pool: ["default"]
         value: 1
       students:
-        "SNI-3-D-TD"   
+        "SNI-3-D-TD"  
+      min_start_slot: 2016 # lundi semaine 4
+      max_start_slot: 2496 # vendredi semaine 4    
     CM4:
       kind: CM
       duration: 6
@@ -46,6 +52,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 2688 # lundi semaine 5
+      max_start_slot: 3168 # vendredi semaine 4      
     CM5:
       kind: CM
       duration: 6
@@ -57,6 +65,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 2688 # lundi semaine 5
+      max_start_slot: 3168 # vendredi semaine 4   
     CM6:
       kind: CM
       duration: 6
@@ -68,6 +78,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 2688 # lundi semaine 5
+      max_start_slot: 3168 # vendredi semaine 4   
     CM7:
       kind: CM
       duration: 6
@@ -79,6 +91,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 3360 # lundi semaine 5
+      max_start_slot: 3840 # vendredi semaine 4     
     CM8:
       kind: CM
       duration: 6
@@ -90,6 +104,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 4032 # lundi semaine 5
+      max_start_slot: 4512 # vendredi semaine 4     
     CM9:
       kind: CM
       duration: 6
@@ -101,6 +117,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 4032 # lundi semaine 5
+      max_start_slot: 4512 # vendredi semaine 4   
     CM10:
       kind: CM
       duration: 6
@@ -111,7 +129,9 @@ MATH642:
         pool: ["default"]
         value: 1
       students:
-        "SNI-3-D-TD"    
+        "SNI-3-D-TD"
+      min_start_slot: 4704
+      max_start_slot: 5184     
     CM11:
       kind: CM
       duration: 6
@@ -123,6 +143,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 4704
+      max_start_slot: 5184   
     CM12:
       kind: CM
       duration: 6
@@ -134,6 +156,8 @@ MATH642:
         value: 1
       students:
         "SNI-3-D-TD"
+      min_start_slot: 5376
+      max_start_slot: 5856   
     # TD  
     TD1-D:
       kind: TD
@@ -313,57 +337,57 @@ MATH642:
     - kind: succession
       activities: [CM2]
       start_after: [CM1]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [CM3]
       start_after: [CM2]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [CM4]
       start_after: [CM3]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM5]
       start_after: [CM4]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM6]
       start_after: [CM5]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM7]
       start_after: [CM6]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM8]
       start_after: [CM7]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM9]
       start_after: [CM8]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM10]
       start_after: [CM9]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM11]
       start_after: [CM10]
-      min_offset: 48
+      min_offset: 0
       max_offset: null       
     - kind: succession
       activities: [CM12]
       start_after: [CM11]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD1]
