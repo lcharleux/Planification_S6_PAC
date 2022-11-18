@@ -1,0 +1,345 @@
+# INFO631
+INFO631:
+  activities:
+  # CM
+    CM1:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    CM2:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"    
+    CM3:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"   
+    CM4:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    CM5:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    CM6:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    CM7:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    # TD  
+    TD1-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [LZ]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD2-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [LZ]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    TD3-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    TD4-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    TD5-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [FV ]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"              
+    TD6-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [FV ]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    TD7-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [FV ]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    TP1-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV , LZ]
+        value: 2
+      rooms: 
+        pool: ["info_rooms"]
+        value: 2
+      students:
+        "IDU-3-G-TD"  
+    TP2-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV , LZ]
+        value: 2
+      rooms: 
+        pool: ["info_rooms"]
+        value: 2
+      students:
+        "IDU-3-G-TD"      
+    TP3-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV , LZ]
+        value: 2
+      rooms: 
+        pool: ["info_rooms"]
+        value: 2
+      students:
+        "IDU-3-G-TD" 
+    TP4-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV , LZ]
+        value: 2
+      rooms: 
+        pool: ["info_rooms"]
+        value: 2
+      students:
+        "IDU-3-G-TD" 
+    TP5-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV , LZ]
+        value: 2
+      rooms: 
+        pool: ["info_rooms"]
+        value: 2
+      students:
+        "IDU-3-G-TD" 
+
+  teachers_acronyms:
+    FV: VERNIER FLAVIEN
+    LZ: ZUCALLI LEA
+    
+
+  rooms:
+    big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
+
+  inner_activity_groups:
+    CM1: [CM1]
+    CM2: [CM2]
+    CM3: [CM3]
+    CM4: [CM4]
+    CM5: [CM5]
+    CM6: [CM6]
+    CM7: [CM7]
+    TD1: [TD1-G]
+    TD2: [TD2-G]
+    TD3: [TD3-G]
+    TD4: [TD4-G]
+    TD5: [TD5-G]
+    TD6: [TD6-G]
+    TD7: [TD7-G]
+    TP1: [TP1-G]
+    TP2: [TP2-G]
+    TP3: [TP3-G]
+    TP4: [TP4-G]
+    TP5: [TP5-G]
+    
+    
+
+  foreign_activity_groups:
+    MECA653_CM1: [[MECA653, CM1]]
+
+
+  constraints:
+    - kind: succession
+      activities: [CM2]
+      start_after: [CM1]
+      min_offset: 192
+      max_offset: null
+    - kind: succession
+      activities: [TD1]
+      start_after: [CM2]
+      min_offset: 0
+      max_offset: null 
+    - kind: succession
+      activities: [TD2]
+      start_after: [TD1]
+      min_offset: 192
+      max_offset: null
+    - kind: succession
+      activities: [CM3]
+      start_after: [TD2]
+      min_offset: 0
+      max_offset: null 
+    - kind: succession
+      activities: [CM4]
+      start_after: [CM3]
+      min_offset: 192
+      max_offset: null
+    - kind: succession
+      activities: [TD3]
+      start_after: [CM4]
+      min_offset: 0
+      max_offset: null
+    - kind: succession
+      activities: [TD4]
+      start_after: [TD3]
+      min_offset: 192
+      max_offset: null
+    - kind: succession
+      activities: [CM5]
+      start_after: [TD4]
+      min_offset: 96
+      max_offset: null 
+    - kind: succession
+      activities: [CM6]
+      start_after: [CM5]
+      min_offset: 192
+      max_offset: null 
+    - kind: succession
+      activities: [TD5]
+      start_after: [CM6]
+      min_offset: 0
+      max_offset: null 
+    - kind: succession
+      activities: [TP1]
+      start_after: [TD5]
+      min_offset: 192
+      max_offset: null                 
+    - kind: succession
+      activities: [TP2]
+      start_after: [TP1]
+      min_offset: 192
+      max_offset: null
+    - kind: succession
+      activities: [TP3]
+      start_after: [TP2]
+      min_offset: 192
+      max_offset: null 
+    - kind: succession
+      activities: [TP4]
+      start_after: [TP3]
+      min_offset: 192
+      max_offset: null
+    - kind: succession
+      activities: [TP5]
+      start_after: [TP4]
+      min_offset: 192
+      max_offset: null 
+    - kind: succession
+      activities: [TD6]
+      start_after: [TP5]
+      min_offset: 96
+      max_offset: null   
+    - kind: succession
+      activities: [TD7]
+      start_after: [TD6]
+      min_offset: 192
+      max_offset: null 
+    - kind: succession
+      activities: [CM7]
+      start_after: [TD7]
+      min_offset: 192
+      max_offset: null    
+
+  color: pink 

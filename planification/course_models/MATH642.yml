@@ -153,7 +153,7 @@ MATH642:
         pool: [AA ]
         value: 1
       rooms: 
-        pool: ["big_info_rooms"]
+        pool: ["default"]
         value: 1
       students:
         "SNI-3-D-TD"
@@ -164,7 +164,7 @@ MATH642:
         pool: [AA ]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["big_info_rooms"]
         value: 1
       students:
         "SNI-3-D-TD"
@@ -310,66 +310,61 @@ MATH642:
 
 
   constraints:
-    # - kind: succession
-    #   activities: [CM1]
-    #   start_after: [MECA653_CM1]
-    #   min_offset: 48
-    #   max_offset: null 
     - kind: succession
       activities: [CM2]
       start_after: [CM1]
-      min_offset: 96
-      max_offset: 192
+      min_offset: 48
+      max_offset: null
     - kind: succession
       activities: [CM3]
       start_after: [CM2]
-      min_offset: 96
-      max_offset: 192
+      min_offset: 48
+      max_offset: null
     - kind: succession
       activities: [CM4]
       start_after: [CM3]
-      min_offset: 162
-      max_offset: 384
+      min_offset: 48
+      max_offset: null 
     - kind: succession
       activities: [CM5]
       start_after: [CM4]
       min_offset: 48
-      max_offset: 192 
+      max_offset: null 
     - kind: succession
       activities: [CM6]
       start_after: [CM5]
       min_offset: 48
-      max_offset: 192 
+      max_offset: null 
     - kind: succession
       activities: [CM7]
       start_after: [CM6]
-      min_offset: 162
-      max_offset: 384
+      min_offset: 48
+      max_offset: null 
     - kind: succession
       activities: [CM8]
       start_after: [CM7]
-      min_offset: 162
-      max_offset: 384   
+      min_offset: 48
+      max_offset: null 
     - kind: succession
       activities: [CM9]
       start_after: [CM8]
       min_offset: 48
-      max_offset: 192         
+      max_offset: null 
     - kind: succession
       activities: [CM10]
       start_after: [CM9]
-      min_offset: 162
-      max_offset: 384
+      min_offset: 48
+      max_offset: null 
     - kind: succession
       activities: [CM11]
       start_after: [CM10]
       min_offset: 48
-      max_offset: 192
+      max_offset: null       
     - kind: succession
       activities: [CM12]
       start_after: [CM11]
       min_offset: 48
-      max_offset: 192  
+      max_offset: null
     - kind: succession
       activities: [TD1]
       start_after: [CM1]

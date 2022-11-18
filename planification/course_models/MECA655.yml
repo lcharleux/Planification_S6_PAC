@@ -172,7 +172,7 @@ MECA655:
       kind: TD
       duration: 6
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["default"]
@@ -183,7 +183,7 @@ MECA655:
       kind: TD
       duration: 6
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["default"]
@@ -194,7 +194,7 @@ MECA655:
       kind: TD
       duration: 6
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["default"]
@@ -205,10 +205,10 @@ MECA655:
       kind: TD
       duration: 6
       teachers: 
-        pool: [FF]
+        pool: [HF]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["big_info_rooms"]
         value: 1
       students:
         "MM-3-A-TD"  
@@ -216,10 +216,10 @@ MECA655:
       kind: TD
       duration: 6
       teachers: 
-        pool: [FF]
+        pool: [HF]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["big_info_rooms"]
         value: 1
       students:
         "MM-3-B-TD"
@@ -227,10 +227,10 @@ MECA655:
       kind: TD
       duration: 6
       teachers: 
-        pool: [FF]
+        pool: [HF]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["big_info_rooms"]
         value: 1
       students:
         "MM-3-C-TD"   
@@ -241,7 +241,7 @@ MECA655:
         pool: [FF]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["big_info_rooms"]
         value: 1
       students:
         "MM-3-A-TD"  
@@ -252,7 +252,7 @@ MECA655:
         pool: [FF]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["big_info_rooms"]
         value: 1
       students:
         "MM-3-B-TD"
@@ -263,7 +263,7 @@ MECA655:
         pool: [FF]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["big_info_rooms"]
         value: 1
       students:
         "MM-3-C-TD"
@@ -382,7 +382,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -393,7 +393,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -404,7 +404,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -415,7 +415,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -426,7 +426,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -437,7 +437,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -448,7 +448,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -459,7 +459,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [FF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -677,21 +677,21 @@ MECA655:
     - kind: succession
       activities: [TD1]
       start_after: [CM3]
-      min_offset: 48
+      min_offset: 1
       max_offset: null   
     - kind: succession
       activities: [TD2]
-      start_after: [TD1, CM4]
-      min_offset: 48
+      start_after: [TD1, CM3]
+      min_offset: 1
       max_offset: null
     - kind: succession
       activities: [TD3]
-      start_after: [TP1, TD2]
-      min_offset: 48
+      start_after: [CM5, TD2]
+      min_offset: 1
       max_offset: null
     - kind: succession
       activities: [TD4]
-      start_after: [CM6, TD3]
+      start_after: [CM5, TD3]
       min_offset: 48
       max_offset: null
     - kind: succession
@@ -706,7 +706,7 @@ MECA655:
       max_offset: null
     - kind: succession
       activities: [TD7]
-      start_after: [TD6, CM6]
+      start_after: [TD6]
       min_offset: 48
       max_offset: null
     - kind: succession
@@ -716,12 +716,12 @@ MECA655:
       max_offset: null
     - kind: succession
       activities: [TP1]
-      start_after: [TD2]
+      start_after: [TD4]
       min_offset: 48
       max_offset: null
     - kind: succession
       activities: [TP2]
-      start_after: [TD4, TP1]
+      start_after: [TD5, TP1]
       min_offset: 48
       max_offset: null
     - kind: succession

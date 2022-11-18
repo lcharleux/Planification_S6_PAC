@@ -24,7 +24,7 @@ from automatic_university_scheduler.scheduling import (
 
 
 WEEK_STRUCTURE = np.array(
-    # 0h   1h   2h   3h   4h   5h   6h   7h   8h   9h   10h  11h  12h  13h  14h  15h  16h  17h  18h  19h  20h  21h  22h  23h
+    #    0h   1h   2h   3h   4h   5h   6h   7h   8h   9h   10h  11h  12h  13h  14h  15h  16h  17h  18h  19h  20h  21h  22h  23h
     [
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # MONDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # TUESDAY
@@ -144,10 +144,10 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 20.0
+solver.parameters.max_time_in_seconds = 300.0
 
 
-solution_printer = SolutionPrinter(limit=100)
+solution_printer = SolutionPrinter(limit=10)
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
 t1 = time.time()
