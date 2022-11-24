@@ -30,32 +30,6 @@
             {
                 "kind": "isocalendar",
                 "from_year": 2023,
-                "from_week": 7,
-                "from_weekday": 3,
-                "from_dayslot": 48,
-                "to_year": 2023,
-                "to_week": 7,
-                "to_weekday": 5,
-                "to_dayslot": 95,
-                "repeat": 1,
-                "repeat_pad": 672
-            },
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
-                "from_week": 8,
-                "from_weekday": 3,
-                "from_dayslot": 48,
-                "to_year": 2023,
-                "to_week": 8,
-                "to_weekday": 5,
-                "to_dayslot": 95,
-                "repeat": 1,
-                "repeat_pad": 672
-            },
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
                 "from_week": 9,
                 "from_weekday": 3,
                 "from_dayslot": 48,
@@ -63,49 +37,9 @@
                 "to_week": 9,
                 "to_weekday": 5,
                 "to_dayslot": 95,
-                "repeat": 1,
-                "repeat_pad": 672
-            },
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
-                "from_week": 10,
-                "from_weekday": 3,
-                "from_dayslot": 48,
-                "to_year": 2023,
-                "to_week": 10,
-                "to_weekday": 5,
-                "to_dayslot": 95,
-                "repeat": 1,
-                "repeat_pad": 672
-            },
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
-                "from_week": 11,
-                "from_weekday": 3,
-                "from_dayslot": 48,
-                "to_year": 2023,
-                "to_week": 11,
-                "to_weekday": 5,
-                "to_dayslot": 95,
-                "repeat": 1,
-                "repeat_pad": 672
-            },
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
-                "from_week": 12,
-                "from_weekday": 3,
-                "from_dayslot": 48,
-                "to_year": 2023,
-                "to_week": 12,
-                "to_weekday": 5,
-                "to_dayslot": 95,
-                "repeat": 1,
+                "repeat": 3,
                 "repeat_pad": 672
             }
-            
         ],
         "first_name": "XXX",
         "name": "XXX",
