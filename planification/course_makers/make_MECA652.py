@@ -235,11 +235,11 @@ for act in CM[10]:
 # TD par blocs de 3:
 for index, TDi in TD.items():
     for i in range(1, len(TDi)):
-        TDi[i].add_after(TDi[i-1], max_offset = 8)
+        TDi[i].add_after(TDi[i-1], max_offset = 40, min_offset = -40)
 
 
 # TD enchainement général
-TD_CM_offset = 32
+TD_CM_offset = 40
 for act in TD[1]:
     act.add_multiple_after(CM[2], max_offset=TD_CM_offset)
 for act in TD[2]:

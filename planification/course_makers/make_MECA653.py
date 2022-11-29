@@ -114,7 +114,7 @@ TD_Image = make_TD(
     index=index,
     after=[CM_Image],
     min_offset=0,
-    max_offset=96 * 2,
+    max_offset=None,
     add_to=course,
 )
 TP_Image = make_TP(
@@ -122,7 +122,7 @@ TP_Image = make_TP(
     index=index,
     after=TD_Image,
     min_offset=0,
-    max_offset=96 * 12,
+    max_offset=None,
     add_to=course,
 )
 
@@ -141,7 +141,7 @@ TD_Data = make_TD(
     index=index,
     after=[CM_Data],
     min_offset=0,
-    max_offset=96 * 2,
+    max_offset=None,
     add_to=course,
 )
 TP_Data = make_TP(
@@ -149,7 +149,7 @@ TP_Data = make_TP(
     index=index,
     after=TD_Data,
     min_offset=0,
-    max_offset=96 * 12,
+    max_offset=None,
     add_to=course,
 )
 
@@ -168,7 +168,7 @@ TD_ODE = make_TD(
     index=index,
     after=[CM_ODE],
     min_offset=0,
-    max_offset=96 * 2,
+    max_offset=None,
     add_to=course,
 )
 TP_ODE = make_TP(
@@ -176,7 +176,7 @@ TP_ODE = make_TP(
     index=index,
     after=TD_ODE,
     min_offset=0,
-    max_offset=96 * 12,
+    max_offset=None,
     add_to=course,
 )
 
@@ -195,7 +195,7 @@ TD_Learn = make_TD(
     index=index,
     after=[CM_Learn],
     min_offset=0,
-    max_offset=96 * 2,
+    max_offset=None,
     add_to=course,
 )
 TP_Learn = make_TP(
@@ -203,7 +203,7 @@ TP_Learn = make_TP(
     index=index,
     after=TD_Learn,
     min_offset=0,
-    max_offset=96 * 12,
+    max_offset=None,
     add_to=course,
 )
 
@@ -222,7 +222,7 @@ TD_Opti = make_TD(
     index=index,
     after=[CM_Opti],
     min_offset=0,
-    max_offset=96 * 2,
+    max_offset=None,
     add_to=course,
 )
 TP_Opti = make_TP(
@@ -230,7 +230,7 @@ TP_Opti = make_TP(
     index=index,
     after=TD_Opti,
     min_offset=0,
-    max_offset=96 * 12,
+    max_offset=None,
     add_to=course,
 )
 
@@ -241,7 +241,7 @@ TP_Projet = make_TP(
     index=index,
     after=TP_Opti,
     min_offset=0,
-    max_offset=96 * 12,
+    max_offset=None,
     add_to=course,
 )
 
