@@ -110,16 +110,16 @@ for index in range(1,2):
     )
 
 # ENCHAINEMENTS
-for act in CM[2]: act.add_multiple_after(CM[1], min_offset=48)
-for act in CM[3]: act.add_multiple_after(CM[2], min_offset=48)
-for act in CM[4]: act.add_multiple_after(CM[3], min_offset=48)
-for act in CM[5]: act.add_multiple_after(TD[1], min_offset=48)
-for act in CM[6]: act.add_multiple_after(TD[2], min_offset=48)
-for act in CM[7]: act.add_multiple_after(TD[3], min_offset=48)
-for act in CM[8]: act.add_multiple_after(TD[4], min_offset=48)
-for act in CM[9]: act.add_multiple_after(TD[5], min_offset=48)
-for act in CM[10]: act.add_multiple_after(TD[6], min_offset=48)
-for act in CM[11]: act.add_multiple_after(TD[8], min_offset=48)
+for act in CM[2]: act.add_multiple_after(CM[1], min_offset=96)
+for act in CM[3]: act.add_multiple_after(CM[2], min_offset=96)
+for act in CM[4]: act.add_multiple_after(CM[3], min_offset=96)
+for act in CM[5]: act.add_multiple_after(TD[1], min_offset=96)
+for act in CM[6]: act.add_multiple_after(TD[2], min_offset=96)
+for act in CM[7]: act.add_multiple_after(TD[3], min_offset=96)
+for act in CM[8]: act.add_multiple_after(TD[4], min_offset=96)
+for act in CM[9]: act.add_multiple_after(TD[5], min_offset=96)
+for act in CM[10]: act.add_multiple_after(TD[6], min_offset=96)
+for act in CM[11]: act.add_multiple_after(TD[8], min_offset=96)
 
 for act in TD[1]: act.add_multiple_after(CM[4])
 for act in TD[2]: act.add_multiple_after(CM[5])
@@ -134,7 +134,7 @@ for act in TD[10]: act.add_multiple_after(TD[9])
 for act in TD[11]: act.add_multiple_after(TD[10])
 for act in TD[12]: act.add_multiple_after(TD[11])
 
-for act in CT[1]: act.add_multiple_after(TD[12], min_offset=48)
+for act in CT[1]: act.add_multiple_after(TD[12], min_offset=96)
 
 path = f"../activity_data/{course_label}.json"
 with open(path, "w") as f:

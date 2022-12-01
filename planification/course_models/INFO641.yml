@@ -1,0 +1,462 @@
+# INFO641
+INFO641:
+  activities:
+  # CM
+    CM1:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["amphi"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    CM2:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["amphi"]
+        value: 1
+      students:
+        "IDU-3-G-TD"    
+    CM3:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["amphi"]
+        value: 1
+      students:
+        "IDU-3-G-TD"   
+    CM4:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["amphi"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    CM5:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["amphi"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    CM6:
+      kind: CM
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["amphi"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+   
+    
+    # TD  
+    TD1-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [REH]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD1-D:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [REH]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"  
+    TD2-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [REH]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD2-D:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [REH]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"  
+    TD3-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD3-D:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"  
+    TD4-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD4-D:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"  
+    TD5-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [REH]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD5-D:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [REH]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"  
+    TD6-G:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD6-D:
+      kind: TD
+      duration: 6
+      teachers: 
+        pool: [SC]
+        value: 1
+      rooms: 
+        pool: ["default"]
+        value: 1
+      students:
+        "SNI-3-D-TD"  
+    
+    TP1-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    TP1-D:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"
+    TP2-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    TP2-D:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"
+    TP3-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    TP3-D:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD" 
+    TP4-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    TP4-D:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD" 
+    TP5-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    TP5-D:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"  
+    TP6-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"
+    
+    TP6-D:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [SC, REH]
+        value: 2
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "SNI-3-D-TD"                
+
+  teachers_acronyms:
+    SC: CIMPAN SORANA
+    REH: EL HADRI RANYA
+    
+
+  rooms:
+    big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "big_info_rooms"]
+
+  inner_activity_groups:
+    CM1: [CM1]
+    CM2: [CM2]
+    CM3: [CM3]
+    CM4: [CM4]
+    CM5: [CM5]
+    CM6: [CM6]
+    TD1: [TD1-G, TD1-D]
+    TD2: [TD2-G, TD2-D]
+    TD3: [TD3-G, TD3-D]
+    TD4: [TD4-G, TD4-D]
+    TD5: [TD5-G, TD5-D]
+    TD6: [TD6-G, TD6-D]
+    
+    TP1: [TP1-G, TP1-D]
+    TP2: [TP2-G, TP2-D]
+    TP3: [TP3-G, TP3-D]
+    TP4: [TP4-G, TP4-D]
+    TP5: [TP5-G, TP5-D]
+    
+    
+
+  foreign_activity_groups:
+    MECA653_CM1: [[MECA653, CM1]]
+
+
+  constraints:
+    - kind: succession
+      activities: [CM2]
+      start_after: [CM1]
+      min_offset: 0
+      max_offset: null
+    - kind: succession
+      activities: [CM3]
+      start_after: [TD2]
+      min_offset: 0
+      max_offset: null         
+    - kind: succession
+      activities: [CM4]
+      start_after: [TD3]
+      min_offset: 0
+      max_offset: null 
+    - kind: succession
+      activities: [CM5]
+      start_after: [TD4]
+      min_offset: 0
+      max_offset: null  
+    - kind: succession
+      activities: [CM6]
+      start_after: [TP2]
+      min_offset: 0
+      max_offset: null  
+    - kind: succession
+      activities: [TD1]
+      start_after: [CM2]
+      min_offset: 0
+      max_offset: null  
+    - kind: succession
+      activities: [TD2]
+      start_after: [CM1, TD1]
+      min_offset: 0
+      max_offset: null   
+    - kind: succession
+      activities: [TD3]
+      start_after: [CM3]
+      min_offset: 0
+      max_offset: null   
+    - kind: succession
+      activities: [TD4]
+      start_after: [CM4]
+      min_offset: 0
+      max_offset: null    
+    - kind: succession
+      activities: [TD5]
+      start_after: [CM6]
+      min_offset: 0
+      max_offset: null      
+    - kind: succession
+      activities: [TD6]
+      start_after: [TD5]
+      min_offset: 0
+      max_offset: null                  
+    - kind: succession
+      activities: [TP1]
+      start_after: [TD3]
+      min_offset: 0
+      max_offset: null  
+    - kind: succession
+      activities: [TP2]
+      start_after: [CM5, TP1]
+      min_offset: 0
+      max_offset: null  
+    - kind: succession
+      activities: [TP3]
+      start_after: [TD6]
+      min_offset: 0
+      max_offset: null  
+    - kind: succession
+      activities: [TP4]
+      start_after: [TP3]
+      min_offset: 0
+      max_offset: null  
+    - kind: succession
+      activities: [TP5]
+      start_after: [TP4]
+      min_offset: 0
+      max_offset: null      
+
+  color: gray 

@@ -1,0 +1,163 @@
+# PROJ632
+PROJ632:
+  activities:
+  
+    
+    # TD  
+    TD1-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD2-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"      
+    TD3-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"    
+    TD4-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"  
+    TD5-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD" 
+    TD6-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"     
+    TD7-G:
+      kind: TP
+      duration: 16
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"   
+    TD8-G:
+      kind: TP
+      duration: 8
+      teachers: 
+        pool: [FV]
+        value: 1
+      rooms: 
+        pool: ["big_info_rooms"]
+        value: 1
+      students:
+        "IDU-3-G-TD"   
+                                  
+
+  teachers_acronyms:
+    FV: VERNIER FLAVIEN
+    
+
+
+
+    
+
+  rooms:
+    big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "big_info_rooms"]
+
+  inner_activity_groups:
+    TD1: [TD1-G]
+    TD2: [TD2-G]
+    TD3: [TD3-G]
+    TD4: [TD4-G]
+    TD5: [TD5-G]
+    TD6: [TD6-G]
+    TD7: [TD7-G]
+    TD8: [TD8-G]
+    
+    
+    
+
+  foreign_activity_groups:
+    MECA653_CM1: [[MECA653, CM1]]
+
+
+  constraints:
+    
+    - kind: succession
+      activities: [TD2]
+      start_after: [TD1]
+      min_offset: 288
+      max_offset: null  
+    - kind: succession
+      activities: [TD3]
+      start_after: [TD2]
+      min_offset: 288
+      max_offset: null    
+    - kind: succession
+      activities: [TD4]
+      start_after: [TD3]
+      min_offset: 288
+      max_offset: null  
+    - kind: succession
+      activities: [TD5]
+      start_after: [TD4]
+      min_offset: 288
+      max_offset: null                 
+    - kind: succession
+      activities: [TD6]
+      start_after: [TD5]
+      min_offset: 288
+      max_offset: null
+    - kind: succession
+      activities: [TD7]
+      start_after: [TD6]
+      min_offset: 288
+      max_offset: null 
+    - kind: succession
+      activities: [TD8]
+      start_after: [TD7]
+      min_offset: 288
+      max_offset: null 
+                               
+  color: gray 

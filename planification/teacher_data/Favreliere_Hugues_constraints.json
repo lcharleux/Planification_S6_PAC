@@ -1,5 +1,5 @@
 {
-    "SAFFRE PHILIPPE": {
+    "FAVRELIERE HUGUES": {
         "unavailable": [
             {
                 "kind": "isocalendar",
@@ -11,8 +11,8 @@
                 "to_week": 4,
                 "to_weekday": 3,
                 "to_dayslot": 95,
-                "repeat": 12,
-                "repeat_pad": 1344
+                "repeat": 40,
+                "repeat_pad": 672
             }
             
         ],

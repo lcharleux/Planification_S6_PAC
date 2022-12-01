@@ -18,7 +18,7 @@ exam_teachers = [teachers_acronyms[acr] for acr in ["EP", "ER", "CE"]]
 TP_rooms = ["A-POLY-B104"]
 course = Course(label=course_label, color="Green")
 default_rooms = json.load(open("../default_rooms.json"))
-big_info_rooms = ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
+big_info_rooms =  ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215", "A-POLY-C216"]
 
 TD_rooms = {
     1: "default",

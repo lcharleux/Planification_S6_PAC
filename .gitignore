@@ -43,3 +43,15 @@ planification/outputs/students_unavailability_matrix_MM-3-C1.txt
 planification/outputs/students_unavailability_matrix_MM-3-C2.txt
 planification/outputs/students_unavailability_matrix_SNI-3-D1.txt
 planification/outputs/students_unavailability_matrix_SNI-3-D2.txt
+planification/course_makers/make_MECA652.py
+planification/courses_activities_dataframes/INFO641_ressources.csv
+planification/courses_activities_dataframes/INFO641_ressources.html
+planification/courses_activities_dataframes/PROJ631_ressources.csv
+planification/courses_activities_dataframes/PROJ631_ressources.html
+planification/courses_activities_dataframes/PROJ632_ressources.csv
+planification/courses_activities_dataframes/PROJ632_ressources.html
+planification/courses_graphs/INFO641_graph.md
+planification/courses_graphs/MATH651_graph.md
+planification/courses_graphs/PROJ631_graph.md
+planification/courses_graphs/PROJ632_graph.md
+planification/outputs/tracked_ressources.yml

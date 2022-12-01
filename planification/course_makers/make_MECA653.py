@@ -29,8 +29,8 @@ def make_TP_blocks(teacher1, teacher2="CHARLEUX LUDOVIC"):
     return TP_blocks
 
 
-TD_rooms = ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
-TP_rooms = ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
+TD_rooms = ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215", "A-POLY-C216"]
+TP_rooms = ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215", "A-POLY-C216"]
 last_act = None
 
 

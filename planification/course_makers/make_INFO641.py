@@ -1,4 +1,4 @@
-# MECA655
+# INFO641
 from automatic_university_scheduler.scheduling import Activity, Course
 from automatic_university_scheduler.validation import constraints_to_graph, activities_to_dataframe
 from automatic_university_scheduler.preprocessing import courses_from_yml
@@ -7,7 +7,7 @@ import pandas as pd
 import json
 
 # SETUP
-course_label = "MECA655"
+course_label = "INFO641"
 yml_path = f"../course_models/{course_label}.yml"
 data = yaml.safe_load(open(yml_path))
 data = data[course_label]
@@ -15,6 +15,8 @@ default_rooms = json.load(open("../default_rooms.json"))
 room_pools = {
     "big_info_rooms": ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215", "A-POLY-C216"],
     "info_rooms": [
+        "A-POLY-C209",
+        "A-POLY-C210",
         "A-POLY-C213",
         "A-POLY-C214",
         "A-POLY-C215",
@@ -22,6 +24,7 @@ room_pools = {
         "A-POLY-C217",
     ],
     "amphi": ["A-POLY-B120"],
+    "C206-207": ["A-POLY-C206/C207"],
 }
 
 # CONSTRAINTS VALIDATION

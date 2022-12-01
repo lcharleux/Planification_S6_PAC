@@ -692,52 +692,52 @@ MECA655:
     - kind: succession
       activities: [TD4]
       start_after: [CM5, TD3]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD5]
       start_after: [TD4, CM6]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [TD6]
       start_after: [TD5]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD7]
       start_after: [TD6]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD8]
       start_after: [TD7]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TP1]
       start_after: [TD4]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TP2]
       start_after: [TD5, TP1]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TP3]
       start_after: [TD5, TP2]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [TP4]
       start_after: [TD6, TP3]
-      min_offset: 48
+      min_offset: 0
       max_offset: null        
     - kind: succession
       activities: [CT1]
       start_after: [TD8, TP4]
-      min_offset: 192 # 2 jours 
+      min_offset: 48 # 2 jours 
       max_offset: null 
 
   color: pink 

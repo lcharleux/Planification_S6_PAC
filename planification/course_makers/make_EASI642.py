@@ -22,7 +22,7 @@ CM_teacher = {
     6: "YY",
     7: "YY",
     8: "YY",
-    9: "MB",
+    # 9: "MB",
 }
 TD_teacher = {
     1: "YY",
@@ -34,12 +34,12 @@ TD_teacher = {
     6: "YY",
     7: "YY",
     8: "YY",
-    9: "MB",
+    # 9: "MB",
 }
 
 exam_teachers = [teachers_acronyms[acr] for acr in ["YY"]]
 TP_rooms = ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215", "A-POLY-C216", "A-POLY-C217"]
-big_info_rooms = ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
+big_info_rooms =  ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215", "A-POLY-C216"]
 course = Course(label=course_label, color="Green")
 default_rooms = json.load(open("../default_rooms.json"))
 
@@ -53,7 +53,7 @@ TD_rooms = {
     6: "default",
     7: "default",
     8: "default",
-    9: "big_info_room",
+    # 9: "big_info_room",
 }
 
 TP_blocks = [["SNI-3-D1", ["GG"]], ["SNI-3-D2", ["MG"]]]
@@ -161,7 +161,7 @@ def make_CC(
 
 # CM
 CM = {}
-for index in range(1, 10):
+for index in range(1, 9):
     CM[index] = make_CM(
         index=index,
         after=None,
@@ -169,7 +169,7 @@ for index in range(1, 10):
     )
 # TD
 TD = {}
-for index in range(1, 10):
+for index in range(1, 9):
     TD[index] = make_TD(
         index=index,
         after=None,
@@ -195,24 +195,24 @@ for index in range(1, 2):
 
 # ENCHAINEMENTS
 for act in CM[2]:
-    act.add_multiple_after(CM[1], min_offset=48)
-    act.add_multiple_after(TD[1], min_offset=48)
+    act.add_multiple_after(CM[1], min_offset=192)
+    act.add_multiple_after(TD[1], min_offset=192)
 for act in CM[3]:
-    act.add_multiple_after(CM[2], min_offset=48)
-    act.add_multiple_after(TD[2], min_offset=48)
+    act.add_multiple_after(CM[2], min_offset=192)
+    act.add_multiple_after(TD[2], min_offset=192)
 for act in CM[4]:
-    act.add_multiple_after(CM[3], min_offset=48)
-    act.add_multiple_after(TD[3], min_offset=48)    
+    act.add_multiple_after(CM[3], min_offset=192)
+    act.add_multiple_after(TD[3], min_offset=192)    
 for act in CM[5]:
-    act.add_multiple_after(CM[4], min_offset=48)
+    act.add_multiple_after(CM[4], min_offset=192)
 for act in CM[6]:
-    act.add_multiple_after(CM[5], min_offset=48)
+    act.add_multiple_after(CM[5], min_offset=192)
 for act in CM[7]:
-    act.add_multiple_after(CM[6], min_offset=48)
+    act.add_multiple_after(CM[6], min_offset=192)
 for act in CM[8]:
-    act.add_multiple_after(CM[7], min_offset=48)
-for act in CM[9]:
-    act.add_multiple_after(CM[8], min_offset=48)
+    act.add_multiple_after(CM[7], min_offset=192)
+# for act in CM[9]:
+#     act.add_multiple_after(CM[8], min_offset=48)
    
 
 for act in TD[1]:
@@ -238,9 +238,9 @@ for act in TD[7]:
 for act in TD[8]:
     act.add_multiple_after(TD[7])
     act.add_multiple_after(CM[8])
-for act in TD[9]:
-    act.add_multiple_after(CM[9])
-    act.add_multiple_after(TD[8])
+# for act in TD[9]:
+#     act.add_multiple_after(CM[9])
+#     act.add_multiple_after(TD[8])
 
 
 for act in TP[2]:
@@ -249,7 +249,7 @@ for act in TP[3]:
     act.add_multiple_after(TP[2])
 
 for act in CC[1]:
-    act.add_multiple_after(TP[3] + TD[9], min_offset=48)
+    act.add_multiple_after(TP[3] + TD[8], min_offset=192)
 
 
 path = f"../activity_data/{course_label}.json"

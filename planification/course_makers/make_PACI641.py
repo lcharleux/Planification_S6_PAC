@@ -146,46 +146,46 @@ for index in range(1, 2):
 for act in CM[1]:
     act.add_after_manual( parent_label="PACI642", activity_label="PACI642_SNI-3-D-TD_CM_3")
 for act in CM[2]:
-    act.add_multiple_after(CM[1], min_offset=48)
+    act.add_multiple_after(CM[1], min_offset=0)
 for act in CM[3]:
-    act.add_multiple_after(CM[2], min_offset=48)
+    act.add_multiple_after(CM[2], min_offset=0)
 for act in CM[4]:
-    act.add_multiple_after(CM[3], min_offset=48)
+    act.add_multiple_after(CM[3], min_offset=0)
 for act in CM[5]:
-    act.add_multiple_after(CM[4], min_offset=48)
+    act.add_multiple_after(CM[4], min_offset=0)
 for act in CM[6]:
-    act.add_multiple_after(CM[5], min_offset=48)
+    act.add_multiple_after(CM[5], min_offset=0)
 for act in CM[7]:
-    act.add_multiple_after(CM[6], min_offset=48)    
+    act.add_multiple_after(CM[6], min_offset=0)    
 for act in CM[8]:
-    act.add_multiple_after(CM[7], min_offset=48)
+    act.add_multiple_after(CM[7], min_offset=0)
 for act in CM[9]:
-    act.add_multiple_after(CM[8], min_offset=48)
+    act.add_multiple_after(CM[8], min_offset=0)
 for act in CM[10]:
-    act.add_multiple_after(CM[9], min_offset=48)
+    act.add_multiple_after(CM[9], min_offset=0)
 for act in CM[11]:
-    act.add_multiple_after(CM[10], min_offset=48)
+    act.add_multiple_after(CM[10], min_offset=0)
 for act in CM[12]:
-    act.add_multiple_after(CM[11], min_offset=48) 
+    act.add_multiple_after(CM[11], min_offset=0) 
 for act in CM[13]:
-    act.add_multiple_after(CM[12], min_offset=48)            
+    act.add_multiple_after(CM[12], min_offset=0)            
 
 for act in TD[1]:
-    act.add_multiple_after(CM[3])
+    act.add_multiple_after(CM[3], min_offset=0)
 for act in TD[2]:
-    act.add_multiple_after(CM[4])
+    act.add_multiple_after(CM[4], min_offset=0)
 for act in TD[3]:
-    act.add_multiple_after(CM[5])
+    act.add_multiple_after(CM[5], min_offset=0)
 for act in TD[4]:
-    act.add_multiple_after(CM[6])
+    act.add_multiple_after(CM[6], min_offset=0)
 for act in TD[5]:
-    act.add_multiple_after(CM[7])
+    act.add_multiple_after(CM[7], min_offset=0)
 for act in TD[6]:
-    act.add_multiple_after(CM[8])
+    act.add_multiple_after(CM[8], min_offset=0)
 for act in TD[7]:
-    act.add_multiple_after(CM[10])
+    act.add_multiple_after(CM[10], min_offset=0)
 for act in TD[8]:
-    act.add_multiple_after(CM[11])
+    act.add_multiple_after(CM[11], min_offset=0)
 for act in TD[9]:
     act.add_multiple_after(CM[12])
 for act in TD[10]:

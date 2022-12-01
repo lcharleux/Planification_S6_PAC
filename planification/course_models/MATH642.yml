@@ -337,57 +337,57 @@ MATH642:
     - kind: succession
       activities: [CM2]
       start_after: [CM1]
-      min_offset: 144
+      min_offset: 192
       max_offset: null
     - kind: succession
       activities: [CM3]
       start_after: [CM2]
-      min_offset: 144
+      min_offset: 192
       max_offset: null
     - kind: succession
       activities: [CM4]
       start_after: [CM3]
-      min_offset: 144
+      min_offset: 192
       max_offset: null 
     - kind: succession
       activities: [CM5]
       start_after: [CM4]
-      min_offset: 144
+      min_offset: 192
       max_offset: null 
     - kind: succession
       activities: [CM6]
       start_after: [CM5]
-      min_offset: 144
+      min_offset: 192
       max_offset: null 
     - kind: succession
       activities: [CM7]
       start_after: [CM6]
-      min_offset: 144
+      min_offset: 192
       max_offset: null 
     - kind: succession
       activities: [CM8]
       start_after: [CM7]
-      min_offset: 144
+      min_offset: 192
       max_offset: null 
     - kind: succession
       activities: [CM9]
       start_after: [CM8]
-      min_offset: 144
+      min_offset: 192
       max_offset: null 
     - kind: succession
       activities: [CM10]
       start_after: [CM9]
-      min_offset: 144
+      min_offset: 192
       max_offset: null 
     - kind: succession
       activities: [CM11]
       start_after: [CM10]
-      min_offset: 144
+      min_offset: 192
       max_offset: null       
     - kind: succession
       activities: [CM12]
       start_after: [CM11]
-      min_offset: 144
+      min_offset: 192
       max_offset: null
     - kind: succession
       activities: [TD1]

@@ -9,6 +9,7 @@ from scipy import ndimage
 import json
 import os
 import time
+import yaml
 from automatic_university_scheduler.scheduling import (
     read_json_data,
     get_unique_teachers_and_rooms,
@@ -29,7 +30,7 @@ WEEK_STRUCTURE = np.array(
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # MONDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # TUESDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # WEDNESDAY
-        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # THURSDAY
+        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # THURSDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # FRIDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SATRUDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SUNDAY
@@ -127,6 +128,10 @@ existing_data = pd.read_csv("existing_activities/extraction_data.csv").fillna(""
 ressource_existing_intervals = {
     k: {t: [] for t in tracked_ressources[k]} for k in ["teachers", "rooms"]
 }
+
+with open("outputs/tracked_ressources.yml", "w") as ymldump:
+    yaml.dump({k:v.tolist() for k,v in tracked_ressources.items()}, ymldump)
+
 
 # 2. STUDENTS
 school = "POLYTECH Annecy"
@@ -286,7 +291,7 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 50.0
+solver.parameters.max_time_in_seconds = 600.0
 
 
 solution_printer = SolutionPrinter(limit=10)

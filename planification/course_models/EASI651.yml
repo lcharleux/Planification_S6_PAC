@@ -305,7 +305,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -327,7 +327,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -349,7 +349,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -371,7 +371,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -393,7 +393,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -415,7 +415,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -437,7 +437,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -459,7 +459,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -481,7 +481,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -503,7 +503,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -525,7 +525,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -547,7 +547,7 @@ EASI651:
       kind: TP
       duration: 16
       teachers: 
-        pool: [PB]
+        pool: [PB,MB]
         value: 1
       rooms: 
         pool: ["room_C121"]
@@ -570,7 +570,7 @@ EASI651:
     MB: BOUTEMEUR MADJID
     PB: BERGERET PASCAL
     QD: DEMOURON QUENTIN
-    CH: HMBNANDEZ RODRIGUEZ CAMILO
+    CH: HERNANDEZ RODRIGUEZ CAMILO
 
   rooms:
     big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
