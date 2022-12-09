@@ -150,25 +150,25 @@ for act in CM[2]:
 for act in CM[3]:
     act.add_multiple_after(CM[2], min_offset=0)
 for act in CM[4]:
-    act.add_multiple_after(CM[3], min_offset=0)
+    act.add_multiple_after(CM[3], min_offset=192)
 for act in CM[5]:
-    act.add_multiple_after(CM[4], min_offset=0)
+    act.add_multiple_after(CM[4], min_offset=192)
 for act in CM[6]:
-    act.add_multiple_after(CM[5], min_offset=0)
+    act.add_multiple_after(CM[5], min_offset=192)
 for act in CM[7]:
-    act.add_multiple_after(CM[6], min_offset=0)    
+    act.add_multiple_after(CM[6], min_offset=192)    
 for act in CM[8]:
-    act.add_multiple_after(CM[7], min_offset=0)
+    act.add_multiple_after(CM[7], min_offset=192)
 for act in CM[9]:
-    act.add_multiple_after(CM[8], min_offset=0)
+    act.add_multiple_after(CM[8], min_offset=192)
 for act in CM[10]:
-    act.add_multiple_after(CM[9], min_offset=0)
+    act.add_multiple_after(CM[9], min_offset=192)
 for act in CM[11]:
-    act.add_multiple_after(CM[10], min_offset=0)
+    act.add_multiple_after(CM[10], min_offset=192)
 for act in CM[12]:
-    act.add_multiple_after(CM[11], min_offset=0) 
+    act.add_multiple_after(CM[11], min_offset=192) 
 for act in CM[13]:
-    act.add_multiple_after(CM[12], min_offset=0)            
+    act.add_multiple_after(CM[12], min_offset=192)            
 
 for act in TD[1]:
     act.add_multiple_after(CM[3], min_offset=0)

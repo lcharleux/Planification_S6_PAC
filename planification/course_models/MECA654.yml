@@ -706,72 +706,72 @@ MECA654:
     - kind: succession
       activities: [TD1]
       start_after: [CM2]
-      min_offset: 48
+      min_offset: 0
       max_offset: null   
     - kind: succession
       activities: [TD2]
       start_after: [TD1]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD3]
       start_after: [CM3,TD2]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD4]
       start_after: [CM5,TD3]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD5]
       start_after: [TD4]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [TD6]
       start_after: [CM6,TD5]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD7]
       start_after: [TD6]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD8]
       start_after: [TD7]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD9]
       start_after: [TD8]
-      min_offset: 48
+      min_offset: 0
       max_offset: null                           
     - kind: succession
       activities: [TD10]
       start_after: [TD9,CM7]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD10]
       start_after: [TD9,CM7]
-      min_offset: 48
+      min_offset: 0
       max_offset: null        
     - kind: succession
       activities: [TP1]
       start_after: [CM5]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TP2]
       start_after: [CM6, TP1]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TP3]
       start_after: [TD10, TP2]
-      min_offset: 48
+      min_offset: 0
       max_offset: null       
     - kind: succession
       activities: [CI1]
@@ -781,7 +781,7 @@ MECA654:
     - kind: succession
       activities: [CT1]
       start_after: [TD10,TP3, CI1]
-      min_offset: 192 # 2 jours 
+      min_offset: 48 # 2 jours 
       max_offset: null 
 
   color: pink 

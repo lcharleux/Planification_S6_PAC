@@ -195,8 +195,8 @@ for index in range(1, 2):
 
 # ENCHAINEMENTS
 for act in CM[2]:
-    act.add_multiple_after(CM[1], min_offset=192)
-    act.add_multiple_after(TD[1], min_offset=192)
+    act.add_multiple_after(CM[1], min_offset=0)
+    act.add_multiple_after(TD[1], min_offset=48)
 for act in CM[3]:
     act.add_multiple_after(CM[2], min_offset=192)
     act.add_multiple_after(TD[2], min_offset=192)
@@ -249,7 +249,7 @@ for act in TP[3]:
     act.add_multiple_after(TP[2])
 
 for act in CC[1]:
-    act.add_multiple_after(TP[3] + TD[8], min_offset=192)
+    act.add_multiple_after(TP[3] + TD[8], min_offset=48)
 
 
 path = f"../activity_data/{course_label}.json"

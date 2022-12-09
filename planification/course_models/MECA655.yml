@@ -652,7 +652,7 @@ MECA655:
     - kind: succession
       activities: [CM2]
       start_after: [CM1]
-      min_offset: 48
+      min_offset: 0
       max_offset: null 
     - kind: succession
       activities: [CM3]
@@ -737,7 +737,7 @@ MECA655:
     - kind: succession
       activities: [CT1]
       start_after: [TD8, TP4]
-      min_offset: 48 # 2 jours 
+      min_offset: 48 
       max_offset: null 
 
   color: pink 

@@ -291,10 +291,10 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 600.0
+solver.parameters.max_time_in_seconds = 3000.0
 
 
-solution_printer = SolutionPrinter(limit=10)
+solution_printer = SolutionPrinter(limit=100)
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
 t1 = time.time()
@@ -359,6 +359,47 @@ for module in unique_modules:
     worksheet.set_column("K:N", 12, my_format)
 
 writer.close()
+
+# MODULES PLANIFICATION
+writer = pd.ExcelWriter(f"outputs/modules_activities_planification.xlsx", engine="xlsxwriter")
+unique_modules = solution.module.unique()
+unique_modules.sort()
+for module in unique_modules:
+    module_solution = solution[solution.module == module].sort_values(["kind", "start"])
+    module_solution = module_solution[
+        [
+            "label",
+            "week",
+            "weekday",
+            "weekdayname",
+            "starttime",
+            "endtime",
+            "kind",
+            "students",
+            "teachers",
+            "rooms",
+            "year",
+            "month",
+            "day",
+            "daystart",
+            "dayend",
+        ]
+    ]
+    sheet_name = f"{module}"
+    module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
+    worksheet = writer.sheets[sheet_name]
+    workbook = writer.book
+    my_format = workbook.add_format(
+        {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+    )
+    worksheet.set_column("A:A", 50, my_format)
+    worksheet.set_column("B:G", 12, my_format)
+    worksheet.set_column("H:H", 20, my_format)
+    worksheet.set_column("I:J", 30, my_format)
+    worksheet.set_column("K:N", 12, my_format)
+
+writer.close()
+
 
 # RESSOURCES
 for ressources in ["teachers", "rooms"]:

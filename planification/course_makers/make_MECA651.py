@@ -13,7 +13,7 @@ teachers_acronyms = {
     "CE": "ELMO KULANESAN CHRISTIAN",
     "AB": "BENHEMOU AYA",
 }
-CM_teacher = teachers_acronyms["EP"]
+CM_teacher = teachers_acronyms["EP"] #attention ça devrait etre ER
 exam_teachers = [teachers_acronyms[acr] for acr in ["EP", "ER", "CE"]]
 TP_rooms = ["A-POLY-B104"]
 course = Course(label=course_label, color="Green")
@@ -102,7 +102,7 @@ def make_CM(
 
 
 def make_TD(
-    TD_blocks, index=1, after=None, min_offset=0, max_offset=96 * 5, add_to=None
+    TD_blocks, index=1, after=None, min_offset=0, max_offset=None, add_to=None
 ):
     if index in range(1, 7):
         part = "solide"
@@ -137,7 +137,7 @@ def make_TD(
 
 
 def make_TP(
-    TP_blocks, index=1, after=None, min_offset=0, max_offset=96 * 5, add_to=None
+    TP_blocks, index=1, after=None, min_offset=0, max_offset=None, add_to=None
 ):
     TP_blocks = TP_blocks[index]
     activities = []
@@ -226,11 +226,11 @@ for index in range(1, 3):
 for act in CM[2]:
     act.add_multiple_after(CM[1], min_offset=48)
 for act in CM[3]:
-    act.add_multiple_after(CM[2], min_offset=48)
+    act.add_multiple_after(CM[2], min_offset=192)
 for act in CM[5]:
-    act.add_multiple_after(TD[8], min_offset=48)
+    act.add_multiple_after(TD[8], min_offset=192)
 for act in CM[6]:
-    act.add_multiple_after(TD[5], min_offset=48)
+    act.add_multiple_after(TD[5], min_offset=192)
 
 
 for act in TD[1]:

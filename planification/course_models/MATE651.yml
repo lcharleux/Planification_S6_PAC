@@ -489,42 +489,42 @@ MATE651:
     - kind: succession
       activities: [TD1]
       start_after: [CM2]
-      min_offset: 1344
+      min_offset: 960
       max_offset: null   
     - kind: succession
       activities: [TD3]
       start_after: [CM3]
-      min_offset: 1344
+      min_offset: 960
       max_offset: null
 
     - kind: succession
       activities: [TD2]
       start_after: [TD1]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD3]
       start_after: [TD2]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD4]
       start_after: [TD3]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD5]
       start_after: [TD4]
-      min_offset: 48
+      min_offset: 0
       max_offset: null  
     - kind: succession
       activities: [TD6]
       start_after: [TD5]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
     - kind: succession
       activities: [TD7]
       start_after: [TD6]
-      min_offset: 48
+      min_offset: 0
       max_offset: null
   color: pink 
