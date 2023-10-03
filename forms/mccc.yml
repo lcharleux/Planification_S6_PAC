@@ -1,0 +1,339 @@
+"MATH651_MM":
+  responsable: "Catherine Adloff"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 13
+      duree: 1.5
+    - type : "td"
+      repetition: 12
+      duree: 1.5
+    - type : "tp"
+      repetition: 0
+      duree: 4.
+    - type : "cc"
+      repetition: 1
+      duree: 1.5
+    - type : "ct"
+      repetition: 1
+      duree: 1.5
+
+"MECA651_MM":
+  responsable: "Eric Pairel"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 6
+      duree: 1.5
+    - type : "td"
+      repetition: 12
+      duree: 1.5
+    - type : "tp"
+      repetition: 3
+      duree: 4.
+    - type : "ci"
+      repetition: 1
+      duree: .75
+    - type : "ct"
+      repetition: 1
+      duree: .75
+
+"MECA654_MM":
+  responsable: "Emile Roux"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 7
+      duree: 1.5
+    - type : "td"
+      repetition: 10
+      duree: 1.5
+    - type : "tp"
+      repetition: 3
+      duree: 4.
+    - type : "ci"
+      repetition: 1
+      duree: .75
+    - type : "ct"
+      repetition: 1
+      duree: .75
+
+"MECA652_MM":
+  responsable: "Philippe Saffré"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 15
+      duree: 1.5
+    - type : "td"
+      repetition: 15
+      duree: 1.5
+    - type : "tp"
+      repetition: 2
+      duree: 4.
+
+"MECA653_MM":
+  responsable: "Ludovic Charleux"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 5
+      duree: 1.5
+    - type : "td"
+      repetition: 5
+      duree: 1.5
+    - type : "tp"
+      repetition: 6
+      duree: 4.
+
+"MATE651_MM":
+  responsable: "Pascal Francescato"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 9
+      duree: 1.5
+    - type : "td"
+      repetition: 7
+      duree: 1.5
+    - type : "tp"
+      repetition: 4
+      duree: 4.
+
+"MECA655_MM":
+  responsable: "Pascal Hernandez"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 6
+      duree: 1.5
+    - type : "td"
+      repetition: 8
+      duree: 1.5
+    - type : "tp"
+      repetition: 4
+      duree: 4.
+    - type : "ct"
+      repetition: 1
+      duree: 1.5
+
+"EASI651_MM":
+  responsable: "Madjid Boutemeur"
+  specialite: "MM4"
+  activites:
+    - type : "cm"
+      repetition: 9
+      duree: 1.5
+    - type : "td"
+      repetition: 6
+      duree: 1.5
+    - type : "tp"
+      repetition: 4
+      duree: 4.  
+
+"INFO631_IDU":
+  responsable: "Flavien Vernier"
+  specialite: "IDU4"
+  activites:
+    - type : "cm"
+      repetition: 7
+      duree: 1.5
+    - type : "td"
+      repetition: 7
+      duree: 1.5
+    - type : "tp"
+      repetition: 5
+      duree: 4.  
+
+"MATH641_PACY":
+  responsable: "Alexandre Bascop"
+  specialite: "IDU4-SNI4"
+  activites:
+    - type : "cm"
+      repetition: 11
+      duree: 1.5
+    - type : "td"
+      repetition: 12
+      duree: 1.5
+    - type : "ct"
+      repetition: 1
+      duree: 1.5
+
+"PROJ631_IDU":
+  responsable: "Sylvie Galichet"
+  specialite: "IDU4"
+  activites:
+    - type : "td"
+      repetition: 28
+      duree: 1.5
+   
+"PROJ631_IDU":
+  responsable: "Sorana Cimpan"
+  specialite: "IDU4"
+  activites:
+    - type : "cm"
+      repetition: 6
+      duree: 1.5
+    - type : "td"
+      repetition: 14
+      duree: 1.5
+    - type : "tp"
+      repetition: 2
+      duree: 4.    
+
+"INFO633_IDU":
+  responsable: "Lionel Valet"
+  specialite: "IDU4"
+  activites:
+    - type : "cm"
+      repetition: 6
+      duree: 1.5
+    - type : "td"
+      repetition: 5
+      duree: 1.5
+    - type : "tp"
+      repetition: 5
+      duree: 4.        
+
+
+"INFO632_IDU":
+  responsable: "Sébastien Monnet"
+  specialite: "IDU4"
+  activites:
+    - type : "cm"
+      repetition: 7
+      duree: 1.5
+    - type : "td"
+      repetition: 9
+      duree: 1.5
+    - type : "tp"
+      repetition: 4
+      duree: 4.        
+
+"ISOC631_IDU":
+  responsable: "Kavé Salamatian"
+  specialite: "IDU4"
+  activites:
+    - type : "cm"
+      repetition: 9
+      duree: 1.5
+    - type : "td"
+      repetition: 10
+      duree: 1.5
+    - type : "tp"
+      repetition: 3
+      duree: 4.        
+
+"PROJ632_IDU":
+  responsable: "Marc-Philippe Huget"
+  specialite: "IDU4"
+  activites:
+    - type : "td"
+      repetition: 20
+      duree: 1.5
+    
+"PACI641_SNI":
+  responsable: "Thomas Mazingue"
+  specialite: "SNI4"
+  activites:
+    - type : "cm"
+      repetition: 14
+      duree: 1.5
+    - type : "td"
+      repetition: 10
+      duree: 1.5
+    
+"PACI642_SNI":
+  responsable: "Yannick Mugnier"
+  specialite: "SNI4"
+  activites:
+    - type : "cm"
+      repetition: 10
+      duree: 1.5
+    - type : "td"
+      repetition: 9
+      duree: 1.5    
+    - type : "tp"
+      repetition: 2
+      duree: 4.  
+  
+"PROJ641_SNI":
+  responsable: "Jean-Jacques Curtelin"
+  specialite: "SNI4"
+  activites:
+    - type : "tp"
+      repetition: 6
+      duree: 4.  
+  
+"EASI641_SNI":
+  responsable: "Pascal Mouille"
+  specialite: "SNI4"
+  activites:
+    - type : "cm"
+      repetition: 7
+      duree: 1.5
+    - type : "td"
+      repetition: 8
+      duree: 1.5
+    - type : "tp"
+      repetition: 3
+      duree: 4.
+    - type : "ct"
+      repetition: 1
+      duree: 1.5  
+
+"EASI642_SNI":
+  responsable: "Yajing Yan"
+  specialite: "SNI4"
+  activites:
+    - type : "cm"
+      repetition: 9
+      duree: 1.5
+    - type : "td"
+      repetition: 9
+      duree: 1.5
+    - type : "tp"
+      repetition: 2
+      duree: 4.
+    - type : "ct"
+      repetition: 1
+      duree: 1.5        
+
+"INFO641_SNI":
+  responsable: "Sorana Cimpan"
+  specialite: "SNI4"
+  activites:
+    - type : "cm"
+      repetition: 6
+      duree: 1.5
+    - type : "td"
+      repetition: 14
+      duree: 1.5
+    - type : "tp"
+      repetition: 2
+      duree: 4.
+    
+"INFO642_SNI":
+  responsable: "Lionel Valet"
+  specialite: "SNI4"
+  activites:
+    - type : "cm"
+      repetition: 6
+      duree: 1.5
+    - type : "td"
+      repetition: 5
+      duree: 1.5
+    - type : "tp"
+      repetition: 5
+      duree: 4.
+
+"MATH642_SNI":
+  responsable: "Abdourrahmane Atto"
+  specialite: "SNI4"
+  activites:
+    - type : "cm"
+      repetition: 12
+      duree: 1.5
+    - type : "td"
+      repetition: 12
+      duree: 1.5

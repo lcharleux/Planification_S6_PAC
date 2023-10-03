@@ -55,3 +55,5 @@ planification/courses_graphs/MATH651_graph.md
 planification/courses_graphs/PROJ631_graph.md
 planification/courses_graphs/PROJ632_graph.md
 planification/outputs/tracked_ressources.yml
+forms/generated_forms/*.xlsx
+*.xlsx#
