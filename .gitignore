@@ -57,3 +57,5 @@ planification/courses_graphs/PROJ632_graph.md
 planification/outputs/tracked_ressources.yml
 forms/generated_forms/*.xlsx
 *.xlsx#
+planification/outputs/modules_activities_planification.xlsx
+

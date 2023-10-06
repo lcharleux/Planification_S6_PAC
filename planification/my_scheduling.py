@@ -291,7 +291,7 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 3000.0
+solver.parameters.max_time_in_seconds = 15.0
 
 
 solution_printer = SolutionPrinter(limit=100)
