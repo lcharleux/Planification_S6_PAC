@@ -1,6 +1,7 @@
 "MATH651_MM":
   responsable: "Catherine Adloff"
-  specialite: "MM4"
+  email: "Catherine.Adloff@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
       repetition: 13
@@ -20,7 +21,8 @@
 
 "MECA651_MM":
   responsable: "Eric Pairel"
-  specialite: "MM4"
+  email: "Eric.Pairel@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
       repetition: 6
@@ -40,7 +42,8 @@
 
 "MECA654_MM":
   responsable: "Emile Roux"
-  specialite: "MM4"
+  email: "Emile.Roux@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
       repetition: 7
@@ -60,13 +63,14 @@
 
 "MECA652_MM":
   responsable: "Philippe Saffré"
-  specialite: "MM4"
+  email: "Philippe.Saffre@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
-      repetition: 15
+      repetition: 10
       duree: 1.5
     - type : "td"
-      repetition: 15
+      repetition: 10
       duree: 1.5
     - type : "tp"
       repetition: 2
@@ -74,7 +78,8 @@
 
 "MECA653_MM":
   responsable: "Ludovic Charleux"
-  specialite: "MM4"
+  email: "Ludovic.Charleux@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
       repetition: 5
@@ -88,7 +93,8 @@
 
 "MATE651_MM":
   responsable: "Pascal Francescato"
-  specialite: "MM4"
+  email: "Pascal.Francescato@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
       repetition: 9
@@ -102,7 +108,8 @@
 
 "MECA655_MM":
   responsable: "Pascal Hernandez"
-  specialite: "MM4"
+  email: "Pascal.Hernandez@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
       repetition: 6
@@ -119,7 +126,8 @@
 
 "EASI651_MM":
   responsable: "Madjid Boutemeur"
-  specialite: "MM4"
+  email: "Madjid.Boutemeur@univ-smb.fr"
+  specialite: "MM3"
   activites:
     - type : "cm"
       repetition: 9
@@ -129,11 +137,12 @@
       duree: 1.5
     - type : "tp"
       repetition: 4
-      duree: 4.  
+      duree: 4.
 
 "INFO631_IDU":
   responsable: "Flavien Vernier"
-  specialite: "IDU4"
+  email: "Flavien.Vernier@univ-smb.fr"
+  specialite: "IDU3"
   activites:
     - type : "cm"
       repetition: 7
@@ -143,11 +152,12 @@
       duree: 1.5
     - type : "tp"
       repetition: 5
-      duree: 4.  
+      duree: 4.
 
 "MATH641_PACY":
   responsable: "Alexandre Bascop"
-  specialite: "IDU4-SNI4"
+  email: "Alexandre.Bascop@univ-smb.fr"
+  specialite: "IDU3-SNI3"
   activites:
     - type : "cm"
       repetition: 11
@@ -160,16 +170,18 @@
       duree: 1.5
 
 "PROJ631_IDU":
-  responsable: "Sylvie Galichet"
-  specialite: "IDU4"
+  responsable: "Flavien Vernier"
+  email: "Flavien.Vernier@univ-smb.fr"
+  specialite: "IDU3"
   activites:
     - type : "td"
       repetition: 28
       duree: 1.5
-   
-"PROJ631_IDU":
+
+"INFO641_PACY":
   responsable: "Sorana Cimpan"
-  specialite: "IDU4"
+  email: "Sorana.Cimpan@univ-smb.fr"
+  specialite: "IDU3-SNI3"
   activites:
     - type : "cm"
       repetition: 6
@@ -179,11 +191,12 @@
       duree: 1.5
     - type : "tp"
       repetition: 2
-      duree: 4.    
+      duree: 4.
 
 "INFO633_IDU":
   responsable: "Lionel Valet"
-  specialite: "IDU4"
+  email: "Lionel.Valet@univ-smb.fr"
+  specialite: "IDU3"
   activites:
     - type : "cm"
       repetition: 6
@@ -193,12 +206,13 @@
       duree: 1.5
     - type : "tp"
       repetition: 5
-      duree: 4.        
+      duree: 4.
 
 
 "INFO632_IDU":
   responsable: "Sébastien Monnet"
-  specialite: "IDU4"
+  email: "Sebastien.Monnet@univ-smb.fr"
+  specialite: "IDU3"
   activites:
     - type : "cm"
       repetition: 7
@@ -208,11 +222,12 @@
       duree: 1.5
     - type : "tp"
       repetition: 4
-      duree: 4.        
+      duree: 4.
 
 "ISOC631_IDU":
   responsable: "Kavé Salamatian"
-  specialite: "IDU4"
+  email: "Mohammad-Reza.Salamatian@univ-smb.fr"
+  specialite: "IDU3"
   activites:
     - type : "cm"
       repetition: 9
@@ -222,19 +237,21 @@
       duree: 1.5
     - type : "tp"
       repetition: 3
-      duree: 4.        
+      duree: 4.
 
 "PROJ632_IDU":
   responsable: "Marc-Philippe Huget"
-  specialite: "IDU4"
+  email: "Marc-Philippe.Huget@univ-smb.fr"
+  specialite: "IDU3"
   activites:
     - type : "td"
       repetition: 20
       duree: 1.5
-    
+
 "PACI641_SNI":
   responsable: "Thomas Mazingue"
-  specialite: "SNI4"
+  email: "Thomas.Mazingue-Desailly@univ-smb.fr"
+  specialite: "SNI3"
   activites:
     - type : "cm"
       repetition: 14
@@ -242,32 +259,35 @@
     - type : "td"
       repetition: 10
       duree: 1.5
-    
+
 "PACI642_SNI":
   responsable: "Yannick Mugnier"
-  specialite: "SNI4"
+  email: "Yannick.Mugnier@univ-smb.fr"
+  specialite: "SNI3"
   activites:
     - type : "cm"
       repetition: 10
       duree: 1.5
     - type : "td"
       repetition: 9
-      duree: 1.5    
+      duree: 1.5
     - type : "tp"
       repetition: 2
-      duree: 4.  
-  
+      duree: 4.
+
 "PROJ641_SNI":
   responsable: "Jean-Jacques Curtelin"
-  specialite: "SNI4"
+  email: "Jean-Jacques.Curtelin@univ-smb.fr"
+  specialite: "SNI3"
   activites:
     - type : "tp"
       repetition: 6
-      duree: 4.  
-  
+      duree: 4.
+
 "EASI641_SNI":
   responsable: "Pascal Mouille"
-  specialite: "SNI4"
+  email: "Pascal.Mouille@univ-smb.fr"
+  specialite: "SNI3"
   activites:
     - type : "cm"
       repetition: 7
@@ -280,11 +300,12 @@
       duree: 4.
     - type : "ct"
       repetition: 1
-      duree: 1.5  
+      duree: 1.5
 
 "EASI642_SNI":
   responsable: "Yajing Yan"
-  specialite: "SNI4"
+  email: "Yajing.Yan@univ-smb.fr"
+  specialite: "SNI3"
   activites:
     - type : "cm"
       repetition: 9
@@ -297,25 +318,12 @@
       duree: 4.
     - type : "ct"
       repetition: 1
-      duree: 1.5        
+      duree: 1.5
 
-"INFO641_SNI":
-  responsable: "Sorana Cimpan"
-  specialite: "SNI4"
-  activites:
-    - type : "cm"
-      repetition: 6
-      duree: 1.5
-    - type : "td"
-      repetition: 14
-      duree: 1.5
-    - type : "tp"
-      repetition: 2
-      duree: 4.
-    
 "INFO642_SNI":
   responsable: "Lionel Valet"
-  specialite: "SNI4"
+  email: "Lionel.Valet@univ-smb.fr"
+  specialite: "SNI3"
   activites:
     - type : "cm"
       repetition: 6
@@ -329,11 +337,39 @@
 
 "MATH642_SNI":
   responsable: "Abdourrahmane Atto"
-  specialite: "SNI4"
+  email: "Abdourrahmane.Atto@univ-smb.fr"
+  specialite: "SNI3"
   activites:
     - type : "cm"
       repetition: 12
       duree: 1.5
     - type : "td"
       repetition: 12
+      duree: 1.5
+
+"SHES601_PACY":
+  responsable: "Elodie Gardet"
+  email: "Elodie.Gardet@univ-smb.fr"
+  specialite: "TC"
+  activites:
+    - type : "cm"
+      repetition: 7
+      duree: 1.5
+    - type : "td"
+      repetition: 6
+      duree: 1.5
+
+"SHES602_PACY":
+  responsable: "Elodie Gardet"
+  email: "Elodie.Gardet@univ-smb.fr"
+  specialite: "TC"
+  activites:
+    - type : "cm"
+      repetition: 9
+      duree: 1.5
+    - type : "td"
+      repetition: 3
+      duree: 1.5
+    - type : "ct"
+      repetition: 1
       duree: 1.5

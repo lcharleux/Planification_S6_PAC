@@ -59,3 +59,6 @@ forms/generated_forms/*.xlsx
 *.xlsx#
 planification/outputs/modules_activities_planification.xlsx
 
+forms/Indisponibilites_Enseignant_NOM_PRENOM.xlsx
+forms/managers.html
+forms/managers_emails.txt

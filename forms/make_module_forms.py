@@ -1,15 +1,16 @@
 import yaml
-from scheduling_forms.core import make_modules_forms
+from scheduling_forms.core import make_modules_forms, export_emails
 import os
+import pandas as pd
 
 eval_activities = ["cc", "ct", "ci", "et"]
 
 groups = {
-    "MM4": {
-        "cm": ["MM4"],
-        "td": ["MM4-" + g for g in list("ABC")],
+    "MM3": {
+        "cm": ["MM3"],
+        "td": ["MM3-" + g for g in list("ABC")],
         "tp": [
-            "MM4-" + g
+            "MM3-" + g
             for g in [
                 "A1",
                 "A2",
@@ -20,30 +21,51 @@ groups = {
             ]
         ],
     },
-    "SNI4": {
-        "cm": ["SNI4"],
-        "td": ["SNI4-E"],
+    "SNI3": {
+        "cm": ["SNI3"],
+        "td": ["SNI3-E"],
         "tp": [
-            "SNI4-E1",
-            "SNI4-E2",
+            "SNI3-E1",
+            # "SNI3-E2",
         ],
     },
-    "IDU4": {
-        "cm": ["IDU4"],
-        "td": ["IDU4-G"],
+    "IDU3": {
+        "cm": ["IDU3"],
+        "td": ["IDU3-G"],
         "tp": [
-            "IDU4-G1",
-            "IDU4-G2",
+            "IDU3-G1",
+            "IDU3-G2",
         ],
     },
-    "IDU4-SNI4": {
-        "cm": ["IDU4-SNI4"],
-        "td": ["IDU4-G", "SNI4-E"],
+    "IDU3-SNI3": {
+        "cm": ["IDU3-SNI3"],
+        "td": ["IDU3-G", "SNI3-E"],
         "tp": [
-            "IDU4-G1",
-            "IDU4-G2",
-            "SNI4-E1",
-            "SNI4-E2",
+            "IDU3-G1",
+            "IDU3-G2",
+            "SNI3-E1",
+            # "SNI3-E2",
+        ],
+    },
+    "TC": {
+        "cm": ["IDU3-SNI3-MM3"],
+        "td": ["IDU3-G", "SNI3-E", "MM3-A", "MM3-B", "MM3-C"],
+        "tp": [
+            "IDU3-G1",
+            "IDU3-G2",
+            "SNI3-E1",
+            # "SNI3-E2",
+        ] + 
+        [
+            "MM3-" + g
+            for g in [
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1",
+                "C2",
+            ]
         ],
     },
 }
@@ -71,4 +93,23 @@ data = yaml.load(open("mccc.yml"), Loader=yaml.FullLoader)
 root_path="generated_forms/"
 if not os.path.exists(root_path):
     os.makedirs(root_path)
-make_modules_forms(data, groups, rooms, eval_activities, root_path=root_path)
+make_modules_forms(data, groups, rooms, eval_activities, year="2324", root_path=root_path)
+
+
+# E-mails
+emails_file = "managers_emails.txt"
+emails = export_emails(data)
+with open(emails_file, "w") as out:
+    out.write(emails)
+
+# Tabular output
+out = {"module":[], "responsable":[], "spécialité":[]}
+
+for module, mdata in data.items():
+    out["module"].append(module)
+    out["responsable"].append(mdata["responsable"])
+    out["spécialité"].append(mdata["specialite"])
+
+out = pd.DataFrame(out).sort_values(["spécialité", "module"]).set_index("module")
+out.columns = [s.capitalize() for s in out.columns]
+out.to_html("managers.html")
