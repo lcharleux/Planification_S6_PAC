@@ -12,13 +12,12 @@ import time
 import yaml
 from automatic_university_scheduler.scheduling import (
     read_json_data,
-    get_unique_teachers_and_rooms,
+    # get_unique_teachers_and_rooms,
     create_unavailable_constraints,
     create_weekly_unavailable_intervals,
     SolutionPrinter,
     export_solution,
-    get_atomic_students_groups,
-    DAYS_NAMES,
+    # get_atomic_students_groups,
     create_activities,
     export_student_schedule_to_xlsx,
 )
@@ -42,10 +41,10 @@ WEEK_STRUCTURE = np.array(
 ).astype(int)
 
 DAYS_PER_WEEK, TIME_SLOTS_PER_DAY = WEEK_STRUCTURE.shape
-MAX_WEEKS = 100
+MAX_WEEKS = 21
 TIME_SLOTS_PER_WEEK = TIME_SLOTS_PER_DAY * DAYS_PER_WEEK
 horizon = MAX_WEEKS * TIME_SLOTS_PER_WEEK
-START_DAY = datetime.date.fromisocalendar(2023, 1, 1)
+START_DAY = datetime.date.fromisocalendar(2024, 1, 1)
 STOP_DAY = START_DAY + datetime.timedelta(weeks=MAX_WEEKS)
 
 # ACTIVITY GENERATION
@@ -73,18 +72,18 @@ students_groups = {
         "MM-3-C1",
         "MM-3-C2",
         "SNI-3-D1",
-        "SNI-3-D2",
+        # "SNI-3-D2",
         "IDU-3-G1",
         "IDU-3-G2",
     ],
     "MM-3": ["MM-3-A1", "MM-3-A2", "MM-3-B1", "MM-3-B2", "MM-3-C1", "MM-3-C2"],
-    "SNI-3": ["SNI-3-D1", "SNI-3-D2"],
+    "SNI-3": ["SNI-3-D1"],
     "IDU-3": ["IDU-3-G1", "IDU-3-G2"],
-    "IDU-3_SNI-3": ["IDU-3-G1", "IDU-3-G2", "SNI-3-D1", "SNI-3-D2"],  # POUR LES MATH641
+    "IDU-3_SNI-3": ["IDU-3-G1", "IDU-3-G2", "SNI-3-D1"],  # POUR LES MATH641
     "MM-3-A-TD": ["MM-3-A1", "MM-3-A2"],
     "MM-3-B-TD": ["MM-3-B1", "MM-3-B2"],
     "MM-3-C-TD": ["MM-3-C1", "MM-3-C2"],
-    "SNI-3-D-TD": ["SNI-3-D1", "SNI-3-D2"],
+    "SNI-3-D-TD": ["SNI-3-D1"],
     "IDU-3-G-TD": ["IDU-3-G1", "IDU-3-G2"],
     "MM-3-A1": ["MM-3-A1"],
     "MM-3-A2": ["MM-3-A2"],
@@ -93,8 +92,8 @@ students_groups = {
     "MM-3-C1": ["MM-3-C1"],
     "MM-3-C2": ["MM-3-C2"],
     "SNI-3-D1": ["SNI-3-D1"],
-    "SNI-3-D2": ["SNI-3-D2"],
-    "SN-3-D2": ["SNI-3-D2"],  # BUG EXTRACTION ADE
+    # "SNI-3-D2": ["SNI-3-D2"],
+    # "SN-3-D2": ["SNI-3-D2"],  # BUG EXTRACTION ADE
     "IDU-3-G1": ["IDU-3-G1"],
     "IDU-3-G2": ["IDU-3-G2"],
 }
@@ -114,8 +113,8 @@ def get_unique_ressources_in_activities(data, kind="teachers"):
             for ress in act[kind]:
                 unique_ressources += ress[1]
 
-    unique_ressources = np.unique(unique_ressources)
-    return unique_ressources
+    return np.unique(unique_ressources)
+
 
 
 # EXISTING ACTIVITIES
@@ -130,7 +129,7 @@ ressource_existing_intervals = {
 }
 
 with open("outputs/tracked_ressources.yml", "w") as ymldump:
-    yaml.dump({k:v.tolist() for k,v in tracked_ressources.items()}, ymldump)
+    yaml.dump({k: v.tolist() for k, v in tracked_ressources.items()}, ymldump)
 
 
 # 2. STUDENTS
@@ -257,7 +256,7 @@ for i in range(len(students_data)):
 for agroup, matrix in matrices.items():
     d = 1
     w = 1
-    with open(f"./outputs/students_unavailability_matrix_{agroup}.txt", "w") as f:
+    with open(f"./outputs/students_unavailability_matrix_{agroup}.txt", "w", encoding="utf-8") as f:
         for r in matrix.reshape(-1, 96):
             f.write(f"w{w}-d{d} " + "".join([str(rr) for rr in r]) + "\n")
             d += 1
@@ -274,7 +273,7 @@ atomic_students_unavailable_intervals = create_activities(
     room_unavailable_intervals=room_unavailable_intervals,
     students_unavailable_intervals=students_unavailable_intervals,
     weekly_unavailable_intervals=weekly_unavailable_intervals,
-    cm_td_allowed_slots=[32, 39, 46, 53, 60, 67],
+    cm_td_allowed_slots=[33, 40, 53, 60, 67],
 )
 
 # MINIMIZE SEMESTER DURATION
@@ -285,8 +284,31 @@ for file, module in activity_data.items():
         if activity["kind"] != "lunch":
             activities_ends.append(activity["model"]["end"])
 
+week_duration = [[] for i in range(MAX_WEEKS)]
+for file, module in activity_data.items():
+    for label, activity in module["activities"].items():
+        # if activity["kind"] != "lunch":
+        #     activities_ends.append(activity["model"]["end"])
+        start = activity["model"]["start"]
+        end = activity["model"]["end"]
+        duration = end - start
+        week = model.NewIntVar(0, 100, "makespan")
+        model.AddDivisionEquality(week, start, 672)
+        #week_duration[model.getOr ] += duration
+        for i, c in enumerate(week_duration):
+            is_week = model.NewBoolVar("is_week")
+            model.Add(week == i).OnlyEnforceIf(is_week) 
+            model.Add(week != i).OnlyEnforceIf(is_week.Not()) 
+            duration_on_week = model.NewIntVar(0, 672, "duration_on_week")
+            model.Add(duration_on_week == duration ).OnlyEnforceIf(is_week)
+            model.Add(duration_on_week == 0).OnlyEnforceIf(is_week.Not())
+            #model.Add(duration_on_week == 0 )
+            week_duration[i].append(duration_on_week)
+
+week_duration_sums = [sum(d) for d in week_duration]
 makespan = model.NewIntVar(0, horizon, "makespan")
-model.AddMaxEquality(makespan, activities_ends)
+#model.AddMaxEquality(makespan, activities_ends)
+model.AddMaxEquality(makespan, week_duration_sums)
 model.Minimize(makespan)
 
 # Solve model.
@@ -358,12 +380,16 @@ for module in unique_modules:
     worksheet.set_column("I:J", 70, my_format)
     worksheet.set_column("K:N", 12, my_format)
 
+if not os.path.isdir("./outputs"):
+    os.mkdir("outputs")
+
 writer.close()
 
 # MODULES PLANIFICATION
-writer = pd.ExcelWriter(f"outputs/modules_activities_planification.xlsx", engine="xlsxwriter")
+writer = pd.ExcelWriter("outputs/modules_activities_planification.xlsx", engine="xlsxwriter")
 unique_modules = solution.module.unique()
 unique_modules.sort()
+
 for module in unique_modules:
     module_solution = solution[solution.module == module].sort_values(["kind", "start"])
     module_solution = module_solution[
@@ -408,8 +434,6 @@ for ressources in ["teachers", "rooms"]:
     )
     unique_ressources = np.unique(np.concatenate(solution[ressources].values))
     unique_ressources.sort()
-    
-
 
     for ressource in unique_ressources:
         loc = solution[ressources].apply(lambda a: np.isin(ressource, a))
