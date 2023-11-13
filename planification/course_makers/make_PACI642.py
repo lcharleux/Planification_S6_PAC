@@ -43,7 +43,7 @@ CM_rooms = {
 TP_rooms = ["A-POLY-C116", "A-POLY-C117"]
 
 TD_blocks = [["SNI-3-D-TD", ["YM"]]]
-TP_blocks = [["SNI-3-D1", ["YM"]], ["SNI-3-D2", ["YM"]]]
+TP_blocks = [["SNI-3-D1", ["YM"]]]
 
 
 def make_CM(

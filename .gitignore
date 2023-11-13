@@ -62,3 +62,9 @@ planification/outputs/modules_activities_planification.xlsx
 forms/Indisponibilites_Enseignant_NOM_PRENOM.xlsx
 forms/managers.html
 forms/managers_emails.txt
+planification/outputs/*
+planification/courses_activities_dataframes/*
+planification/courses_graphs/*
+planification/sandbox/*
+planification/outputs/*
+

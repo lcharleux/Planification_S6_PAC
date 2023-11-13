@@ -1,46 +1,6 @@
 {
     "ELMO KULANESAN CHRISTIAN": {
-        "unavailable": [
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
-                "from_week": 1,
-                "from_weekday": 1,
-                "from_dayslot": 1,
-                "to_year": 2023,
-                "to_week": 1,
-                "to_weekday": 1,
-                "to_dayslot": 36,
-                "repeat": 40,
-                "repeat_pad": 672
-            },
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
-                "from_week": 1,
-                "from_weekday": 1,
-                "from_dayslot": 68,
-                "to_year": 2023,
-                "to_week": 1,
-                "to_weekday": 1,
-                "to_dayslot": 95,
-                "repeat": 40,
-                "repeat_pad": 672
-            },
-            {
-                "kind": "isocalendar",
-                "from_year": 2023,
-                "from_week": 9,
-                "from_weekday": 3,
-                "from_dayslot": 48,
-                "to_year": 2023,
-                "to_week": 9,
-                "to_weekday": 5,
-                "to_dayslot": 95,
-                "repeat": 3,
-                "repeat_pad": 672
-            }
-        ],
+       
         "first_name": "XXX",
         "name": "XXX",
         "phone": "xxxx"

@@ -29,7 +29,7 @@ WEEK_STRUCTURE = np.array(
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # MONDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # TUESDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # WEDNESDAY
-        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # THURSDAY
+        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # THURSDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # FRIDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SATRUDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SUNDAY
@@ -199,7 +199,7 @@ for teacher, intervals in ressource_existing_intervals["teachers"].items():
         end = interval["to_dayslot"]
         start = max(32, start)
         end = min(73, end)
-        duration += end - start
+        duration += max(0, end - start)
     print(teacher, duration)
 
 
@@ -276,47 +276,102 @@ atomic_students_unavailable_intervals = create_activities(
     cm_td_allowed_slots=[33, 40, 53, 60, 67],
 )
 
-# MINIMIZE SEMESTER DURATION
-# Makespan objective
-activities_ends = []
-for file, module in activity_data.items():
-    for label, activity in module["activities"].items():
-        if activity["kind"] != "lunch":
-            activities_ends.append(activity["model"]["end"])
+# MINIMIZE SEMESTER DURATION or WEEK DURATION
 
-week_duration = [[] for i in range(MAX_WEEKS)]
-for file, module in activity_data.items():
-    for label, activity in module["activities"].items():
-        # if activity["kind"] != "lunch":
-        #     activities_ends.append(activity["model"]["end"])
-        start = activity["model"]["start"]
-        end = activity["model"]["end"]
-        duration = end - start
-        week = model.NewIntVar(0, 100, "makespan")
-        model.AddDivisionEquality(week, start, 672)
-        #week_duration[model.getOr ] += duration
-        for i, c in enumerate(week_duration):
-            is_week = model.NewBoolVar("is_week")
-            model.Add(week == i).OnlyEnforceIf(is_week) 
-            model.Add(week != i).OnlyEnforceIf(is_week.Not()) 
-            duration_on_week = model.NewIntVar(0, 672, "duration_on_week")
-            model.Add(duration_on_week == duration ).OnlyEnforceIf(is_week)
-            model.Add(duration_on_week == 0).OnlyEnforceIf(is_week.Not())
-            #model.Add(duration_on_week == 0 )
-            week_duration[i].append(duration_on_week)
+# 1. SEMESTER DURATION 
+def get_semester_duration(model, activity_data, students_groups, horizon):
+    activities_ends = []
+    for file, module in activity_data.items():
+        for label, activity in module["activities"].items():
+            if activity["kind"] != "lunch":
+                activities_ends.append(activity["model"]["end"])
+    makespan = model.NewIntVar(0, horizon, "makespan")
+    model.AddMaxEquality(makespan, activities_ends)
+    return makespan
 
-week_duration_sums = [sum(d) for d in week_duration]
-makespan = model.NewIntVar(0, horizon, "makespan")
-#model.AddMaxEquality(makespan, activities_ends)
-model.AddMaxEquality(makespan, week_duration_sums)
+
+
+# 2. WEEK DURATION AND ABSOLUTE DEVIATION FROM MEAN WEEK DURATION
+def get_absolute_week_duration_deviation(model, activity_data, students_groups, horizon, MAX_WEEKS):
+    week_duration = {group:[[] for i in range(MAX_WEEKS)] for group in students_atomic_groups}
+    total_activities_duration = {group:0 for group in students_atomic_groups}
+    for file, module in activity_data.items():
+        for label, activity in module["activities"].items():
+            # if activity["kind"] != "lunch":
+            #     activities_ends.append(activity["model"]["end"])
+            start = activity["model"]["start"]
+            end = activity["model"]["end"]
+            #duration = end - start
+            duration = activity["duration"]
+            for group in students_groups[activity["students"]]:
+                total_activities_duration[group] += duration 
+            week = model.NewIntVar(0, 100, "makespan")
+            model.AddDivisionEquality(week, start, 672)
+            #week_duration[model.getOr ] += duration
+            # for i, c in enumerate(week_duration):
+            for i in range(MAX_WEEKS):
+                is_week = model.NewBoolVar("is_week")
+                model.Add(week == i).OnlyEnforceIf(is_week) 
+                model.Add(week != i).OnlyEnforceIf(is_week.Not()) 
+                duration_on_week = model.NewIntVar(0, 672, "duration_on_week")
+                model.Add(duration_on_week == duration ).OnlyEnforceIf(is_week)
+                model.Add(duration_on_week == 0).OnlyEnforceIf(is_week.Not())
+                #model.Add(duration_on_week == 0 )
+                for group in students_groups[activity["students"]]:
+                    week_duration[group][i].append(duration_on_week)
+    # Remove empty groups:
+    week_duration_curated = {}
+    for group, wd in week_duration.items():
+        l = sum([len(d) for d in wd])
+        if l != 0:
+            week_duration_curated[group] = wd
+
+    #week_duration_sums = [sum([d for d in wd]) for group, wd in week_duration.items()]
+    week_duration_sums = []
+    week_duration_residuals = []
+    for group, wd in week_duration_curated.items():
+        total_duration_per_group = 0
+        for nw, w in enumerate(wd):
+            if len(w) != 0:
+                week_duration_sums.append(sum(w))
+                total_duration_per_group += sum(w)
+            else:
+                week_duration_sums.append(0)
+        mean_week_duration = model.NewIntVar(0, 672, f"mean_week_duration_{group}")
+        #print(group, wd)
+        #print(group, len(wd), total_duration_per_group)
+        model.AddDivisionEquality(mean_week_duration, total_activities_duration[group], len(wd))
+        for w in wd:
+            week_duration = sum(w)
+            abs_week_residual = model.NewIntVar(0, 672, "mean_week_duration")
+            positive_residual = model.NewBoolVar("mean_week_duration")
+            model.Add( week_duration - mean_week_duration >= 0).OnlyEnforceIf(positive_residual)
+            model.Add( week_duration - mean_week_duration < 0).OnlyEnforceIf(positive_residual.Not())
+            model.Add(abs_week_residual == week_duration - mean_week_duration).OnlyEnforceIf(positive_residual)
+            model.Add(abs_week_residual == mean_week_duration - week_duration).OnlyEnforceIf(positive_residual.Not())
+            week_duration_residuals.append(abs_week_residual)
+    makespan = model.NewIntVar(0, horizon, "makespan")
+    model.Add(makespan == sum(week_duration_residuals))
+    
+    return makespan    
+        
+
+# makespan = model.NewIntVar(0, horizon, "makespan")
+# #model.AddMaxEquality(makespan, activities_ends)
+# #model.AddMaxEquality(makespan, week_duration_sums)
+# #makespan = sum([d**2 for d in week_duration_sums])
+# model.Add(makespan == sum(week_duration_residuals))
+makespan = get_absolute_week_duration_deviation(model, activity_data, students_groups, horizon, MAX_WEEKS=MAX_WEEKS)
 model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 15.0
+solver.parameters.max_time_in_seconds = 60.0
+solver.parameters.num_search_workers = 16
+#solver.parameters.log_search_progress = True
 
 
-solution_printer = SolutionPrinter(limit=100)
+solution_printer = SolutionPrinter(limit=20)
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
 t1 = time.time()

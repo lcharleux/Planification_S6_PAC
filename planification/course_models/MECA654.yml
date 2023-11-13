@@ -84,7 +84,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["default"]
@@ -95,7 +95,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["default"]
@@ -106,7 +106,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["default"]
@@ -117,7 +117,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["default"]
@@ -128,7 +128,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["default"]
@@ -139,7 +139,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["default"]
@@ -216,7 +216,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [ER]
+        pool: [EP]
         value: 1
       rooms: 
         pool: ["default"]
@@ -238,7 +238,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [EP]
+        pool: [ER]
         value: 1
       rooms: 
         pool: ["default"]
@@ -282,7 +282,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [ER]
+        pool: [EP]
         value: 1
       rooms: 
         pool: ["default"]
@@ -293,7 +293,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [EP]
+        pool: [ER]
         value: 1
       rooms: 
         pool: ["default"]
@@ -315,7 +315,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [ER]
+        pool: [EP]
         value: 1
       rooms: 
         pool: ["default"]
@@ -337,7 +337,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [EP]
+        pool: [ER]
         value: 1
       rooms: 
         pool: ["default"]
@@ -359,7 +359,7 @@ MECA654:
       kind: TD
       duration: 6
       teachers: 
-        pool: [EP]
+        pool: [ER]
         value: 1
       rooms: 
         pool: ["default"]
@@ -414,7 +414,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -447,7 +447,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -458,7 +458,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -469,7 +469,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -480,7 +480,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -513,7 +513,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -524,7 +524,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -535,7 +535,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -546,7 +546,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -568,7 +568,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -579,7 +579,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -590,7 +590,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -601,7 +601,7 @@ MECA654:
       kind: TP
       duration: 16
       teachers: 
-        pool: [CE]
+        pool: [AB]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -633,11 +633,12 @@ MECA654:
 
   teachers_acronyms:
     ER: ROUX EMILE
-    CE: ELMO KULANESAN CHRISTIAN
+    AB: BENHEMOU AYA
     EP: PAIREL ERIC
 
-  rooms:
-    big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
+
+  # rooms:
+  #   big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
 
   inner_activity_groups:
     CM1: [CM1]
@@ -666,122 +667,164 @@ MECA654:
   foreign_activity_groups:
     MECA653_CM1: [[MECA653, CM1]]
 
-
+  variables:
+  - &zero 0
+  - &oneday 96
+  - &twodays 192
+  - &threedays 288
+  - &fourdays 384
+  - &fivedays 480
+  - &oneweek 672
+  
   constraints:
-    # - kind: succession
-    #   activities: [CM1]
-    #   start_after: [MECA653_CM1]
-    #   min_offset: 48
-    #   max_offset: null 
-    - kind: succession
-      activities: [CM2]
-      start_after: [CM1]
-      min_offset: 48
-      max_offset: null 
-    - kind: succession
-      activities: [CM3]
-      start_after: [TD2, CM2]
-      min_offset: 48
-      max_offset: null 
-    - kind: succession
-      activities: [CM4]
-      start_after: [TD3, CM3]
-      min_offset: 48
-      max_offset: null
-    - kind: succession
-      activities: [CM5]
-      start_after: [CM4]
-      min_offset: 48
-      max_offset: null
-    - kind: succession
-      activities: [CM6]
-      start_after: [TD5, CM5]
-      min_offset: 48
-      max_offset: null
-    - kind: succession
-      activities: [CM7]
-      start_after: [TD9, CM6]
-      min_offset: 48
-      max_offset: null  
-    - kind: succession
-      activities: [TD1]
-      start_after: [CM2]
-      min_offset: 0
-      max_offset: null   
-    - kind: succession
-      activities: [TD2]
-      start_after: [TD1]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TD3]
-      start_after: [CM3,TD2]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TD4]
-      start_after: [CM5,TD3]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TD5]
-      start_after: [TD4]
-      min_offset: 0
-      max_offset: null 
-    - kind: succession
-      activities: [TD6]
-      start_after: [CM6,TD5]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TD7]
-      start_after: [TD6]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TD8]
-      start_after: [TD7]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TD9]
-      start_after: [TD8]
-      min_offset: 0
-      max_offset: null                           
-    - kind: succession
-      activities: [TD10]
-      start_after: [TD9,CM7]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TD10]
-      start_after: [TD9,CM7]
-      min_offset: 0
-      max_offset: null        
-    - kind: succession
-      activities: [TP1]
-      start_after: [CM5]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TP2]
-      start_after: [CM6, TP1]
-      min_offset: 0
-      max_offset: null
-    - kind: succession
-      activities: [TP3]
-      start_after: [TD10, TP2]
-      min_offset: 0
-      max_offset: null       
-    - kind: succession
-      activities: [CI1]
-      start_after: [TD3]
-      min_offset: 480 # 5 jours
-      max_offset: 960 # 10 jours
-    - kind: succession
-      activities: [CT1]
-      start_after: [TD10,TP3, CI1]
-      min_offset: 48 # 2 jours 
-      max_offset: null 
+    - {kind: succession, activities: [CM2], start_after: [CM1], min_offset: *oneday, max_offset: null } 
+    - {kind: succession, activities: [CM3], start_after: [CM2], min_offset: *oneweek, max_offset: null }
+    - {kind: succession, activities: [CM4], start_after: [CM3], min_offset: *oneweek, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [CM4], min_offset: *oneweek, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [CM5], min_offset: *oneweek, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [CM6], min_offset: *oneweek, max_offset: null }
+    
+    - {kind: succession, activities: [CM3], start_after: [TD2], min_offset: *oneday, max_offset: null } 
+    - {kind: succession, activities: [CM4], start_after: [TD3], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [TD5], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [TD9], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [CI1], min_offset: *oneday, max_offset: null }
+    
+    
+    - {kind: succession, activities: [TD1], start_after: [CM2], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD2], start_after: [TD1], min_offset: *oneday, max_offset: null } 
+    - {kind: succession, activities: [TD3], start_after: [CM3], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD4], start_after: [CM5], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD5], start_after: [TD4], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [TD6], start_after: [CM6], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD7], start_after: [TD6], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [TD8], start_after: [TD7], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [TD9], start_after: [TD8], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [TD10], start_after: [CM7], min_offset: *oneday, max_offset: null }
+    
+    - {kind: succession, activities: [TP2], start_after: [TP1], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [TP3], start_after: [TP2], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [TP1], start_after: [CM5], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TP2], start_after: [CM6], min_offset: *zero, max_offset: null }
+    
+    - {kind: succession, activities: [CI1], start_after: [TD3], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CT1], start_after: [TD10,TP3], min_offset: *oneweek, max_offset: null }
+
+  # constraints:
+  #   # - kind: succession
+  #   #   activities: [CM1]
+  #   #   start_after: [MECA653_CM1]
+  #   #   min_offset: 48
+  #   #   max_offset: null 
+  #   - kind: succession
+  #     activities: [CM2]
+  #     start_after: [CM1]
+  #     min_offset: 48
+  #     max_offset: null 
+  #   - kind: succession
+  #     activities: [CM3]
+  #     start_after: [TD2, CM2]
+  #     min_offset: 48
+  #     max_offset: null 
+  #   - kind: succession
+  #     activities: [CM4]
+  #     start_after: [TD3, CM3]
+  #     min_offset: 48
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [CM5]
+  #     start_after: [CM4]
+  #     min_offset: 48
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [CM6]
+  #     start_after: [TD5, CM5]
+  #     min_offset: 48
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [CM7]
+  #     start_after: [TD9, CM6]
+  #     min_offset: 48
+  #     max_offset: null  
+  #   - kind: succession
+  #     activities: [TD1]
+  #     start_after: [CM2]
+  #     min_offset: 0
+  #     max_offset: null   
+  #   - kind: succession
+  #     activities: [TD2]
+  #     start_after: [TD1]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TD3]
+  #     start_after: [CM3,TD2]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TD4]
+  #     start_after: [CM5,TD3]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TD5]
+  #     start_after: [TD4]
+  #     min_offset: 0
+  #     max_offset: null 
+  #   - kind: succession
+  #     activities: [TD6]
+  #     start_after: [CM6,TD5]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TD7]
+  #     start_after: [TD6]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TD8]
+  #     start_after: [TD7]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TD9]
+  #     start_after: [TD8]
+  #     min_offset: 0
+  #     max_offset: null                           
+  #   - kind: succession
+  #     activities: [TD10]
+  #     start_after: [TD9,CM7]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TD10]
+  #     start_after: [TD9,CM7]
+  #     min_offset: 0
+  #     max_offset: null        
+  #   - kind: succession
+  #     activities: [TP1]
+  #     start_after: [CM5]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TP2]
+  #     start_after: [CM6, TP1]
+  #     min_offset: 0
+  #     max_offset: null
+  #   - kind: succession
+  #     activities: [TP3]
+  #     start_after: [TD10, TP2]
+  #     min_offset: 0
+  #     max_offset: null       
+  #   - kind: succession
+  #     activities: [CI1]
+  #     start_after: [TD3]
+  #     min_offset: 480 # 5 jours
+  #     max_offset: 960 # 10 jours
+  #   - kind: succession
+  #     activities: [CT1]
+  #     start_after: [TD10,TP3, CI1]
+  #     min_offset: 48 # 2 jours 
+  #     max_offset: null 
 
   color: pink 
