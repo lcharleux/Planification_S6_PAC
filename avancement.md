@@ -32,7 +32,7 @@ Date: 20/20/2023
     * MATH642 (Abdourrahmane Atto): 
 * IDU:
     * INFO631 (Flavier Vernier): 
-    * PROJ631 (Sylvie Galichet):  
+    * PROJ631 (Flavier Vernier):  
     * INFO633 (Lionel Valet): 
     * INFO632 (Sébastien Monnet): 
     * ISOC631 (Kavé Salamatian): 
@@ -46,29 +46,29 @@ OK
 
 * MMT:
     * MATH651 (Catherine Adloff): 
-    * MECA651 (Eric Pairel): 
+    * MECA651 (Eric Pairel): OK
     * MECA654 (Emile Roux): OK
     * MECA652 (Philippe Saffré): 
     * MECA653 (Ludovic Charleux): OK
-    * MATE651 (Pascal Francescato): 
+    * MATE651 (Pascal Francescato): OK
     * MECA655 (Pascal Hernandez): OK
     * EASI651 (Madjid Boutemeur): 
 * SNI:
-    * MATH641 (Alexandre Bascop):  
-    * PACI641 (Thomas Mazingue):
+    * MATH641 (Alexandre Bascop): OK
+    * PACI641 (Thomas Mazingue): 
     * PACI642 (Yannick Mugnier): 
     * PROJ641 (Jean-Jacques Curtelin):  
     * EASI641 (Pascal Mouille): OK
-    * EASI642 (Yajing Yan): 
+    * EASI642 (Yajing Yan): OK
     * INFO641 (Sorana Cimpan):  
     * INFO642 (Lionel Valet): 
     * MATH642 (Abdourrahmane Atto): 
 * IDU:
-    * INFO631 (Flavier Vernier): 
-    * PROJ631 (Sylvie Galichet):  
+    * INFO631 (Flavier Vernier): OK
+    * PROJ631 (Flavien Vernier): OK 
     * INFO633 (Lionel Valet): 
     * INFO632 (Sébastien Monnet): 
     * ISOC631 (Kavé Salamatian): 
-    * PROJ632 (Marc-Philippe Huget): 
+    * PROJ632 (Marc-Philippe Huget): OK
 
 ## Planification
