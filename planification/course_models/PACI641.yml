@@ -1,0 +1,111 @@
+# PACI641
+PACI641:
+  
+  activities:
+  # CM
+    CM1:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM2:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM3:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM4:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM5:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM6:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM7:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM8:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM9:  {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM10: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM11: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM12: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM13: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+
+    # TD  
+    TD1-D:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD2-D:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD3-D:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD4-D:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD5-D:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD6-D:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD7-D:  {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD8-D:  {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD9-D:  {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD10-D: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+
+       
+    # CT = CM10
+    CT1: {kind: CM, duration: 8, teachers: {pool: [TM], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "SNI-3-D-TD"}
+
+  teachers_acronyms:
+    YM: MUGNIER YANNICK
+    TM: MAZINGUE THOMAS
+
+  rooms:
+    big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
+
+  inner_activity_groups:
+    CM1: [CM1]
+    CM2: [CM2]
+    CM3: [CM3]
+    CM4: [CM4]
+    CM5: [CM5]
+    CM6: [CM6]
+    CM7: [CM7]
+    CM8: [CM8]
+    CM9: [CM9]
+    CM10: [CM10]
+    CM11: [CM11]
+    CM12: [CM12]
+    CM13: [CM13]
+
+    TD1: [TD1-D]
+    TD2: [TD2-D]
+    TD3: [TD3-D]
+    TD4: [TD4-D]
+    TD5: [TD5-D]
+    TD6: [TD6-D]
+    TD7: [TD7-D]
+    TD8: [TD8-D]
+    TD9: [TD9-D]
+    TD10: [TD10-D]
+    CT1: [CT1]
+  
+  foreign_activity_groups:
+    PACI642_CM3: [[PACI642, PACI642_CM3]]
+
+  variables:
+  - &zero 0
+  - &oneday 96
+  - &twodays 192
+  - &threedays 288
+  - &fourdays 384
+  - &fivedays 480
+  - &oneweek 480 # Nearly one week
+
+
+
+  constraints:
+    - {kind: succession, activities: [CM1],  start_after: [PACI642_CM3], min_offset: *twodays, max_offset: null } 
+    - {kind: succession, activities: [CM2],  start_after: [CM1], min_offset: *twodays, max_offset: null } 
+    - {kind: succession, activities: [CM3],  start_after: [CM2], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM4], start_after: [TD1], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [TD2], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [TD3], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [TD4], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM8], start_after: [TD5], min_offset: *twodays, max_offset: null }  
+    - {kind: succession, activities: [CM9],  start_after: [TD6], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM10], start_after: [CM9], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM11], start_after: [TD7], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM12], start_after: [TD8], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM13], start_after: [TD9], min_offset: *twodays, max_offset: null }
+    
+    - {kind: succession, activities: [TD1], start_after: [CM3], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD2], start_after: [CM4], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD3], start_after: [CM5], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD4], start_after: [CM6], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD5], start_after: [CM7], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD6], start_after: [CM8], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD7], start_after: [CM10], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD8], start_after: [CM11], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD9], start_after: [CM12], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD10], start_after: [CM13], min_offset: *zero, max_offset: null }
+
+    - {kind: succession, activities: [CT1], start_after: [TD10], min_offset: *oneweek, max_offset: null }
+  color: pink 

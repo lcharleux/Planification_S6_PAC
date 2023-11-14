@@ -12,31 +12,31 @@ Date: 20/20/2023
 ### Réponses 
 
 * MMT:
-    * MATH651 (Catherine Adloff): 
-    * MECA651 (Eric Pairel): 
-    * MECA654 (Emile Roux): 
-    * MECA652 (Philippe Saffré): 
-    * MECA653 (Ludovic Charleux): 
-    * MATE651 (Pascal Francescato): 
-    * MECA655 (Pascal Hernandez): 
-    * EASI651 (Madjid Boutemeur): 
+    * MATH651 (Catherine Adloff): NON
+    * MECA651 (Eric Pairel): OUI
+    * MECA654 (Emile Roux): OUI
+    * MECA652 (Philippe Saffré): NON 
+    * MECA653 (Ludovic Charleux):  OUI
+    * MATE651 (Pascal Francescato):  NON
+    * MECA655 (Pascal Hernandez): OUI
+    * EASI651 (Madjid Boutemeur): NON
 * SNI:
-    * MATH641 (Alexandre Bascop):  
-    * PACI641 (Thomas Mazingue):
-    * PACI642 (Yannick Mugnier): 
-    * PROJ641 (Jean-Jacques Curtelin):  
-    * EASI641 (Pascal Mouille): 
-    * EASI642 (Yajing Yan): 
-    * INFO641 (Sorana Cimpan):  
-    * INFO642 (Lionel Valet): 
-    * MATH642 (Abdourrahmane Atto): 
+    * MATH641 (Alexandre Bascop):  OUI
+    * PACI641 (Thomas Mazingue):OUI
+    * PACI642 (Yannick Mugnier): OUI
+    * PROJ641 (Jean-Jacques Curtelin): NON  
+    * EASI641 (Pascal Mouille): OUI
+    * EASI642 (Yajing Yan): OUI
+    * INFO641 (Sorana Cimpan): NON
+    * INFO642 (Lionel Valet): OUI
+    * MATH642 (Abdourrahmane Atto): OUI 
 * IDU:
-    * INFO631 (Flavier Vernier): 
-    * PROJ631 (Flavier Vernier):  
-    * INFO633 (Lionel Valet): 
-    * INFO632 (Sébastien Monnet): 
-    * ISOC631 (Kavé Salamatian): 
-    * PROJ632 (Marc-Philippe Huget): 
+    * INFO631 (Flavier Vernier): OUI
+    * PROJ631 (Flavier Vernier):  OUI
+    * INFO633 (Lionel Valet): OUI
+    * INFO632 (Sébastien Monnet): NON
+    * ISOC631 (Kavé Salamatian): NON
+    * PROJ632 (Marc-Philippe Huget): OUI
 
 ## Extraction ADE
 
@@ -45,28 +45,28 @@ OK
 ## MAJ Maquette AUS
 
 * MMT:
-    * MATH651 (Catherine Adloff): 
+    * MATH651 (Catherine Adloff): OK
     * MECA651 (Eric Pairel): OK
     * MECA654 (Emile Roux): OK
     * MECA652 (Philippe Saffré): 
     * MECA653 (Ludovic Charleux): OK
     * MATE651 (Pascal Francescato): OK
     * MECA655 (Pascal Hernandez): OK
-    * EASI651 (Madjid Boutemeur): 
+    * EASI651 (Madjid Boutemeur): OK
 * SNI:
     * MATH641 (Alexandre Bascop): OK
-    * PACI641 (Thomas Mazingue): 
-    * PACI642 (Yannick Mugnier): 
+    * PACI641 (Thomas Mazingue): OK
+    * PACI642 (Yannick Mugnier): OK
     * PROJ641 (Jean-Jacques Curtelin):  
     * EASI641 (Pascal Mouille): OK
     * EASI642 (Yajing Yan): OK
     * INFO641 (Sorana Cimpan):  
-    * INFO642 (Lionel Valet): 
-    * MATH642 (Abdourrahmane Atto): 
+    * INFO642 (Lionel Valet): EN ATTENTE DE PRECISIONS
+    * MATH642 (Abdourrahmane Atto): OK
 * IDU:
     * INFO631 (Flavier Vernier): OK
     * PROJ631 (Flavien Vernier): OK 
-    * INFO633 (Lionel Valet): 
+    * INFO633 (Lionel Valet): EN ATTENTE DE PRECISIONS
     * INFO632 (Sébastien Monnet): 
     * ISOC631 (Kavé Salamatian): 
     * PROJ632 (Marc-Philippe Huget): OK

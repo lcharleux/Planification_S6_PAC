@@ -366,7 +366,7 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 60.0
+solver.parameters.max_time_in_seconds = 120.0
 solver.parameters.num_search_workers = 16
 #solver.parameters.log_search_progress = True
 
