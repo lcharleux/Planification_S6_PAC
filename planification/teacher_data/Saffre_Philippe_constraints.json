@@ -3,11 +3,11 @@
         "unavailable": [
             {
                 "kind": "isocalendar",
-                "from_year": 2023,
+                "from_year": 2024,
                 "from_week": 4,
                 "from_weekday": 3,
                 "from_dayslot": 1,
-                "to_year": 2023,
+                "to_year": 2024,
                 "to_week": 4,
                 "to_weekday": 3,
                 "to_dayslot": 95,

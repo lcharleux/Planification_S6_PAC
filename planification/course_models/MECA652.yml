@@ -1,0 +1,165 @@
+MECA652:
+
+  activities:
+  # CM
+    CM1:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM2:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM3:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM4:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM5:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM6:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM7:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM8:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM9:  {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CM10: {kind: CM, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+  
+    
+    # TD  
+    TD1-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD1-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD1-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}
+
+    TD2-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD2-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD2-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}
+
+    TD3-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD3-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD3-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}
+
+    TD4-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD4-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD4-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}  
+
+    TD5-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD5-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD5-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"} 
+
+    TD6-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD6-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD6-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"} 
+    
+    TD7-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD7-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD7-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"} 
+
+    TD8-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD8-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD8-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"} 
+
+    TD9-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD9-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD9-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"} 
+
+    TD10-A: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
+    TD10-B: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
+    TD10-C: {kind: TD, duration: 6, teachers: {pool: [PS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"} 
+
+    #TP
+    TP1-A1: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-A1"}
+    TP1-A2: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-A2"}
+    TP1-B1: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-B1"}
+    TP1-B2: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-B2"}
+    TP1-C1: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-C1"}
+    TP1-C2: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-C2"}
+
+    TP2-A1: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-A1"}
+    TP2-A2: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-A2"}
+    TP2-B1: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-B1"}
+    TP2-B2: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-B2"}
+    TP2-C1: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-C1"}
+    TP2-C2: {kind: TP, duration: 16, teachers: {pool: [PS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "MM-3-C2"}
+    
+
+   
+   
+   
+
+  teachers_acronyms:
+    PS: SAFFRE PHILIPPE
+
+  rooms:
+    big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"]
+
+  inner_activity_groups:
+    CM1: [CM1]
+    CM2: [CM2]
+    CM3: [CM3]
+    CM4: [CM4]
+    CM5: [CM5]
+    CM6: [CM6]
+    CM7: [CM7]
+    CM8: [CM8]
+    CM9: [CM9]
+    CM10: [CM10]
+    
+    TD1: [TD1-A, TD1-B, TD1-C]
+    TD2: [TD2-A, TD2-B, TD2-C]
+    TD3: [TD3-A, TD3-B, TD3-C]
+    TD4: [TD4-A, TD4-B, TD4-C]
+    TD5: [TD5-A, TD5-B, TD5-C]
+    TD6: [TD6-A, TD6-B, TD6-C]
+    TD7: [TD7-A, TD7-B, TD7-C]
+    TD8: [TD8-A, TD8-B, TD8-C]
+    TD9: [TD9-A, TD9-B, TD9-C]
+    TD10: [TD10-A, TD10-B, TD10-C]
+
+    TP1: [TP1-A1, TP1-A2, TP1-B1, TP1-B2, TP1-C1, TP1-C2]
+    TP2: [TP2-A1, TP2-A2, TP2-B1, TP2-B2, TP2-C1, TP2-C2]
+    
+    
+  
+  variables:
+  - &zero 0
+  - &oneday 96
+  - &twodays 192
+  - &threedays 288
+  - &fourdays 384
+  - &fivedays 480
+  - &oneweek 672
+  - &sameday 48
+  
+
+
+  constraints:
+    - {kind: succession, activities: [CM2], start_after: [CM1], min_offset:  *twodays, max_offset: null } 
+    - {kind: succession, activities: [CM3], start_after: [CM2], min_offset:  *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM4], start_after: [CM3], min_offset:  *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [CM4], min_offset:  *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [CM5], min_offset:  *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [CM6], min_offset:  *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM8], start_after: [CM7], min_offset:  *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM9], start_after: [CM8], min_offset:  *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM10], start_after: [CM9], min_offset: *fivedays, max_offset: null }
+    
+    - {kind: succession, activities: [CM3], start_after: [TD1], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [CM4], start_after: [TD2], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [TD3], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [TD4], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [TD5], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [CM8], start_after: [TD6], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [CM9], start_after: [TD7], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [CM10], start_after: [TD8], min_offset: *zero, max_offset: null }
+
+    - {kind: succession, activities: [TD1], start_after: [CM2], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD2], start_after: [CM3], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD3], start_after: [CM4], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD4], start_after: [CM5], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD5], start_after: [CM6], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD6], start_after: [CM7], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD7], start_after: [CM8], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD8], start_after: [CM9], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD9], start_after: [CM10], min_offset: *zero, max_offset: *sameday }
+    - {kind: succession, activities: [TD10], start_after: [TP1], min_offset: *zero, max_offset: null }
+  
+    - {kind: succession, activities: [TP1], start_after: [TD9], min_offset: *zero, max_offset: null }
+
+    - {kind: succession, activities: [TP2], start_after: [TD10], min_offset: *zero, max_offset: null }
+
+    # - {kind: succession, activities: [TP2], start_after: [TD2], min_offset: *zero, max_offset: null }
+    # - {kind: succession, activities: [TP3], start_after: [TD3], min_offset: *zero, max_offset: null }
+    # - {kind: succession, activities: [TP4], start_after: [TD4], min_offset: *zero, max_offset: null }
+    # - {kind: succession, activities: [TP5], start_after: [TD5], min_offset: *zero, max_offset: null }
+    # - {kind: succession, activities: [TP6], start_after: [TP5], min_offset: *oneweek, max_offset: null }
+
+  color: pink 

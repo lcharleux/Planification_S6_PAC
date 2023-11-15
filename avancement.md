@@ -48,7 +48,7 @@ OK
     * MATH651 (Catherine Adloff): OK
     * MECA651 (Eric Pairel): OK
     * MECA654 (Emile Roux): OK
-    * MECA652 (Philippe Saffré): 
+    * MECA652 (Philippe Saffré): OK
     * MECA653 (Ludovic Charleux): OK
     * MATE651 (Pascal Francescato): OK
     * MECA655 (Pascal Hernandez): OK
@@ -72,3 +72,8 @@ OK
     * PROJ632 (Marc-Philippe Huget): OK
 
 ## Planification
+
+## Problèmes à résoudre:
+
+* Horaires de TP: où est la grille de plages autorisées ??
+* Comment respecter les contraintes molles du type: "éviter de commencer à 8h"
