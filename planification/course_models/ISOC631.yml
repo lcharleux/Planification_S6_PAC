@@ -1,0 +1,123 @@
+# ISOC631
+ISOC631:
+  activities:
+  # CM
+    CM1: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM2: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM3: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM4: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM5: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM6: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM7: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM8: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    CM9: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    # TD  
+    TD1-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD2-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD3-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD4-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD5-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD6-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD7-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD8-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD9-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD10-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+
+    #TP
+    TP1-G1: {kind: TP, duration: 16, teachers: {pool: [KS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "IDU-3-G1"}
+    TP1-G2: {kind: TP, duration: 16, teachers: {pool: [KS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "IDU-3-G2"}
+    TP2-G1: {kind: TP, duration: 16, teachers: {pool: [KS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "IDU-3-G1"}
+    TP2-G2: {kind: TP, duration: 16, teachers: {pool: [KS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "IDU-3-G2"}
+    TP3-G1: {kind: TP, duration: 16, teachers: {pool: [KS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "IDU-3-G1"}
+    TP3-G2: {kind: TP, duration: 16, teachers: {pool: [KS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "IDU-3-G2"}
+  
+  teachers_acronyms:
+   KS: SALAMATIAN MOHAMMAD-REZA
+    
+
+  rooms:
+    big_info_rooms: ["A-POLY-C213", "A-POLY-C214", "big_info_rooms"]
+
+  inner_activity_groups:
+    CM1: [CM1]
+    CM2: [CM2]
+    CM3: [CM3]
+    CM4: [CM4]
+    CM5: [CM5]
+    CM6: [CM6]
+    CM7: [CM7]
+    CM8: [CM8]
+    CM9: [CM9]
+    
+    TD1: [TD1-G]
+    TD2: [TD2-G]
+    TD3: [TD3-G]
+    TD4: [TD4-G]
+    TD5: [TD5-G]
+    TD6: [TD6-G]
+    TD7: [TD7-G]
+    TD8: [TD8-G]
+    TD9: [TD9-G]
+    TD10: [TD10-G]
+
+    TP1: [TP1-G1, TP1-G2]
+    TP2: [TP2-G1, TP2-G2]
+    TP3: [TP3-G1, TP3-G2] 
+    
+    
+    
+    
+
+  foreign_activity_groups:
+    MECA653_CM1: [[MECA653, CM1]]
+
+  variables:
+  - &zero 0
+  - &oneday 96
+  - &twodays 192
+  - &threedays 288
+  - &fourdays 384
+  - &fivedays 480
+  - &oneweek 672
+
+  constraints:
+    - {kind: succession, activities: [CM2], start_after: [CM1], min_offset: *twodays, max_offset: null } 
+    - {kind: succession, activities: [CM3], start_after: [CM2], min_offset: *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM4], start_after: [CM3], min_offset: *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [CM4], min_offset: *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [CM5], min_offset: *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [CM6], min_offset: *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM8], start_after: [CM7], min_offset: *fivedays, max_offset: null }
+    - {kind: succession, activities: [CM9], start_after: [CM8], min_offset: *fivedays, max_offset: null }
+
+    - {kind: succession, activities: [CM2], start_after: [TD1], min_offset: *oneday, max_offset: null }    
+    - {kind: succession, activities: [CM3], start_after: [TD2], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM4], start_after: [TD3], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [TD4], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [TD5], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [TD6], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM8], start_after: [TD7], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [CM9], start_after: [TD8], min_offset: *oneday, max_offset: null }
+
+
+    - {kind: succession, activities: [TD1], start_after: [CM1], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD2], start_after: [CM2], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD3], start_after: [CM3], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD4], start_after: [CM4], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD5], start_after: [CM5], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD6], start_after: [CM6], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD7], start_after: [CM7], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD8], start_after: [CM8], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD9], start_after: [CM9], min_offset: *zero, max_offset: null }
+    - {kind: succession, activities: [TD10], start_after: [TD9], min_offset: *twodays, max_offset: null }
+        
+    - {kind: succession, activities: [TP2], start_after: [TP1], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [TP3], start_after: [TP2], min_offset: *twodays, max_offset: null }
+    
+    - {kind: succession, activities: [TP1], start_after: [TD3], min_offset: 0, max_offset: null }
+    - {kind: succession, activities: [TP2], start_after: [TD5], min_offset: 0, max_offset: null }
+    - {kind: succession, activities: [TP3], start_after: [TD7], min_offset: 0, max_offset: null }
+    
+
+                
+  color: gray 

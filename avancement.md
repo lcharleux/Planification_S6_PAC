@@ -57,18 +57,18 @@ OK
     * MATH641 (Alexandre Bascop): OK
     * PACI641 (Thomas Mazingue): OK
     * PACI642 (Yannick Mugnier): OK
-    * PROJ641 (Jean-Jacques Curtelin):  
+    * PROJ641 (Jean-Jacques Curtelin):  DEJA PLANIFIE 
     * EASI641 (Pascal Mouille): OK
     * EASI642 (Yajing Yan): OK
-    * INFO641 (Sorana Cimpan):  
+    * INFO641 (Sorana Cimpan):  OK (mais pas de retour)
     * INFO642 (Lionel Valet): EN ATTENTE DE PRECISIONS
     * MATH642 (Abdourrahmane Atto): OK
 * IDU:
     * INFO631 (Flavier Vernier): OK
     * PROJ631 (Flavien Vernier): OK 
     * INFO633 (Lionel Valet): EN ATTENTE DE PRECISIONS
-    * INFO632 (Sébastien Monnet): 
-    * ISOC631 (Kavé Salamatian): 
+    * INFO632 (Sébastien Monnet): OK (mais pas de retour)
+    * ISOC631 (Kavé Salamatian): OK (mais pas de retour)
     * PROJ632 (Marc-Philippe Huget): OK
 
 ## Planification

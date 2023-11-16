@@ -10,6 +10,7 @@ import json
 import os
 import time
 import yaml
+import string
 from automatic_university_scheduler.scheduling import (
     read_json_data,
     # get_unique_teachers_and_rooms,
@@ -366,12 +367,12 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 2000.0
+solver.parameters.max_time_in_seconds = 45.0
 solver.parameters.num_search_workers = 16
 #solver.parameters.log_search_progress = True
 
 
-solution_printer = SolutionPrinter(limit=200)
+solution_printer = SolutionPrinter(limit=20)
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
 t1 = time.time()
@@ -528,5 +529,8 @@ for ressources in ["teachers", "rooms"]:
         worksheet.set_column("I:I", 20, my_format)
         worksheet.set_column("J:K", 70, my_format)
         worksheet.set_column("L:N", 12, my_format)
-
+        nrows = ressource_solution.shape[0] +2
+        tag = f"A2:P{nrows}"
+        worksheet.autofilter(tag)
+        
     writer.close()
