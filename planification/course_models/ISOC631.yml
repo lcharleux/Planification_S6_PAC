@@ -12,16 +12,16 @@ ISOC631:
     CM8: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
     CM9: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
     # TD  
-    TD1-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD2-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD3-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD4-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD5-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD6-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD7-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD8-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD9-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
-    TD10-G: {kind: CM, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD1-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD2-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD3-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD4-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD5-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD6-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD7-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD8-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD9-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD10-G: {kind: TD, duration: 6, teachers: {pool: [KS], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
 
     #TP
     TP1-G1: {kind: TP, duration: 16, teachers: {pool: [KS], value: 1}, rooms: {pool: ["info_rooms"], value: 1}, students: "IDU-3-G1"}

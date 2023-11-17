@@ -50,7 +50,7 @@ OK
     * MECA654 (Emile Roux): OK
     * MECA652 (Philippe Saffré): OK
     * MECA653 (Ludovic Charleux): OK
-    * MATE651 (Pascal Francescato): OK
+    * MATE651 (Pascal Francescato): OK ???
     * MECA655 (Pascal Hernandez): OK
     * EASI651 (Madjid Boutemeur): OK
 * SNI:
@@ -77,3 +77,16 @@ OK
 
 * Horaires de TP: où est la grille de plages autorisées ??
 * Comment respecter les contraintes molles du type: "éviter de commencer à 8h"
+
+## Données utiles
+
+### SHES
+
+* David Antoinat:  david.antoinat@cera.caisse-epargne.fr; davidantoinat@gmail.com 06 20 26 00 60
+
+
+* Michel Breysse:  michel.breysse@ca-des-savoie.fr; breyssemichel@gmail.com  04 50 64 72 17
+
+09/02
+
+
