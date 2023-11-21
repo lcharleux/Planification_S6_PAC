@@ -7,7 +7,7 @@ import pandas as pd
 import json
 
 # SETUP
-course_label = "INFO633"
+course_label = "INFO633_642"
 yml_path = f"../course_models/{course_label}.yml"
 data = yaml.safe_load(open(yml_path))
 data = data[course_label]
@@ -15,10 +15,10 @@ default_rooms = json.load(open("../default_rooms.json"))
 room_pools = {
     "big_info_rooms": ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215"],
     "info_rooms": [
-        "A-POLY-C213",
-        "A-POLY-C214",
-        "A-POLY-C215",
-        "A-POLY-C216",
+        "A-POLY-C209",
+        "A-POLY-C202",
+        "A-POLY-C210",
+        "A-POLY-A030",
         "A-POLY-C217",
     ],
     "amphi": ["A-POLY-B120"],

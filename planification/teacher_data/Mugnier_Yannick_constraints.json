@@ -1,16 +1,16 @@
 {
-    "BASCOP ALEXANDRE": {
+    "MUGNIER YANNICK": {
         "unavailable": [
             {
                 "kind": "isocalendar",
                 "from_year": 2024,
-                "from_week": 16,
-                "from_weekday": 1,
+                "from_week": 10,
+                "from_weekday": 5,
                 "from_dayslot": 1,
-                "to_year": 2024,
-                "to_week": 16,
+                "to_year": 2023,
+                "to_week": 10,
                 "to_weekday": 5,
-                "to_dayslot": 96,
+                "to_dayslot": 95,
                 "repeat": 1,
                 "repeat_pad": 672
             }

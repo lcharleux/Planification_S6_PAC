@@ -27,11 +27,11 @@ from automatic_university_scheduler.scheduling import (
 WEEK_STRUCTURE = np.array(
     #    0h   1h   2h   3h   4h   5h   6h   7h   8h   9h   10h  11h  12h  13h  14h  15h  16h  17h  18h  19h  20h  21h  22h  23h
     [
-        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # MONDAY
-        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # TUESDAY
-        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # WEDNESDAY
-        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # THURSDAY
-        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # FRIDAY
+        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # MONDAY
+        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # TUESDAY
+        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # WEDNESDAY
+        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # THURSDAY
+        "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # FRIDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SATRUDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SUNDAY
     ]
@@ -201,7 +201,7 @@ for teacher, intervals in ressource_existing_intervals["teachers"].items():
         start = max(32, start)
         end = min(73, end)
         duration += max(0, end - start)
-    print(teacher, duration)
+    print(f"TEACHER {teacher}: cumulated existing activities {duration/4} h")
 
 
 # TEACHER UNAVAILABILITY
@@ -265,6 +265,46 @@ for agroup, matrix in matrices.items():
                 w += 1
                 d = 1
 
+
+activities_kinds = {
+    "CM": { 
+        "allowed_start_time_slots": [33, 40, 53, 60, 67]
+    },
+    "TD": { 
+        "allowed_start_time_slots": [33, 40, 53, 60, 67]
+    },
+    "CM_YM": { # CM YANNICK MUGNIER
+        "allowed_start_time_slots": [40, 53, 60]
+    },
+    "TD_YM": { # TD YANNICK MUGNIER
+        "allowed_start_time_slots": [40, 53, 60]
+    },
+    "TD_MB": { # TD MICKAEL BOREL
+        "allowed_start_time_slots": [46] # 46
+    },
+    "EX": { 
+        "allowed_start_time_slots": [33, 40, 53, 60, 67]
+    },
+    "TP": { 
+        "allowed_start_time_slots": [32, 53, 57]
+    }
+}
+
+# activities_kinds = {
+#     "CM": { 
+#         "allowed_start_time_slots": range(96)
+#     },
+#     "TD": { 
+#         "allowed_start_time_slots": range(96)
+#     },
+#     "EX": { 
+#         "allowed_start_time_slots": range(96)
+#     },
+#     "TP": { 
+#         "allowed_start_time_slots": range(96)
+#     }
+# }
+
 atomic_students_unavailable_intervals = create_activities(
     activity_data,
     model,
@@ -274,7 +314,8 @@ atomic_students_unavailable_intervals = create_activities(
     room_unavailable_intervals=room_unavailable_intervals,
     students_unavailable_intervals=students_unavailable_intervals,
     weekly_unavailable_intervals=weekly_unavailable_intervals,
-    cm_td_allowed_slots=[33, 40, 53, 60, 67],
+    activities_kinds=activities_kinds
+    #cm_td_allowed_slots=[33, 40, 53, 60, 67],
 )
 
 # MINIMIZE SEMESTER DURATION or WEEK DURATION
@@ -367,136 +408,50 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 3600.0
+solver.parameters.max_time_in_seconds = 43200
 solver.parameters.num_search_workers = 16
 #solver.parameters.log_search_progress = True
 
 
-solution_printer = SolutionPrinter(limit=400)
+solution_printer = SolutionPrinter(limit=1000)
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
+solver_final_status = solver.StatusName()
+print(f"SOLVER STATUS: {solver_final_status}")
 t1 = time.time()
+print(solver.ResponseStats())
 print(f"Elapsed time: {t1-t0:.2f} s")
 
-solution = export_solution(
-    activity_data,
-    model,
-    solver,
-    students_groups,
-    week_structure=WEEK_STRUCTURE,
-    start_day=START_DAY,
-)
-xlsx_path = "outputs/schedule.xlsx"
-if not os.path.isdir("./outputs"):
-    os.mkdir("outputs")
-
-export_student_schedule_to_xlsx(
-    xlsx_path,
-    solution,
-    students_groups,
-    week_structure=WEEK_STRUCTURE,
-    row_height=15,
-    column_width=25,
-)
-# MODULES
-writer = pd.ExcelWriter(f"outputs/modules_activities.xlsx", engine="xlsxwriter")
-unique_modules = solution.module.unique()
-unique_modules.sort()
-for module in unique_modules:
-    module_solution = solution[solution.module == module].sort_values(["start"])
-    module_solution = module_solution[
-        [
-            "label",
-            "week",
-            "weekday",
-            "weekdayname",
-            "starttime",
-            "endtime",
-            "kind",
-            "students",
-            "teachers",
-            "rooms",
-            "year",
-            "month",
-            "day",
-            "daystart",
-            "dayend",
-        ]
-    ]
-    sheet_name = f"{module}"
-    module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
-    worksheet = writer.sheets[sheet_name]
-    workbook = writer.book
-    my_format = workbook.add_format(
-        {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+if not solver_final_status == "INFEASIBLE":
+        
+    solution = export_solution(
+        activity_data,
+        model,
+        solver,
+        students_groups,
+        week_structure=WEEK_STRUCTURE,
+        start_day=START_DAY,
     )
-    worksheet.set_column("A:A", 50, my_format)
-    worksheet.set_column("B:G", 12, my_format)
-    worksheet.set_column("H:H", 20, my_format)
-    worksheet.set_column("I:J", 70, my_format)
-    worksheet.set_column("K:N", 12, my_format)
+    xlsx_path = "outputs/schedule.xlsx"
+    if not os.path.isdir("./outputs"):
+        os.mkdir("outputs")
 
-if not os.path.isdir("./outputs"):
-    os.mkdir("outputs")
-
-writer.close()
-
-# MODULES PLANIFICATION
-writer = pd.ExcelWriter("outputs/modules_activities_planification.xlsx", engine="xlsxwriter")
-unique_modules = solution.module.unique()
-unique_modules.sort()
-
-for module in unique_modules:
-    module_solution = solution[solution.module == module].sort_values(["kind", "start"])
-    module_solution = module_solution[
-        [
-            "label",
-            "week",
-            "weekday",
-            "weekdayname",
-            "starttime",
-            "endtime",
-            "kind",
-            "students",
-            "teachers",
-            "rooms",
-            "year",
-            "month",
-            "day",
-            "daystart",
-            "dayend",
-        ]
-    ]
-    sheet_name = f"{module}"
-    module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
-    worksheet = writer.sheets[sheet_name]
-    workbook = writer.book
-    my_format = workbook.add_format(
-        {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+    export_student_schedule_to_xlsx(
+        xlsx_path,
+        solution,
+        students_groups,
+        week_structure=WEEK_STRUCTURE,
+        row_height=15,
+        column_width=25,
     )
-    worksheet.set_column("A:A", 50, my_format)
-    worksheet.set_column("B:G", 12, my_format)
-    worksheet.set_column("H:H", 20, my_format)
-    worksheet.set_column("I:J", 30, my_format)
-    worksheet.set_column("K:N", 12, my_format)
-
-writer.close()
-
-
-# RESSOURCES
-for ressources in ["teachers", "rooms"]:
-    writer = pd.ExcelWriter(
-        f"outputs/{ressources}_activities.xlsx", engine="xlsxwriter"
-    )
-    unique_ressources = np.unique(np.concatenate(solution[ressources].values))
-    unique_ressources.sort()
-
-    for ressource in unique_ressources:
-        loc = solution[ressources].apply(lambda a: np.isin(ressource, a))
-        ressource_solution = solution[loc].sort_values(["start"])
-        ressource_solution = ressource_solution[
+    # MODULES
+    writer = pd.ExcelWriter(f"outputs/modules_activities.xlsx", engine="xlsxwriter")
+    unique_modules = solution.module.unique()
+    unique_modules.sort()
+    for module in unique_modules:
+        module_solution = solution[solution.module == module].sort_values(["start"])
+        module_solution = module_solution[
             [
-                "module",
                 "label",
                 "week",
                 "weekday",
@@ -514,23 +469,114 @@ for ressources in ["teachers", "rooms"]:
                 "dayend",
             ]
         ]
-        sheet_name = f"{ressource}"
-        ressource_solution.to_excel(
-            writer, sheet_name=sheet_name, index=False, startrow=1
-        )
+        sheet_name = f"{module}"
+        module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
         worksheet = writer.sheets[sheet_name]
         workbook = writer.book
         my_format = workbook.add_format(
             {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
         )
-        worksheet.set_column("A:A", 20, my_format)
-        worksheet.set_column("B:B", 50, my_format)
-        worksheet.set_column("C:H", 12, my_format)
-        worksheet.set_column("I:I", 20, my_format)
-        worksheet.set_column("J:K", 70, my_format)
-        worksheet.set_column("L:N", 12, my_format)
-        nrows = ressource_solution.shape[0] +2
-        tag = f"A2:P{nrows}"
-        worksheet.autofilter(tag)
-        
+        worksheet.set_column("A:A", 50, my_format)
+        worksheet.set_column("B:G", 12, my_format)
+        worksheet.set_column("H:H", 20, my_format)
+        worksheet.set_column("I:J", 70, my_format)
+        worksheet.set_column("K:N", 12, my_format)
+
+    if not os.path.isdir("./outputs"):
+        os.mkdir("outputs")
+
     writer.close()
+
+    # MODULES PLANIFICATION
+    writer = pd.ExcelWriter("outputs/modules_activities_planification.xlsx", engine="xlsxwriter")
+    unique_modules = solution.module.unique()
+    unique_modules.sort()
+
+    for module in unique_modules:
+        module_solution = solution[solution.module == module].sort_values(["kind", "start"])
+        module_solution = module_solution[
+            [
+                "label",
+                "week",
+                "weekday",
+                "weekdayname",
+                "starttime",
+                "endtime",
+                "kind",
+                "students",
+                "teachers",
+                "rooms",
+                "year",
+                "month",
+                "day",
+                "daystart",
+                "dayend",
+            ]
+        ]
+        sheet_name = f"{module}"
+        module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
+        worksheet = writer.sheets[sheet_name]
+        workbook = writer.book
+        my_format = workbook.add_format(
+            {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+        )
+        worksheet.set_column("A:A", 50, my_format)
+        worksheet.set_column("B:G", 12, my_format)
+        worksheet.set_column("H:H", 20, my_format)
+        worksheet.set_column("I:J", 30, my_format)
+        worksheet.set_column("K:N", 12, my_format)
+
+    writer.close()
+
+
+    # RESSOURCES
+    for ressources in ["teachers", "rooms"]:
+        writer = pd.ExcelWriter(
+            f"outputs/{ressources}_activities.xlsx", engine="xlsxwriter"
+        )
+        unique_ressources = np.unique(np.concatenate(solution[ressources].values))
+        unique_ressources.sort()
+
+        for ressource in unique_ressources:
+            loc = solution[ressources].apply(lambda a: np.isin(ressource, a))
+            ressource_solution = solution[loc].sort_values(["start"])
+            ressource_solution = ressource_solution[
+                [
+                    "module",
+                    "label",
+                    "week",
+                    "weekday",
+                    "weekdayname",
+                    "starttime",
+                    "endtime",
+                    "kind",
+                    "students",
+                    "teachers",
+                    "rooms",
+                    "year",
+                    "month",
+                    "day",
+                    "daystart",
+                    "dayend",
+                ]
+            ]
+            sheet_name = f"{ressource}"
+            ressource_solution.to_excel(
+                writer, sheet_name=sheet_name, index=False, startrow=1
+            )
+            worksheet = writer.sheets[sheet_name]
+            workbook = writer.book
+            my_format = workbook.add_format(
+                {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+            )
+            worksheet.set_column("A:A", 20, my_format)
+            worksheet.set_column("B:B", 50, my_format)
+            worksheet.set_column("C:H", 12, my_format)
+            worksheet.set_column("I:I", 20, my_format)
+            worksheet.set_column("J:K", 70, my_format)
+            worksheet.set_column("L:N", 12, my_format)
+            nrows = ressource_solution.shape[0] +2
+            tag = f"A2:P{nrows}"
+            worksheet.autofilter(tag)
+            
+        writer.close()

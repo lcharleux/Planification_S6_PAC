@@ -11,11 +11,11 @@ PACI641:
     CM6:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
     CM7:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
     CM8:  {kind: CM, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM9:  {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM10: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM11: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM12: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM13: {kind: CM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM9:  {kind: CM_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM10: {kind: CM_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM11: {kind: CM_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM12: {kind: CM_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM13: {kind: CM_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
 
     # TD  
     TD1-D:  {kind: TD, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
@@ -24,10 +24,10 @@ PACI641:
     TD4-D:  {kind: TD, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
     TD5-D:  {kind: TD, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
     TD6-D:  {kind: TD, duration: 6, teachers: {pool: [TM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    TD7-D:  {kind: TD, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    TD8-D:  {kind: TD, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    TD9-D:  {kind: TD, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    TD10-D: {kind: TD, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD7-D:  {kind: TD_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD8-D:  {kind: TD_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD9-D:  {kind: TD_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    TD10-D: {kind: TD_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
 
        
     # CT = CM10

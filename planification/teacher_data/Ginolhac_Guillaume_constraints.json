@@ -1,0 +1,75 @@
+{
+    "GINOLHAC GUILLAUME": {
+        "unavailable": [
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 7,
+                "from_weekday": 1,
+                "from_dayslot": 40,
+                "to_year": 2024,
+                "to_week": 7,
+                "to_weekday": 1,
+                "to_dayslot": 48,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 8,
+                "from_weekday": 1,
+                "from_dayslot": 1,
+                "to_year": 2024,
+                "to_week": 8,
+                "to_weekday": 5,
+                "to_dayslot": 96,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 11,
+                "from_weekday": 1,
+                "from_dayslot": 40,
+                "to_year": 2024,
+                "to_week": 11,
+                "to_weekday": 1,
+                "to_dayslot": 48,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 15,
+                "from_weekday": 1,
+                "from_dayslot": 40,
+                "to_year": 2024,
+                "to_week": 15,
+                "to_weekday": 1,
+                "to_dayslot": 48,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 20,
+                "from_weekday": 1,
+                "from_dayslot": 1,
+                "to_year": 2024,
+                "to_week": 20,
+                "to_weekday": 5,
+                "to_dayslot": 96,
+                "repeat": 1,
+                "repeat_pad": 672
+            }
+            
+        ],
+        "first_name": "XXX",
+        "name": "XXX",
+        "phone": "xxxx"
+    }
+}

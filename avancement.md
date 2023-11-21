@@ -87,6 +87,9 @@ OK
 
 * Michel Breysse:  michel.breysse@ca-des-savoie.fr; breyssemichel@gmail.com  04 50 64 72 17
 
-09/02
 
+
+### MATE 651: 
+* TP IUT:
+    En 2022-2023 : planification de la S13 à la S21
 

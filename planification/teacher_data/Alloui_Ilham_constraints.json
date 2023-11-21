@@ -3,28 +3,41 @@
         "unavailable": [
             {
                 "kind": "isocalendar",
-                "from_year": 2023,
+                "from_year": 2024,
                 "from_week": 1,
                 "from_weekday": 1,
-                "from_dayslot": 62,
-                "to_year": 2023,
+                "from_dayslot": 48,
+                "to_year": 2024,
                 "to_week": 1,
                 "to_weekday": 1,
-                "to_dayslot": 95,
-                "repeat": 40,
+                "to_dayslot": 56,
+                "repeat": 21,
                 "repeat_pad": 672
             },
             {
                 "kind": "isocalendar",
-                "from_year": 2023,
+                "from_year": 2024,
                 "from_week": 1,
                 "from_weekday": 2,
-                "from_dayslot": 62,
-                "to_year": 2023,
+                "from_dayslot": 48,
+                "to_year": 2024,
                 "to_week": 1,
                 "to_weekday": 2,
-                "to_dayslot": 95,
-                "repeat": 40,
+                "to_dayslot": 56,
+                "repeat": 21,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 1,
+                "from_weekday": 4,
+                "from_dayslot": 48,
+                "to_year": 2024,
+                "to_week": 1,
+                "to_weekday": 4,
+                "to_dayslot": 56,
+                "repeat": 21,
                 "repeat_pad": 672
             }
             

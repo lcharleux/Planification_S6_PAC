@@ -185,7 +185,7 @@ INFO632:
       kind: TP
       duration: 16
       teachers: 
-        pool: [SM, SN]
+        pool: [SM, GC]
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
@@ -197,7 +197,7 @@ INFO632:
       kind: TP
       duration: 16
       teachers: 
-        pool: [SM, SN]
+        pool: [SM, GC]
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
@@ -209,7 +209,7 @@ INFO632:
       kind: TP
       duration: 16
       teachers: 
-        pool: [SM, SN]
+        pool: [SM, GC]
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
@@ -221,7 +221,7 @@ INFO632:
       kind: TP
       duration: 16
       teachers: 
-        pool: [SM, SN]
+        pool: [SM, GC]
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
@@ -231,7 +231,8 @@ INFO632:
 
   teachers_acronyms:
     SM: MONNET SEBASTIEN
-    SN: NAAMA SALOUA
+    GC: NAAMA SALOUA
+    GC: GINOLHAC GUILLAUME
     
 
   rooms:
