@@ -12,7 +12,7 @@ INFO641:
         pool: ["amphi"]
         value: 1
       students:
-        "IDU-3-G-TD"
+        "IDU-3_SNI-3"
     CM2:
       kind: CM
       duration: 6
@@ -23,7 +23,7 @@ INFO641:
         pool: ["amphi"]
         value: 1
       students:
-        "IDU-3-G-TD"    
+        "IDU-3_SNI-3"    
     CM3:
       kind: CM
       duration: 6
@@ -34,7 +34,7 @@ INFO641:
         pool: ["amphi"]
         value: 1
       students:
-        "IDU-3-G-TD"   
+        "IDU-3_SNI-3"   
     CM4:
       kind: CM
       duration: 6
@@ -45,7 +45,7 @@ INFO641:
         pool: ["amphi"]
         value: 1
       students:
-        "IDU-3-G-TD"
+        "IDU-3_SNI-3"
     CM5:
       kind: CM
       duration: 6
@@ -56,7 +56,7 @@ INFO641:
         pool: ["amphi"]
         value: 1
       students:
-        "IDU-3-G-TD"
+        "IDU-3_SNI-3"
     CM6:
       kind: CM
       duration: 6
@@ -67,7 +67,7 @@ INFO641:
         pool: ["amphi"]
         value: 1
       students:
-        "IDU-3-G-TD"
+        "IDU-3_SNI-3"
    
     
     # TD  

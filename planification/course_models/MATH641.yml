@@ -3,17 +3,17 @@ MATH641:
   
   activities:
   # CM
-    CM1: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM2: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM3: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM4: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM5: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM6: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM7: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM8: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM9: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM10: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
-    CM11: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+    CM1: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM2: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM3: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM4: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM5: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM6: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM7: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM8: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM9: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1},  rooms: {pool: ["amphi"], value: 1}, students:  "IDU-3_SNI-3"}
+    CM10: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "IDU-3_SNI-3"}
+    CM11: {kind: CM, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "IDU-3_SNI-3"}
 
     # TD  
     TD1-D: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
@@ -28,6 +28,19 @@ MATH641:
     TD10-D: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
     TD11-D: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
     TD12-D: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D-TD"}
+
+    TD1-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD2-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD3-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD4-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD5-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD6-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD7-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD8-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD9-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1},  students: "IDU-3-G-TD"}
+    TD10-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD11-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
+    TD12-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
 
     # CT
     CT1: {kind: CM, duration: 8, teachers: {pool: [AB], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "SNI-3-D-TD"}
@@ -50,18 +63,18 @@ MATH641:
     CM9: [CM9]
     CM10: [CM10]
     CM11: [CM11]
-    TD1: [TD1-D]
-    TD2: [TD2-D]
-    TD3: [TD3-D]
-    TD4: [TD4-D]
-    TD5: [TD5-D]
-    TD6: [TD6-D]
-    TD7: [TD7-D]
-    TD8: [TD8-D]
-    TD9: [TD9-D]
-    TD10: [TD10-D]
-    TD11: [TD11-D]
-    TD12: [TD12-D]
+    TD1: [TD1-D, TD1-G]
+    TD2: [TD2-D, TD2-G]
+    TD3: [TD3-D, TD3-G]
+    TD4: [TD4-D, TD4-G]
+    TD5: [TD5-D, TD5-G]
+    TD6: [TD6-D, TD6-G]
+    TD7: [TD7-D, TD7-G]
+    TD8: [TD8-D, TD8-G]
+    TD9: [TD9-D, TD9-G]
+    TD10: [TD10-D, TD10-G]
+    TD11: [TD11-D, TD11-G]
+    TD12: [TD12-D, TD12-G]
     CT1: [CT1]
   
   variables:
