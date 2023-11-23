@@ -89,7 +89,7 @@ INFO641:
         pool: [REH]
         value: 1
       rooms: 
-        pool: ["big_info_rooms"]
+        pool: ["info_rooms"]
         value: 1
       students:
         "SNI-3-D-TD"  
@@ -111,7 +111,7 @@ INFO641:
         pool: [REH]
         value: 1
       rooms: 
-        pool: ["big_info_rooms"]
+        pool: ["info_rooms"]
         value: 1
       students:
         "SNI-3-D-TD"  
@@ -133,7 +133,7 @@ INFO641:
         pool: [SC]
         value: 1
       rooms: 
-        pool: ["big_info_rooms"]
+        pool: ["info_rooms"]
         value: 1
       students:
         "SNI-3-D-TD"  
@@ -155,7 +155,7 @@ INFO641:
         pool: [SC]
         value: 1
       rooms: 
-        pool: ["big_info_rooms"]
+        pool: ["info_rooms"]
         value: 1
       students:
         "SNI-3-D-TD"  
@@ -177,7 +177,7 @@ INFO641:
         pool: [REH]
         value: 1
       rooms: 
-        pool: ["big_info_rooms"]
+        pool: ["info_rooms"]
         value: 1
       students:
         "SNI-3-D-TD"  

@@ -79,17 +79,17 @@ OK
     * MECA654 (Emile Roux): ok
     * MECA652 (Philippe Saffré): ok
     * MECA653 (Ludovic Charleux): ok
-    * MATE651 (Pascal Francescato): 
-    * MECA655 (Pascal Hernandez): 
-    * EASI651 (Madjid Boutemeur): 
+    * MATE651 (Pascal Francescato): ok
+    * MECA655 (Pascal Hernandez): ok
+    * EASI651 (Madjid Boutemeur): ok
 * SNI:
-    * MATH641 (Alexandre Bascop): 
-    * PACI641 (Thomas Mazingue): 
-    * PACI642 (Yannick Mugnier): 
+    * MATH641 (Alexandre Bascop): OK
+    * PACI641 (Thomas Mazingue): OK
+    * PACI642 (Yannick Mugnier): OK
     * PROJ641 (Jean-Jacques Curtelin):  DEJA PLANIFIE 
-    * EASI641 (Pascal Mouille): 
-    * EASI642 (Yajing Yan): 
-    * INFO641 (Sorana Cimpan): 
+    * EASI641 (Pascal Mouille): OK
+    * EASI642 (Yajing Yan): OK
+    * INFO641 (Sorana Cimpan): OK
     * INFO642 (Lionel Valet): 
     * MATH642 (Abdourrahmane Atto): 
 * IDU:

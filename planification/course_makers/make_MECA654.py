@@ -25,6 +25,7 @@ room_pools = {
         "A-POLY-C217",
     ],
     "amphi": ["A-POLY-B120"],
+    "amphi_x2": ["A-POLY-B120", "A-POLY-B014"],
 }
 
 # CONSTRAINTS VALIDATION

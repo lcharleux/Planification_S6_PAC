@@ -602,11 +602,11 @@ MECA655:
       kind: EX
       duration: 8
       teachers: 
-        pool: [PH]
-        value: 1
+        pool: [PH, HF]
+        value: 2
       rooms: 
-        pool: ["amphi"]
-        value: 1
+        pool: ["amphi_x2"]
+        value: 2
       students:
         "MM-3"    
 

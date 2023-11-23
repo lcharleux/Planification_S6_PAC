@@ -25,8 +25,8 @@ PACI642:
     TD9-D: {kind: TD_YM, duration: 6, teachers: {pool: [YM], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "SNI-3-D-TD"}
     
     #TP
-    TP1-D1: {kind: TP, duration: 16, teachers: {pool: [YM], value: 1}, rooms: {pool: ["C117"], value: 1}, students: "SNI-3-D1"}
-    TP2-D1: {kind: TP, duration: 16, teachers: {pool: [YM], value: 1}, rooms: {pool: ["C117"], value: 1}, students: "SNI-3-D1"}
+    TP1-D1: {kind: TP, duration: 16, teachers: {pool: [YM], value: 1}, rooms: {pool: ["C116_C117"], value: 2}, students: "SNI-3-D1"}
+    TP2-D1: {kind: TP, duration: 16, teachers: {pool: [YM], value: 1}, rooms: {pool: ["C116_C117"], value: 2}, students: "SNI-3-D1"}
    
     # CT = CM10
     CT1: {kind: CM_YM, duration: 8, teachers: {pool: [YM], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "SNI-3-D-TD"}

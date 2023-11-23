@@ -68,4 +68,5 @@ planification/courses_graphs/*
 planification/sandbox/*
 planification/outputs/*
 
-planification/nohup.out
+planification/*nohup.out
+

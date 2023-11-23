@@ -15,12 +15,10 @@ default_rooms = json.load(open("../default_rooms.json"))
 room_pools = {
     "big_info_rooms": ["A-POLY-C213", "A-POLY-C214", "A-POLY-C215", "A-POLY-C216"],
     "info_rooms": [
+        "A-POLY-A030",
+        "A-POLY-C202",
         "A-POLY-C209",
         "A-POLY-C210",
-        "A-POLY-C213",
-        "A-POLY-C214",
-        "A-POLY-C215",
-        "A-POLY-C216",
         "A-POLY-C217",
     ],
     "amphi": ["A-POLY-B120"],

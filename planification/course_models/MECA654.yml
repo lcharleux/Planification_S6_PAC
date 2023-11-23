@@ -615,7 +615,7 @@ MECA654:
         pool: [ER]
         value: 1
       rooms: 
-        pool: ["amphi"]
+        pool: ["amphi_x2"]
         value: 1
       students:
         "MM-3"
@@ -626,7 +626,7 @@ MECA654:
         pool: [ER]
         value: 1
       rooms: 
-        pool: ["amphi"]
+        pool: ["amphi_x2"]
         value: 1
       students:
         "MM-3"    
