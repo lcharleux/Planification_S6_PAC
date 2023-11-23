@@ -349,7 +349,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [AA]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -371,7 +371,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [AA]
+        pool: [HF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -415,7 +415,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [HF]
+        pool: [AA]
         value: 1
       rooms: 
         pool: ["info_rooms"]
@@ -426,7 +426,7 @@ MECA655:
       kind: TP
       duration: 16
       teachers: 
-        pool: [AA]
+        pool: [HF]
         value: 1
       rooms: 
         pool: ["info_rooms"]
