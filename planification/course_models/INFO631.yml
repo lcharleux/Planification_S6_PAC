@@ -68,14 +68,14 @@ INFO631:
         value: 1
       students:
         "IDU-3-G-TD"
-    CM7:
-      kind: CM
-      duration: 6
+    EX:
+      kind: EX
+      duration: 8
       teachers: 
         pool: [FV]
         value: 1
       rooms: 
-        pool: ["default"]
+        pool: ["amphi"]
         value: 1
       students:
         "IDU-3-G-TD"
@@ -166,7 +166,7 @@ INFO631:
         pool: [FV , LZ]
         value: 2
       rooms: 
-        pool: ["info_rooms"]
+        pool: ["big_info_rooms"]
         value: 2
       students:
         "IDU-3-G-TD"  
@@ -177,7 +177,7 @@ INFO631:
         pool: [FV , LZ]
         value: 2
       rooms: 
-        pool: ["info_rooms"]
+        pool: ["big_info_rooms"]
         value: 2
       students:
         "IDU-3-G-TD"      
@@ -188,7 +188,7 @@ INFO631:
         pool: [FV , LZ]
         value: 2
       rooms: 
-        pool: ["info_rooms"]
+        pool: ["big_info_rooms"]
         value: 2
       students:
         "IDU-3-G-TD" 
@@ -199,7 +199,7 @@ INFO631:
         pool: [FV , LZ]
         value: 2
       rooms: 
-        pool: ["info_rooms"]
+        pool: ["big_info_rooms"]
         value: 2
       students:
         "IDU-3-G-TD" 
@@ -210,7 +210,7 @@ INFO631:
         pool: [FV , LZ]
         value: 2
       rooms: 
-        pool: ["info_rooms"]
+        pool: ["big_info_rooms"]
         value: 2
       students:
         "IDU-3-G-TD" 
@@ -230,7 +230,7 @@ INFO631:
     CM4: [CM4]
     CM5: [CM5]
     CM6: [CM6]
-    CM7: [CM7]
+    EX: [EX]
     TD1: [TD1-G]
     TD2: [TD2-G]
     TD3: [TD3-G]
@@ -264,10 +264,10 @@ INFO631:
     - {kind: succession, activities: [CM4], start_after: [CM3], min_offset: *oneweek, max_offset: null }
     - {kind: succession, activities: [CM5], start_after: [CM4], min_offset: *oneweek, max_offset: null }
     - {kind: succession, activities: [CM6], start_after: [CM5], min_offset: *oneweek, max_offset: null }
-    - {kind: succession, activities: [CM7], start_after: [CM6], min_offset: *oneweek, max_offset: null }
+    - {kind: succession, activities: [EX], start_after: [CM6], min_offset: *oneweek, max_offset: null }
     - {kind: succession, activities: [CM3], start_after: [TD2], min_offset: *oneday, max_offset: null }
     - {kind: succession, activities: [CM5], start_after: [TD4], min_offset: *oneday, max_offset: null }
-    - {kind: succession, activities: [CM7], start_after: [TD7], min_offset: *oneday, max_offset: null }
+    - {kind: succession, activities: [EX], start_after: [TD7], min_offset: *oneday, max_offset: null }
 
     - {kind: succession, activities: [TD2], start_after: [TD1], min_offset: *twodays, max_offset: null }
     - {kind: succession, activities: [TD3], start_after: [TD2], min_offset: *twodays, max_offset: null }

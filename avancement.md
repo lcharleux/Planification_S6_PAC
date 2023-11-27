@@ -90,13 +90,13 @@ OK
     * EASI641 (Pascal Mouille): OK
     * EASI642 (Yajing Yan): OK
     * INFO641 (Sorana Cimpan): OK
-    * INFO642 (Lionel Valet): 
-    * MATH642 (Abdourrahmane Atto): 
+    * INFO642 (Lionel Valet): OK
+    * MATH642 (Abdourrahmane Atto): oK
 * IDU:
-    * INFO631 (Flavier Vernier): 
-    * PROJ631 (Flavien Vernier): 
-    * INFO633 (Lionel Valet): 
-    * INFO632 (Sébastien Monnet): 
+    * INFO631 (Flavier Vernier): OK
+    * PROJ631 (Flavien Vernier): OK
+    * INFO633 (Lionel Valet): OK
+    * INFO632 (Sébastien Monnet): OK
     * ISOC631 (Kavé Salamatian): 
     * PROJ632 (Marc-Philippe Huget): 
 

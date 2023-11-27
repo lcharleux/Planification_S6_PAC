@@ -17,14 +17,14 @@
             {
                 "kind": "isocalendar",
                 "from_year": 2024,
-                "from_week": 3,
-                "from_weekday": 1,
+                "from_week": 5,
+                "from_weekday": 3,
                 "from_dayslot": 1,
                 "to_year": 2024,
-                "to_week": 3,
+                "to_week": 5,
                 "to_weekday": 3,
                 "to_dayslot": 95,
-                "repeat": 25,
+                "repeat": 18,
                 "repeat_pad": 672
             },
             {
@@ -32,6 +32,19 @@
                 "from_year": 2024,
                 "from_week": 16,
                 "from_weekday": 1,
+                "from_dayslot": 1,
+                "to_year": 2024,
+                "to_week": 16,
+                "to_weekday": 2,
+                "to_dayslot": 95,
+                "repeat": 1,
+                "repeat_pad": 672
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 16,
+                "from_weekday": 4,
                 "from_dayslot": 1,
                 "to_year": 2024,
                 "to_week": 16,

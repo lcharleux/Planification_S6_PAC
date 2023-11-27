@@ -8,7 +8,7 @@ INFO633_642:
     
     A02_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A02_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
-    A02_D1: {kind: TD_MB, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"} 
+    A02_D1: {kind: TD, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"} 
     
     A03_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A03_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
@@ -16,7 +16,7 @@ INFO633_642:
 
     A04_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A04_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
-    A04_D1: {kind: TD_MB, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
+    A04_D1: {kind: TD, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
 
     A05_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A05_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
@@ -26,9 +26,9 @@ INFO633_642:
     A06_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
     A06_D1: {kind: TD_MB, duration: 4, teachers: {pool: [MB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
 
-    A07_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
-    A07_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
-    A07_D1: {kind: TD_MB, duration: 4, teachers: {pool: [MB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
+    A07_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
+    A07_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
+    A07_D1: {kind: TD, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
 
     A08_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A08_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
@@ -40,7 +40,7 @@ INFO633_642:
 
     A10_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A10_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
-    A10_D1: {kind: TD_MB, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
+    A10_D1: {kind: TD, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
 
     A11_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A11_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
@@ -52,7 +52,7 @@ INFO633_642:
 
     A13_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A13_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
-    A13_D1: {kind: TD_MB, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
+    A13_D1: {kind: TD, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
 
     A14_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A14_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
@@ -60,7 +60,7 @@ INFO633_642:
 
     A15_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A15_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 0}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
-    A15_D1: {kind: TD_MB, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
+    A15_D1: {kind: TD, duration: 4, teachers: {pool: [MB], value: 0}, rooms: {pool: ["default"], value: 1}, students: "SNI-3-D1"}
 
     A16_G1: {kind: TD, duration: 4, teachers: {pool: [LV], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G1"}
     A16_G2: {kind: TD, duration: 4, teachers: {pool: [IA], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G2"}
@@ -82,7 +82,7 @@ INFO633_642:
    
     CC1: {kind: EX, duration: 6, teachers: {pool: [LV,IA], value: 2}, rooms: {pool: ["big_info_rooms"], value: 3}, students: "IDU-3_SNI-3"}
     CC2: {kind: EX, duration: 6, teachers: {pool: [LV,IA], value: 2}, rooms: {pool: ["big_info_rooms"], value: 3}, students: "IDU-3_SNI-3"}
-    CC3: {kind: EX, duration: 6, teachers: {pool: [LV,IA], value: 2}, rooms: {pool: ["big_info_rooms"], value: 3}, students: "IDU-3_SNI-3"}
+    CC3: {kind: EX, duration: 8, teachers: {pool: [LV,IA], value: 2}, rooms: {pool: ["big_info_rooms"], value: 3}, students: "IDU-3_SNI-3"}
 
   teachers_acronyms:
     LV: VALET LIONEL

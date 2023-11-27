@@ -408,12 +408,12 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 43200
+solver.parameters.max_time_in_seconds = 30
 solver.parameters.num_search_workers = 16
 #solver.parameters.log_search_progress = True
 
 
-solution_printer = SolutionPrinter(limit=1000)
+solution_printer = SolutionPrinter(limit=15)
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
 solver_final_status = solver.StatusName()
@@ -481,7 +481,10 @@ if not solver_final_status == "INFEASIBLE":
         worksheet.set_column("H:H", 20, my_format)
         worksheet.set_column("I:J", 70, my_format)
         worksheet.set_column("K:N", 12, my_format)
-
+        nrows = module_solution.shape[0] +2
+        tag = f"A2:N{nrows}"
+        worksheet.autofilter(tag)
+        
     if not os.path.isdir("./outputs"):
         os.mkdir("outputs")
 
