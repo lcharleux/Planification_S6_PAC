@@ -97,8 +97,8 @@ OK
     * PROJ631 (Flavien Vernier): OK
     * INFO633 (Lionel Valet): OK
     * INFO632 (Sébastien Monnet): OK
-    * ISOC631 (Kavé Salamatian): 
-    * PROJ632 (Marc-Philippe Huget): 
+    * ISOC631 (Kavé Salamatian): OK
+    * PROJ632 (Marc-Philippe Huget): OK
 
 
 
@@ -114,8 +114,6 @@ OK
 ### SHES
 
 * David Antoinat:  david.antoinat@cera.caisse-epargne.fr; davidantoinat@gmail.com 06 20 26 00 60
-
-
 * Michel Breysse:  michel.breysse@ca-des-savoie.fr; breyssemichel@gmail.com  04 50 64 72 17
 
 
