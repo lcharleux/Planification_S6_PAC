@@ -22,7 +22,7 @@ from automatic_university_scheduler.scheduling import (
     create_activities,
     export_student_schedule_to_xlsx,
 )
-
+from automatic_university_scheduler.preprocessing import read_week_structure_from_csv
 
 WEEK_STRUCTURE = np.array(
     #    0h   1h   2h   3h   4h   5h   6h   7h   8h   9h   10h  11h  12h  13h  14h  15h  16h  17h  18h  19h  20h  21h  22h  23h
@@ -34,12 +34,20 @@ WEEK_STRUCTURE = np.array(
         "0000 0000 0000 0000 0000 0000 0000 0000 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 0000 0000 0000 0000 0000",  # FRIDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SATRUDAY
         "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",  # SUNDAY
-    ]
-)
+    ])
+
+
+
 
 WEEK_STRUCTURE = np.array(
     [list(day.replace(" ", "")) for day in WEEK_STRUCTURE]
 ).astype(int)
+
+
+
+#WEEK_STRUCTURE2 = np.array([list("".join(row)) for row in pd.read_csv("week_matrix.csv",index_col = 0, header = 0, dtype = str).values], dtype = int)
+#WEEK_STRUCTURE2 = read_week_structure_from_csv("week_matrix.csv")
+
 
 DAYS_PER_WEEK, TIME_SLOTS_PER_DAY = WEEK_STRUCTURE.shape
 MAX_WEEKS = 21

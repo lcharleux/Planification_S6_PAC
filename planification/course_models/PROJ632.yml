@@ -53,13 +53,13 @@ PROJ632:
   - &oneweek 672
   
   constraints:
-    - {kind: succession, activities: [TPD4H2], start_after: [TPD4H1], min_offset: *twodays, max_offset: null } 
-    - {kind: succession, activities: [TPD4H3], start_after: [TPD4H2], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [TPD4H4], start_after: [TPD4H3], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [TPD4H5], start_after: [TPD4H4], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [TPD4H6], start_after: [TPD4H5], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [TPD4H7], start_after: [TPD4H6], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [TPD2H1], start_after: [TPD4H7], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [TPD4H2], start_after: [TPD4H1], min_offset: *threedays, max_offset: null } 
+    - {kind: succession, activities: [TPD4H3], start_after: [TPD4H2], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [TPD4H4], start_after: [TPD4H3], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [TPD4H5], start_after: [TPD4H4], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [TPD4H6], start_after: [TPD4H5], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [TPD4H7], start_after: [TPD4H6], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [TPD2H1], start_after: [TPD4H7], min_offset: *threedays, max_offset: null }
     
                                
   color: gray 

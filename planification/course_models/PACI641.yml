@@ -82,19 +82,19 @@ PACI641:
 
 
   constraints:
-    - {kind: succession, activities: [CM1],  start_after: [PACI642_CM3], min_offset: *twodays, max_offset: null } 
-    - {kind: succession, activities: [CM2],  start_after: [CM1], min_offset: *twodays, max_offset: null } 
-    - {kind: succession, activities: [CM3],  start_after: [CM2], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM4], start_after: [TD1], min_offset: *oneday, max_offset: null }
-    - {kind: succession, activities: [CM5], start_after: [TD2], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM6], start_after: [TD3], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM7], start_after: [TD4], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM8], start_after: [TD5], min_offset: *twodays, max_offset: null }  
-    - {kind: succession, activities: [CM9],  start_after: [TD6], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM10], start_after: [CM9], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM11], start_after: [TD7], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM12], start_after: [TD8], min_offset: *twodays, max_offset: null }
-    - {kind: succession, activities: [CM13], start_after: [TD9], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CM1], start_after: [PACI642_CM3], min_offset: *twodays, max_offset: null } 
+    - {kind: succession, activities: [CM2], start_after: [CM1], min_offset: *threedays, max_offset: null } 
+    - {kind: succession, activities: [CM3], start_after: [CM2], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM4], start_after: [TD1], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM5], start_after: [TD2], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM6], start_after: [TD3], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM7], start_after: [TD4], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM8], start_after: [TD5], min_offset: *threedays, max_offset: null }  
+    - {kind: succession, activities: [CM9], start_after: [TD6], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM10],start_after: [CM9], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM11],start_after: [TD7], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM12],start_after: [TD8], min_offset: *threedays, max_offset: null }
+    - {kind: succession, activities: [CM13],start_after: [TD9], min_offset: *threedays, max_offset: null }
     
     - {kind: succession, activities: [TD1], start_after: [CM3], min_offset: *zero, max_offset: null }
     - {kind: succession, activities: [TD2], start_after: [CM4], min_offset: *zero, max_offset: null }

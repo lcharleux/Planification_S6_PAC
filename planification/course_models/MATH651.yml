@@ -655,7 +655,7 @@ MATH651:
     - {kind: succession, activities: [TD9],  start_after: [CM11], min_offset: *zero,     max_offset: null }
     - {kind: succession, activities: [TD10], start_after: [CM12], min_offset: *zero,     max_offset: null }
     - {kind: succession, activities: [TD11], start_after: [CM13], min_offset: *zero,     max_offset: null }
-    - {kind: succession, activities: [TD12],  start_after: [TD11], min_offset: *zero,     max_offset: null }
+    - {kind: succession, activities: [TD12],  start_after: [TD11], min_offset: *twodays,     max_offset: null }
     - {kind: succession, activities: [TD8],  start_after: [CI1], min_offset: *zero,     max_offset: null }
     - {kind: succession, activities: [CI1],  start_after: [TD6], min_offset: *twodays,     max_offset: null }
     - {kind: succession, activities: [CT1],  start_after: [TD12], min_offset: *fivedays,     max_offset: null }
