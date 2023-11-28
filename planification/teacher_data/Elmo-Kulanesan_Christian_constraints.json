@@ -1,5 +1,20 @@
 {
     "ELMO KULANESAN CHRISTIAN": {
+        "unavailable": [
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 4,
+                "from_weekday": 5,
+                "from_dayslot": 1,
+                "to_year": 2024,
+                "to_week": 4,
+                "to_weekday": 5,
+                "to_dayslot": 48,
+                "repeat": 18,
+                "repeat_pad": 672
+            }
+        ],
        
         "first_name": "XXX",
         "name": "XXX",
