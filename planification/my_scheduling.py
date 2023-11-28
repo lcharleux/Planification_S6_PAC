@@ -77,26 +77,50 @@ students_groups = {
         "IDU-3-G1",
         "IDU-3-G2",
     ],
+    "SNI-3, MM-3, IDU-3": 
+    [
+        "MM-3-A1",
+        "MM-3-A2",
+        "MM-3-B1",
+        "MM-3-B2",
+        "MM-3-C1",
+        "MM-3-C2",
+        "SNI-3-D1",
+        # "SNI-3-D2",
+        "IDU-3-G1",
+        "IDU-3-G2",
+    ],
     "MM-3": ["MM-3-A1", "MM-3-A2", "MM-3-B1", "MM-3-B2", "MM-3-C1", "MM-3-C2"],
     "SNI-3": ["SNI-3-D1"],
     "IDU-3": ["IDU-3-G1", "IDU-3-G2"],
     "IDU-3_SNI-3": ["IDU-3-G1", "IDU-3-G2", "SNI-3-D1"],  # POUR LES MATH641
+    "SNI-3, IDU-3": ["IDU-3-G1", "IDU-3-G2", "SNI-3-D1"],  
     "MM-3-A-TD": ["MM-3-A1", "MM-3-A2"],
     "MM-3-B-TD": ["MM-3-B1", "MM-3-B2"],
     "MM-3-C-TD": ["MM-3-C1", "MM-3-C2"],
     "SNI-3-D-TD": ["SNI-3-D1"],
     "IDU-3-G-TD": ["IDU-3-G1", "IDU-3-G2"],
     "MM-3-A1": ["MM-3-A1"],
+    "MM-3-A1-TP": ["MM-3-A1"],
     "MM-3-A2": ["MM-3-A2"],
     "MM-3-B1": ["MM-3-B1"],
+    "MM-3-A2-TP": ["MM-3-A2"],
     "MM-3-B2": ["MM-3-B2"],
+    "MM-3-B2-TP": ["MM-3-B2"],
     "MM-3-C1": ["MM-3-C1"],
+    "MM-3-C1-TP": ["MM-3-C1"],
     "MM-3-C2": ["MM-3-C2"],
+    "MM-3-C2-TP": ["MM-3-C2"],
     "SNI-3-D1": ["SNI-3-D1"],
+    "SNI-3-D1-TP": ["SNI-3-D1"],
     # "SNI-3-D2": ["SNI-3-D2"],
     # "SN-3-D2": ["SNI-3-D2"],  # BUG EXTRACTION ADE
     "IDU-3-G1": ["IDU-3-G1"],
+    "IDU-3-G1-TP": ["IDU-3-G1"],
     "IDU-3-G2": ["IDU-3-G2"],
+    "IDU-3-G2-TP": ["IDU-3-G2"],
+    
+
 }
 
 
@@ -408,12 +432,12 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 30
+solver.parameters.max_time_in_seconds = 28800 # 8h
 solver.parameters.num_search_workers = 16
 #solver.parameters.log_search_progress = True
 
 
-solution_printer = SolutionPrinter(limit=15)
+solution_printer = SolutionPrinter(limit=30)
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
 solver_final_status = solver.StatusName()
@@ -484,7 +508,7 @@ if not solver_final_status == "INFEASIBLE":
         nrows = module_solution.shape[0] +2
         tag = f"A2:N{nrows}"
         worksheet.autofilter(tag)
-        
+
     if not os.path.isdir("./outputs"):
         os.mkdir("outputs")
 
