@@ -111,8 +111,9 @@ students_groups = {
     "MM-3-A1": ["MM-3-A1"],
     "MM-3-A1-TP": ["MM-3-A1"],
     "MM-3-A2": ["MM-3-A2"],
-    "MM-3-B1": ["MM-3-B1"],
     "MM-3-A2-TP": ["MM-3-A2"],
+    "MM-3-B1": ["MM-3-B1"],
+    "MM-3-B1-TP": ["MM-3-B1"],
     "MM-3-B2": ["MM-3-B2"],
     "MM-3-B2-TP": ["MM-3-B2"],
     "MM-3-C1": ["MM-3-C1"],
@@ -440,12 +441,12 @@ model.Minimize(makespan)
 
 # Solve model.
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 28800 # 8h
+solver.parameters.max_time_in_seconds = 54000 # 54000 = 15h
 solver.parameters.num_search_workers = 16
 #solver.parameters.log_search_progress = True
 
 
-solution_printer = SolutionPrinter(limit=30)
+solution_printer = SolutionPrinter(limit=25) # 30 is OK
 t0 = time.time()
 status = solver.Solve(model, solution_printer)
 solver_final_status = solver.StatusName()
