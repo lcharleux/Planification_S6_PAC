@@ -9,25 +9,25 @@ MECA653:
     CM5: {kind: CM, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
     
     # TD  
-    TD1-A: {kind: TD, duration: 6, teachers: {pool: [CE], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
-    TD1-B: {kind: TD, duration: 6, teachers: {pool: [CE], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
-    TD1-C: {kind: TD, duration: 6, teachers: {pool: [CE], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}
+    TD1-A: {kind: TD, duration: 6, teachers: {pool: [CE], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-A-TD"}
+    TD1-B: {kind: TD, duration: 6, teachers: {pool: [CE], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-B-TD"}
+    TD1-C: {kind: TD, duration: 6, teachers: {pool: [CE], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-C-TD"}
 
-    TD2-A: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
-    TD2-B: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
-    TD2-C: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}
+    TD2-A: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-A-TD"}
+    TD2-B: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-B-TD"}
+    TD2-C: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-C-TD"}
 
-    TD3-A: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
-    TD3-B: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
-    TD3-C: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}
+    TD3-A: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-A-TD"}
+    TD3-B: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-B-TD"}
+    TD3-C: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-C-TD"}
 
-    TD4-A: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
-    TD4-B: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
-    TD4-C: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"}  
+    TD4-A: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-A-TD"}
+    TD4-B: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-B-TD"}
+    TD4-C: {kind: TD, duration: 6, teachers: {pool: [ER], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-C-TD"}  
 
-    TD5-A: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-A-TD"}
-    TD5-B: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-B-TD"}
-    TD5-C: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["default"], value: 1}, students: "MM-3-C-TD"} 
+    TD5-A: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-A-TD"}
+    TD5-B: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-B-TD"}
+    TD5-C: {kind: TD, duration: 6, teachers: {pool: [LC], value: 1}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-C-TD"} 
     
     #TP
     TP1-A: {kind: TP, duration: 16, teachers: {pool: [CE,LC], value: 2}, rooms: {pool: ["big_info_rooms"], value: 1}, students: "MM-3-A-TD"}

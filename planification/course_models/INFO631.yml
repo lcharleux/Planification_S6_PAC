@@ -167,7 +167,7 @@ INFO631:
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
-        value: 2
+        value: 1
       students:
         "IDU-3-G-TD"  
     TP2-G:
@@ -178,7 +178,7 @@ INFO631:
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
-        value: 2
+        value: 1
       students:
         "IDU-3-G-TD"      
     TP3-G:
@@ -189,7 +189,7 @@ INFO631:
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
-        value: 2
+        value: 1
       students:
         "IDU-3-G-TD" 
     TP4-G:
@@ -200,7 +200,7 @@ INFO631:
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
-        value: 2
+        value: 1
       students:
         "IDU-3-G-TD" 
     TP5-G:
@@ -211,7 +211,7 @@ INFO631:
         value: 2
       rooms: 
         pool: ["big_info_rooms"]
-        value: 2
+        value: 1
       students:
         "IDU-3-G-TD" 
 

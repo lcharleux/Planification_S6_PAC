@@ -675,6 +675,7 @@ MECA654:
   - &fourdays 384
   - &fivedays 480
   - &oneweek 672
+  - &tendays 960
   
   constraints:
     - {kind: succession, activities: [CM2], start_after: [CM1], min_offset: *oneday, max_offset: null } 
@@ -707,7 +708,7 @@ MECA654:
     - {kind: succession, activities: [TP1], start_after: [CM5], min_offset: *zero, max_offset: null }
     - {kind: succession, activities: [TP2], start_after: [CM6], min_offset: *zero, max_offset: null }
     
-    - {kind: succession, activities: [CI1], start_after: [TD3], min_offset: *twodays, max_offset: null }
+    - {kind: succession, activities: [CI1], start_after: [TD3], min_offset: *tendays, max_offset: null }
     - {kind: succession, activities: [CT1], start_after: [TD10,TP3], min_offset: *oneweek, max_offset: null }
 
   # constraints:

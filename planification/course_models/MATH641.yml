@@ -43,7 +43,7 @@ MATH641:
     TD12-G: {kind: TD, duration: 6, teachers: {pool: [AB], value: 1}, rooms: {pool: ["default"], value: 1}, students: "IDU-3-G-TD"}
 
     # CT
-    CT1: {kind: CM, duration: 8, teachers: {pool: [AB], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "SNI-3-D-TD"}
+    CT1: {kind: CM, duration: 8, teachers: {pool: [AB], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "IDU-3_SNI-3"}
 
   teachers_acronyms:
     AB: BASCOP ALEXANDRE

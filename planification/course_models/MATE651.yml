@@ -92,7 +92,7 @@ MATE651:
         "MM-3"
     CM9:
       kind: EX
-      duration: 6
+      duration: 8
       teachers: 
         pool: [PF]
         value: 1

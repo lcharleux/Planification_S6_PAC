@@ -15,6 +15,28 @@
             {
                 "kind": "isocalendar",
                 "from_year": 2024,
+                "from_week": 9,
+                "from_weekday": 1,
+                "from_dayslot": 0,
+                "to_year": 2024,
+                "to_week": 9,
+                "to_weekday": 5,
+                "to_dayslot": 96
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
+                "from_week": 14,
+                "from_weekday": 1,
+                "from_dayslot": 0,
+                "to_year": 2024,
+                "to_week": 14,
+                "to_weekday": 1,
+                "to_dayslot": 96
+            },
+            {
+                "kind": "isocalendar",
+                "from_year": 2024,
                 "from_week": 17,
                 "from_weekday": 1,
                 "from_dayslot": 0,

@@ -81,8 +81,8 @@ MECA651:
     TP3-C2: {kind: TP, duration: 16, teachers: {pool: [GF], value: 1}, rooms: {pool: ["B104"], value: 1}, students: "MM-3-C2"}
 
     # CI/CT
-    CI1: {kind: CM, duration: 4, teachers: {pool: [EP], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
-    CT1: {kind: CM, duration: 4, teachers: {pool: [ER], value: 1}, rooms: {pool: ["amphi"], value: 1}, students: "MM-3"}
+    CI1: {kind: CM, duration: 4, teachers: {pool: [EP], value: 1}, rooms: {pool: ["amphi_x2"], value: 2}, students: "MM-3"}
+    CT1: {kind: CM, duration: 4, teachers: {pool: [ER], value: 1}, rooms: {pool: ["amphi_x2"], value: 2}, students: "MM-3"}
 
   teachers_acronyms:
     ER: ROUX EMILE
