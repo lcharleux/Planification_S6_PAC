@@ -1,4 +1,4 @@
-# Planification du S6 PAC
+# Planification du S7 MMT PAC
 
 ## Récupération des informations
 
@@ -20,23 +20,7 @@ Date: 20/20/2023
     * MATE651 (Pascal Francescato):  NON 
     * MECA655 (Pascal Hernandez): OUI
     * EASI651 (Madjid Boutemeur): OUI (retard important)
-* SNI:
-    * MATH641 (Alexandre Bascop):  OUI
-    * PACI641 (Thomas Mazingue):OUI
-    * PACI642 (Yannick Mugnier): OUI
-    * PROJ641 (Jean-Jacques Curtelin): (PLANIFICATION A PART)
-    * EASI641 (Pascal Mouille): OUI
-    * EASI642 (Yajing Yan): OUI
-    * INFO641 (Sorana Cimpan): NON
-    * INFO642 (Lionel Valet): OUI
-    * MATH642 (Abdourrahmane Atto): OUI 
-* IDU:
-    * INFO631 (Flavier Vernier): OUI
-    * PROJ631 (Flavier Vernier):  OUI
-    * INFO633 (Lionel Valet): OUI
-    * INFO632 (Sébastien Monnet): OUI (retard)
-    * ISOC631 (Kavé Salamatian): NON
-    * PROJ632 (Marc-Philippe Huget): OUI
+
 
 ## Extraction ADE
 
@@ -53,23 +37,7 @@ OK
     * MATE651 (Pascal Francescato): OK ???
     * MECA655 (Pascal Hernandez): OK
     * EASI651 (Madjid Boutemeur): OK
-* SNI:
-    * MATH641 (Alexandre Bascop): OK
-    * PACI641 (Thomas Mazingue): OK
-    * PACI642 (Yannick Mugnier): OK
-    * PROJ641 (Jean-Jacques Curtelin):  DEJA PLANIFIE 
-    * EASI641 (Pascal Mouille): OK
-    * EASI642 (Yajing Yan): OK
-    * INFO641 (Sorana Cimpan):  OK (mais pas de retour)
-    * INFO642 (Lionel Valet): OK
-    * MATH642 (Abdourrahmane Atto): OK
-* IDU:
-    * INFO631 (Flavier Vernier): OK
-    * PROJ631 (Flavien Vernier): OK 
-    * INFO633 (Lionel Valet): OK
-    * INFO632 (Sébastien Monnet): OK (mais pas de retour)
-    * ISOC631 (Kavé Salamatian): OK (mais pas de retour)
-    * PROJ632 (Marc-Philippe Huget): OK
+
 
 ## MAJ Maquette ADE
 
@@ -82,23 +50,7 @@ OK
     * MATE651 (Pascal Francescato): ok
     * MECA655 (Pascal Hernandez): ok
     * EASI651 (Madjid Boutemeur): ok
-* SNI:
-    * MATH641 (Alexandre Bascop): OK
-    * PACI641 (Thomas Mazingue): OK
-    * PACI642 (Yannick Mugnier): OK
-    * PROJ641 (Jean-Jacques Curtelin):  DEJA PLANIFIE 
-    * EASI641 (Pascal Mouille): OK
-    * EASI642 (Yajing Yan): OK
-    * INFO641 (Sorana Cimpan): OK
-    * INFO642 (Lionel Valet): OK
-    * MATH642 (Abdourrahmane Atto): oK
-* IDU:
-    * INFO631 (Flavier Vernier): OK
-    * PROJ631 (Flavien Vernier): OK
-    * INFO633 (Lionel Valet): OK
-    * INFO632 (Sébastien Monnet): OK
-    * ISOC631 (Kavé Salamatian): OK
-    * PROJ632 (Marc-Philippe Huget): OK
+
 
 
 
