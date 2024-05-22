@@ -70,3 +70,4 @@ planification/outputs/*
 
 planification/*nohup.out
 
+.devcontainer/.env

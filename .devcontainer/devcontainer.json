@@ -1,0 +1,52 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "celmo-scheduler",
+    
+    "image": "scheduler:0.0",
+    // "build": {
+    //     "dockerfile": "./Dockerfile"
+    // },
+    "mounts":[
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
+    ],
+    "runArgs": [
+        "--privileged",
+        "--net=host"
+        // "--cpuset-cpus=0-5" // limit to 6 cores
+
+    ],
+
+	"customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash (container default)": {
+                        "path": "/bin/bash",
+                        "overrideName": true
+                    }
+                }
+            },
+            "extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.copilot-labs",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"PKief.material-icon-theme",
+				"ms-toolsai.jupyter",
+				"James-Yu.latex-workshop",
+				"mathematic.vscode-latex",
+				"mhutchie.git-graph"
+			]
+        }
+    },
+	"postCreateCommand": "/bin/bash /workspaces/Planification_S6_PAC/.devcontainer/postCreateCommand.sh",
+    "postStartCommand": "/bin/bash /workspaces/Planification_S6_PAC/.devcontainer/postStartCommand.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	}
+}
