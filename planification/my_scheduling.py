@@ -437,148 +437,55 @@ def get_absolute_week_duration_deviation(model, activity_data, students_groups, 
 # #makespan = sum([d**2 for d in week_duration_sums])
 # model.Add(makespan == sum(week_duration_residuals))
 makespan = get_absolute_week_duration_deviation(model, activity_data, students_groups, horizon, MAX_WEEKS=MAX_WEEKS)
-model.Minimize(makespan)
+if False:    
+    model.Minimize(makespan)
 
-# Solve model.
-solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 54000 # 54000 = 15h
-solver.parameters.num_search_workers = 16
-#solver.parameters.log_search_progress = True
+    # Solve model.
+    solver = cp_model.CpSolver()
+    solver.parameters.max_time_in_seconds = 54000 # 54000 = 15h
+    solver.parameters.num_search_workers = 16
+    #solver.parameters.log_search_progress = True
 
 
-solution_printer = SolutionPrinter(limit=25) # 30 is OK
-t0 = time.time()
-status = solver.Solve(model, solution_printer)
-solver_final_status = solver.StatusName()
-print(f"SOLVER STATUS: {solver_final_status}")
-t1 = time.time()
-print(solver.ResponseStats())
-print(f"Elapsed time: {t1-t0:.2f} s")
+    solution_printer = SolutionPrinter(limit=25) # 30 is OK
+    t0 = time.time()
+    status = solver.Solve(model, solution_printer)
+    solver_final_status = solver.StatusName()
+    print(f"SOLVER STATUS: {solver_final_status}")
+    t1 = time.time()
+    print(solver.ResponseStats())
+    print(f"Elapsed time: {t1-t0:.2f} s")
 
-if not solver_final_status == "INFEASIBLE":
-        
-    solution = export_solution(
-        activity_data,
-        model,
-        solver,
-        students_groups,
-        week_structure=WEEK_STRUCTURE,
-        start_day=START_DAY,
-    )
-    xlsx_path = "outputs/schedule.xlsx"
-    if not os.path.isdir("./outputs"):
-        os.mkdir("outputs")
-
-    export_student_schedule_to_xlsx(
-        xlsx_path,
-        solution,
-        students_groups,
-        week_structure=WEEK_STRUCTURE,
-        row_height=15,
-        column_width=25,
-    )
-    # MODULES
-    writer = pd.ExcelWriter(f"outputs/modules_activities.xlsx", engine="xlsxwriter")
-    unique_modules = solution.module.unique()
-    unique_modules.sort()
-    for module in unique_modules:
-        module_solution = solution[solution.module == module].sort_values(["start"])
-        module_solution = module_solution[
-            [
-                "label",
-                "week",
-                "weekday",
-                "weekdayname",
-                "starttime",
-                "endtime",
-                "kind",
-                "students",
-                "teachers",
-                "rooms",
-                "year",
-                "month",
-                "day",
-                "daystart",
-                "dayend",
-            ]
-        ]
-        sheet_name = f"{module}"
-        module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
-        worksheet = writer.sheets[sheet_name]
-        workbook = writer.book
-        my_format = workbook.add_format(
-            {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+    if not solver_final_status == "INFEASIBLE":
+            
+        solution = export_solution(
+            activity_data,
+            model,
+            solver,
+            students_groups,
+            week_structure=WEEK_STRUCTURE,
+            start_day=START_DAY,
         )
-        worksheet.set_column("A:A", 50, my_format)
-        worksheet.set_column("B:G", 12, my_format)
-        worksheet.set_column("H:H", 20, my_format)
-        worksheet.set_column("I:J", 70, my_format)
-        worksheet.set_column("K:N", 12, my_format)
-        nrows = module_solution.shape[0] +2
-        tag = f"A2:N{nrows}"
-        worksheet.autofilter(tag)
+        xlsx_path = "outputs/schedule.xlsx"
+        if not os.path.isdir("./outputs"):
+            os.mkdir("outputs")
 
-    if not os.path.isdir("./outputs"):
-        os.mkdir("outputs")
-
-    writer.close()
-
-    # MODULES PLANIFICATION
-    writer = pd.ExcelWriter("outputs/modules_activities_planification.xlsx", engine="xlsxwriter")
-    unique_modules = solution.module.unique()
-    unique_modules.sort()
-
-    for module in unique_modules:
-        module_solution = solution[solution.module == module].sort_values(["kind", "start"])
-        module_solution = module_solution[
-            [
-                "label",
-                "week",
-                "weekday",
-                "weekdayname",
-                "starttime",
-                "endtime",
-                "kind",
-                "students",
-                "teachers",
-                "rooms",
-                "year",
-                "month",
-                "day",
-                "daystart",
-                "dayend",
-            ]
-        ]
-        sheet_name = f"{module}"
-        module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
-        worksheet = writer.sheets[sheet_name]
-        workbook = writer.book
-        my_format = workbook.add_format(
-            {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+        export_student_schedule_to_xlsx(
+            xlsx_path,
+            solution,
+            students_groups,
+            week_structure=WEEK_STRUCTURE,
+            row_height=15,
+            column_width=25,
         )
-        worksheet.set_column("A:A", 50, my_format)
-        worksheet.set_column("B:G", 12, my_format)
-        worksheet.set_column("H:H", 20, my_format)
-        worksheet.set_column("I:J", 30, my_format)
-        worksheet.set_column("K:N", 12, my_format)
-
-    writer.close()
-
-
-    # RESSOURCES
-    for ressources in ["teachers", "rooms"]:
-        writer = pd.ExcelWriter(
-            f"outputs/{ressources}_activities.xlsx", engine="xlsxwriter"
-        )
-        unique_ressources = np.unique(np.concatenate(solution[ressources].values))
-        unique_ressources.sort()
-
-        for ressource in unique_ressources:
-            loc = solution[ressources].apply(lambda a: np.isin(ressource, a))
-            ressource_solution = solution[loc].sort_values(["start"])
-            ressource_solution = ressource_solution[
+        # MODULES
+        writer = pd.ExcelWriter(f"outputs/modules_activities.xlsx", engine="xlsxwriter")
+        unique_modules = solution.module.unique()
+        unique_modules.sort()
+        for module in unique_modules:
+            module_solution = solution[solution.module == module].sort_values(["start"])
+            module_solution = module_solution[
                 [
-                    "module",
                     "label",
                     "week",
                     "weekday",
@@ -596,23 +503,117 @@ if not solver_final_status == "INFEASIBLE":
                     "dayend",
                 ]
             ]
-            sheet_name = f"{ressource}"
-            ressource_solution.to_excel(
-                writer, sheet_name=sheet_name, index=False, startrow=1
-            )
+            sheet_name = f"{module}"
+            module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
             worksheet = writer.sheets[sheet_name]
             workbook = writer.book
             my_format = workbook.add_format(
                 {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
             )
-            worksheet.set_column("A:A", 20, my_format)
-            worksheet.set_column("B:B", 50, my_format)
-            worksheet.set_column("C:H", 12, my_format)
-            worksheet.set_column("I:I", 20, my_format)
-            worksheet.set_column("J:K", 70, my_format)
-            worksheet.set_column("L:N", 12, my_format)
-            nrows = ressource_solution.shape[0] +2
-            tag = f"A2:P{nrows}"
+            worksheet.set_column("A:A", 50, my_format)
+            worksheet.set_column("B:G", 12, my_format)
+            worksheet.set_column("H:H", 20, my_format)
+            worksheet.set_column("I:J", 70, my_format)
+            worksheet.set_column("K:N", 12, my_format)
+            nrows = module_solution.shape[0] +2
+            tag = f"A2:N{nrows}"
             worksheet.autofilter(tag)
-            
+
+        if not os.path.isdir("./outputs"):
+            os.mkdir("outputs")
+
         writer.close()
+
+        # MODULES PLANIFICATION
+        writer = pd.ExcelWriter("outputs/modules_activities_planification.xlsx", engine="xlsxwriter")
+        unique_modules = solution.module.unique()
+        unique_modules.sort()
+
+        for module in unique_modules:
+            module_solution = solution[solution.module == module].sort_values(["kind", "start"])
+            module_solution = module_solution[
+                [
+                    "label",
+                    "week",
+                    "weekday",
+                    "weekdayname",
+                    "starttime",
+                    "endtime",
+                    "kind",
+                    "students",
+                    "teachers",
+                    "rooms",
+                    "year",
+                    "month",
+                    "day",
+                    "daystart",
+                    "dayend",
+                ]
+            ]
+            sheet_name = f"{module}"
+            module_solution.to_excel(writer, sheet_name=sheet_name, index=False, startrow=1)
+            worksheet = writer.sheets[sheet_name]
+            workbook = writer.book
+            my_format = workbook.add_format(
+                {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+            )
+            worksheet.set_column("A:A", 50, my_format)
+            worksheet.set_column("B:G", 12, my_format)
+            worksheet.set_column("H:H", 20, my_format)
+            worksheet.set_column("I:J", 30, my_format)
+            worksheet.set_column("K:N", 12, my_format)
+
+        writer.close()
+
+
+        # RESSOURCES
+        for ressources in ["teachers", "rooms"]:
+            writer = pd.ExcelWriter(
+                f"outputs/{ressources}_activities.xlsx", engine="xlsxwriter"
+            )
+            unique_ressources = np.unique(np.concatenate(solution[ressources].values))
+            unique_ressources.sort()
+
+            for ressource in unique_ressources:
+                loc = solution[ressources].apply(lambda a: np.isin(ressource, a))
+                ressource_solution = solution[loc].sort_values(["start"])
+                ressource_solution = ressource_solution[
+                    [
+                        "module",
+                        "label",
+                        "week",
+                        "weekday",
+                        "weekdayname",
+                        "starttime",
+                        "endtime",
+                        "kind",
+                        "students",
+                        "teachers",
+                        "rooms",
+                        "year",
+                        "month",
+                        "day",
+                        "daystart",
+                        "dayend",
+                    ]
+                ]
+                sheet_name = f"{ressource}"
+                ressource_solution.to_excel(
+                    writer, sheet_name=sheet_name, index=False, startrow=1
+                )
+                worksheet = writer.sheets[sheet_name]
+                workbook = writer.book
+                my_format = workbook.add_format(
+                    {"align": "center", "valign": "vcenter", "border": 0, "font_size": 11}
+                )
+                worksheet.set_column("A:A", 20, my_format)
+                worksheet.set_column("B:B", 50, my_format)
+                worksheet.set_column("C:H", 12, my_format)
+                worksheet.set_column("I:I", 20, my_format)
+                worksheet.set_column("J:K", 70, my_format)
+                worksheet.set_column("L:N", 12, my_format)
+                nrows = ressource_solution.shape[0] +2
+                tag = f"A2:P{nrows}"
+                worksheet.autofilter(tag)
+                
+            writer.close()
