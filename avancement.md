@@ -12,12 +12,12 @@ Date:
 ### Réponses 
 
 * MMT:
-    * MATH651 (Catherine Adloff):
+    * MATH651 -> MATH620 (Catherine Adloff):
     * MECA651 (Eric Pairel):
     * MECA654 (Emile Roux): 
     * MECA652 (Philippe Saffré): 
     * MECA653 (Ludovic Charleux):  
-    * MATE651 (Pascal Francescato):  
+    * (MATE651) MATE611 (Bernard Riveil-Reydet): OK  
     * MECA655 (Pascal Hernandez): 
     * EASI651 (Madjid Boutemeur): 
 * SNI:
@@ -45,7 +45,7 @@ OK
 ## MAJ Maquette AUS
 
 * MMT:
-    * MATH651 (Catherine Adloff): 
+    * MATH651 -> MATH620 (Catherine Adloff):
     * MECA651 (Eric Pairel): 
     * MECA654 (Emile Roux): 
     * MECA652 (Philippe Saffré): 
@@ -74,7 +74,7 @@ OK
 ## MAJ Maquette ADE
 
 * MMT:
-    * MATH651 (Catherine Adloff): 
+    * MATH651 -> MATH620 (Catherine Adloff):
     * MECA651 (Eric Pairel): 
     * MECA654 (Emile Roux): 
     * MECA652 (Philippe Saffré): 
@@ -117,8 +117,4 @@ OK
 * Michel Breysse:  michel.breysse@ca-des-savoie.fr; breyssemichel@gmail.com  04 50 64 72 17
 
 
-
-### MATE 651: 
-* TP IUT:
-    En 2022-2023 : planification de la S13 à la S21
 
